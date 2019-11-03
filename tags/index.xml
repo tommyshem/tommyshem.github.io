@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Tom&#39;s Things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sun, 03 Nov 2019 15:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Nov 2019 17:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://tommyshem.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>c</title>
+      <link>https://tommyshem.github.io/tags/c/</link>
+      <pubDate>Sun, 03 Nov 2019 17:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>c notes</title>
+      <link>https://tommyshem.github.io/tags/c-notes/</link>
+      <pubDate>Sun, 03 Nov 2019 17:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/c-notes/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>git</title>
