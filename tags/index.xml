@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Tom&#39;s Things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sun, 03 Nov 2019 14:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Nov 2019 15:30:00 +0000</lastBuildDate>
     
 	<atom:link href="https://tommyshem.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>git</title>
+      <link>https://tommyshem.github.io/tags/git/</link>
+      <pubDate>Sun, 03 Nov 2019 15:30:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://tommyshem.github.io/tags/github/</link>
+      <pubDate>Sun, 03 Nov 2019 15:30:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/github/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>bin</title>
@@ -174,15 +192,6 @@
     </item>
     
     <item>
-      <title>github</title>
-      <link>https://tommyshem.github.io/tags/github/</link>
-      <pubDate>Tue, 13 Mar 2018 15:15:30 +0000</pubDate>
-      
-      <guid>https://tommyshem.github.io/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>solus</title>
       <link>https://tommyshem.github.io/tags/solus/</link>
       <pubDate>Sun, 11 Mar 2018 09:00:00 +0000</pubDate>
@@ -206,15 +215,6 @@
       <pubDate>Sun, 04 Mar 2018 17:30:00 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/tags/swift/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://tommyshem.github.io/tags/git/</link>
-      <pubDate>Fri, 23 Feb 2018 18:30:00 +0000</pubDate>
-      
-      <guid>https://tommyshem.github.io/tags/git/</guid>
       <description></description>
     </item>
     

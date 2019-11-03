@@ -6,10 +6,31 @@
     <description>Recent content in github on Tom&#39;s Things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 13 Mar 2018 15:15:30 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Nov 2019 15:30:00 +0000</lastBuildDate>
     
 	<atom:link href="https://tommyshem.github.io/categories/github/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git clear local and remote repo and start over</title>
+      <link>https://tommyshem.github.io/2019/11/03/git-clear-local-and-remote-repo-and-start-over/</link>
+      <pubDate>Sun, 03 Nov 2019 15:30:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2019/11/03/git-clear-local-and-remote-repo-and-start-over/</guid>
+      <description>Git clear local and remote repo and start over Create a new folder and copy the files you need if any into the new folder.
+Example below with no files
+mkdir project-name-here cd project-name-here git init git remote add origin git@github.com:user/project-here.git git add . git commit -m &amp;quot;Initial commit&amp;quot; git push -u origin master --force  You can clone the repo and delete .git folder so there is no commit history on local copy and github repo.</description>
+    </item>
+    
+    <item>
+      <title>Clone all my github repositories in to current directory.</title>
+      <link>https://tommyshem.github.io/2018/03/13/clone-all-my-github-repositories-in-to-current-directory./</link>
+      <pubDate>Tue, 13 Mar 2018 15:15:30 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2018/03/13/clone-all-my-github-repositories-in-to-current-directory./</guid>
+      <description> Clone all my Github repositories in to the current directory with one bash line. curl -s https://api.github.com/users/tommyshem/repos | grep \&amp;quot;clone_url\&amp;quot; | awk &#39;{print $2}&#39; | sed -e &#39;s/&amp;quot;//g&#39; -e &#39;s/,//g&#39; | xargs -n1 git clone  or you can use this one if jq command is installed on your system
+curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs -n1 git clone  </description>
+    </item>
     
     <item>
       <title>Clone all my github repositories in to current directory.</title>

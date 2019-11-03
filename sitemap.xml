@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://tommyshem.github.io/categories/</loc>
+    <lastmod>2019-11-03T15:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/git/</loc>
+    <lastmod>2019-11-03T15:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/2019/11/03/git-clear-local-and-remote-repo-and-start-over/</loc>
+    <lastmod>2019-11-03T15:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/categories/github/</loc>
+    <lastmod>2019-11-03T15:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/github/</loc>
+    <lastmod>2019-11-03T15:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/post/</loc>
+    <lastmod>2019-11-03T15:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/</loc>
+    <lastmod>2019-11-03T15:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/</loc>
+    <lastmod>2019-11-03T15:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://tommyshem.github.io/tags/bin/</loc>
     <lastmod>2019-11-03T14:00:00+00:00</lastmod>
   </url>
@@ -18,32 +58,12 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/</loc>
-    <lastmod>2019-11-03T14:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://tommyshem.github.io/tags/elf/</loc>
     <lastmod>2019-11-03T14:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/post/</loc>
-    <lastmod>2019-11-03T14:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tommyshem.github.io/tags/</loc>
-    <lastmod>2019-11-03T14:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://tommyshem.github.io/tags/terminal/</loc>
-    <lastmod>2019-11-03T14:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tommyshem.github.io/</loc>
     <lastmod>2019-11-03T14:00:00+00:00</lastmod>
   </url>
   
@@ -108,12 +128,12 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/rust/</loc>
+    <loc>https://tommyshem.github.io/categories/rust/</loc>
     <lastmod>2019-01-27T09:24:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/rust/</loc>
+    <loc>https://tommyshem.github.io/tags/rust/</loc>
     <lastmod>2019-01-27T09:24:55+00:00</lastmod>
   </url>
   
@@ -213,12 +233,12 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/docker/</loc>
+    <loc>https://tommyshem.github.io/tags/docker/</loc>
     <lastmod>2018-08-12T21:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/docker/</loc>
+    <loc>https://tommyshem.github.io/categories/docker/</loc>
     <lastmod>2018-08-12T21:00:00+02:00</lastmod>
   </url>
   
@@ -248,12 +268,7 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/github/</loc>
-    <lastmod>2018-03-13T15:15:30+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tommyshem.github.io/tags/github/</loc>
+    <loc>https://tommyshem.github.io/2018/03/13/clone-all-my-github-repositories-in-to-current-directory./</loc>
     <lastmod>2018-03-13T15:15:30+00:00</lastmod>
   </url>
   
@@ -273,12 +288,12 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/gtk/</loc>
+    <loc>https://tommyshem.github.io/tags/gtk/</loc>
     <lastmod>2018-03-04T17:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/gtk/</loc>
+    <loc>https://tommyshem.github.io/categories/gtk/</loc>
     <lastmod>2018-03-04T17:30:00+00:00</lastmod>
   </url>
   
@@ -290,11 +305,6 @@
   <url>
     <loc>https://tommyshem.github.io/2018/03/04/swift-gtk-3/</loc>
     <lastmod>2018-03-04T17:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tommyshem.github.io/tags/git/</loc>
-    <lastmod>2018-02-23T18:30:00+00:00</lastmod>
   </url>
   
   <url>
@@ -408,12 +418,12 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/hugo/</loc>
+    <loc>https://tommyshem.github.io/categories/hugo/</loc>
     <lastmod>2018-01-28T17:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/hugo/</loc>
+    <loc>https://tommyshem.github.io/tags/hugo/</loc>
     <lastmod>2018-01-28T17:15:00+00:00</lastmod>
   </url>
   
@@ -458,12 +468,12 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/vscode/</loc>
+    <loc>https://tommyshem.github.io/categories/vscode/</loc>
     <lastmod>2018-01-28T09:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/vscode/</loc>
+    <loc>https://tommyshem.github.io/tags/vscode/</loc>
     <lastmod>2018-01-28T09:00:00+00:00</lastmod>
   </url>
   

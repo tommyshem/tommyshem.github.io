@@ -6,10 +6,21 @@
     <description>Recent content in git on Tom&#39;s Things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Fri, 23 Feb 2018 18:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Nov 2019 15:30:00 +0000</lastBuildDate>
     
 	<atom:link href="https://tommyshem.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git clear local and remote repo and start over</title>
+      <link>https://tommyshem.github.io/2019/11/03/git-clear-local-and-remote-repo-and-start-over/</link>
+      <pubDate>Sun, 03 Nov 2019 15:30:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2019/11/03/git-clear-local-and-remote-repo-and-start-over/</guid>
+      <description>Git clear local and remote repo and start over Create a new folder and copy the files you need if any into the new folder.
+Example below with no files
+mkdir project-name-here cd project-name-here git init git remote add origin git@github.com:user/project-here.git git add . git commit -m &amp;quot;Initial commit&amp;quot; git push -u origin master --force  You can clone the repo and delete .git folder so there is no commit history on local copy and github repo.</description>
+    </item>
     
     <item>
       <title>Git tips</title>
