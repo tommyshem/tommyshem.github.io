@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>node js on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/tags/node-js/</link>
+    <description>Recent content in node js on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Mon, 09 Jul 2018 19:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/tags/node-js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Node tips and tricks</title>
+      <link>https://tommyshem.github.io/2018/07/09/node-tips-and-tricks/</link>
+      <pubDate>Mon, 09 Jul 2018 19:00:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/2018/07/09/node-tips-and-tricks/</guid>
+      <description>To find where global libraries are installed, you can type
+```bash npm list -g &amp;ldquo;&amp;rsquo;</description>
+    </item>
+    
+  </channel>
+</rss>

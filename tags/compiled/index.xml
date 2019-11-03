@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Compiled on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/tags/compiled/</link>
+    <description>Recent content in Compiled on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sun, 16 Sep 2018 16:30:00 +1800</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/tags/compiled/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compiled Notes</title>
+      <link>https://tommyshem.github.io/2018/09/16/compiled-notes/</link>
+      <pubDate>Sun, 16 Sep 2018 16:30:00 +1800</pubDate>
+      
+      <guid>https://tommyshem.github.io/2018/09/16/compiled-notes/</guid>
+      <description> Compiled files Notes display needed linked dynamically libraries in the exec progam, for it to run.
+readelf -d exec-filename-here  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <title>Rust Notes &middot; Tom&#39;s Things</title>
+    <meta name="generator" content="Hugo 0.40.1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Tommy Shem">
+    
+      <meta name="description" content="My Blog">
+    
+    
+    <link rel="canonical" href="https://tommyshem.github.io/2019/01/22/rust-notes/"/>
+    <link rel="icon" href="https://tommyshem.github.io/favicon.ico">
+    <link rel="apple-touch-icon" href="https://tommyshem.github.io/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="https://tommyshem.github.io/css/style.css">
+    <link rel="stylesheet" href="https://tommyshem.github.io/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://tommyshem.github.io/css/monokai.css">
+    <link rel="stylesheet" href="https://tommyshem.github.io/fancybox/jquery.fancybox.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="Rust Notes" />
+<meta property="og:description" content="Rust Notes Setup rust with Rustup website https://rustup.rs/
+curl https://sh.rustup.rs -sSf | sh  location of all rustup install and files $HOME/.cargo/bin
+Rustup use Install bash completions (Optional)
+rustup completions bash &gt; /etc/bash_completion.d/rustup.bash-completion  Updating rustup
+rustup self update  Install stable toolchain
+rustup install stable  Nightly Install Nightly toolchain
+rustup install nightly  Set Nightly as default
+rustup default nightly  updating rust toolchains
+rustup update  Rustup Components List components which can be installed on your system" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tommyshem.github.io/2019/01/22/rust-notes/" />
+
+
+
+<meta property="article:published_time" content="2019-01-22T14:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2019-01-22T14:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+<meta itemprop="name" content="Rust Notes">
+<meta itemprop="description" content="Rust Notes Setup rust with Rustup website https://rustup.rs/
+curl https://sh.rustup.rs -sSf | sh  location of all rustup install and files $HOME/.cargo/bin
+Rustup use Install bash completions (Optional)
+rustup completions bash &gt; /etc/bash_completion.d/rustup.bash-completion  Updating rustup
+rustup self update  Install stable toolchain
+rustup install stable  Nightly Install Nightly toolchain
+rustup install nightly  Set Nightly as default
+rustup default nightly  updating rust toolchains
+rustup update  Rustup Components List components which can be installed on your system">
+
+
+<meta itemprop="datePublished" content="2019-01-22T14:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-01-22T14:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="171">
+
+
+
+<meta itemprop="keywords" content="rust,rust notes," />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Rust Notes"/>
+<meta name="twitter:description" content="Rust Notes Setup rust with Rustup website https://rustup.rs/
+curl https://sh.rustup.rs -sSf | sh  location of all rustup install and files $HOME/.cargo/bin
+Rustup use Install bash completions (Optional)
+rustup completions bash &gt; /etc/bash_completion.d/rustup.bash-completion  Updating rustup
+rustup self update  Install stable toolchain
+rustup install stable  Nightly Install Nightly toolchain
+rustup install nightly  Set Nightly as default
+rustup default nightly  updating rust toolchains
+rustup update  Rustup Components List components which can be installed on your system"/>
+
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="https://tommyshem.github.io/" id="logo">
+          
+          <i class="logo" style="background-image: url('https://tommyshem.github.io/images/logo/detective-penguin.png')"></i>
+          
+          <span class="site-title">Tom&#39;s Things</span>
+      </a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="https://tommyshem.github.io/">Home</a>
+          
+          
+          
+          
+          
+          
+
+          
+          <a class="main-nav-link" href="/about/">About</a>
+          
+
+          
+          
+          
+          
+          <a class="main-nav-link" href="https://tommyshem.github.io/tags/">Tags</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://tommyshem.github.io/categories/">Categories</a>
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="https://tommyshem.github.io/images/avatar/Avatar1.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" class="search-form-input" placeholder="Search">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="sitesearch" value="https://tommyshem.github.io/" />
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="https://tommyshem.github.io/">Home</a></td>
+          
+          
+          
+          
+          
+          
+
+          
+          <td><a class="main-nav-link" href="/about/">About</a></td>
+          
+
+          
+          
+          
+          
+          <td><a class="main-nav-link" href="https://tommyshem.github.io/tags/">Tags</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://tommyshem.github.io/categories/">Categories</a></td>
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="https://tommyshem.github.io/" />
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+   	
+   	<div class="outer">
+   	
+    	<aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      
+      <img id="avatar" src="https://tommyshem.github.io/images/avatar/Avatar1.png">
+      
+      <h2 id="name">Tommy Shem</h2>
+      <h3 id="title">Hobby programmer in Golang and Python3 on Linux.</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Earth</span>
+      
+          <a id="follow" href="https://github.com/tommyshem">
+              Follow
+          </a>
+      
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        25
+        <span>Posts</span>
+      </div>
+      <div class="article-info-block">
+        
+          34
+        
+        <span>
+            Tags
+        </span>
+      </div>
+    </div>
+    <div class="profile-block social-links">
+      <table>
+        <tr>
+          
+<td><a href="//github.com/tommyshem" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <td><a href="https://tommyshem.github.io/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+    
+
+    <section id="main">
+    
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            <img src="https://tommyshem.github.io/images/blog/vscode-debug-screen.png" class="article-banner">
+        
+
+        <header class="article-header">
+    <a href="https://tommyshem.github.io/2019/01/22/rust-notes/">
+    <h1 class="article-title" itemprop="name">
+        Rust Notes
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2019-01-22 14:00:00 &#43;0000 UTC" itemprop="datePublished">2019-01-22</time>
+            &middot;
+            171
+            words
+            &middot;
+            1
+            minute read
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://tommyshem.github.io/categories/rust">rust</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://tommyshem.github.io/tags/rust">rust</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://tommyshem.github.io/tags/rust-notes">rust notes</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<h1 id="rust-notes">Rust Notes</h1>
+
+<h2 id="setup-rust-with-rustup">Setup rust with Rustup</h2>
+
+<p>website <a href="https://rustup.rs/">https://rustup.rs/</a></p>
+
+<pre><code class="language-bash">curl https://sh.rustup.rs -sSf | sh
+</code></pre>
+
+<p>location of all rustup install and files $HOME/.cargo/bin</p>
+
+<h2 id="rustup-use">Rustup use</h2>
+
+<p>Install bash completions (Optional)</p>
+
+<pre><code class="language-bash">rustup completions bash &gt; /etc/bash_completion.d/rustup.bash-completion 
+</code></pre>
+
+<p>Updating rustup</p>
+
+<pre><code class="language-bash">rustup self update
+</code></pre>
+
+<p>Install stable toolchain</p>
+
+<pre><code class="language-bash">rustup install stable
+</code></pre>
+
+<h2 id="nightly">Nightly</h2>
+
+<p>Install Nightly toolchain</p>
+
+<pre><code class="language-bash">rustup install nightly
+</code></pre>
+
+<p>Set Nightly as default</p>
+
+<pre><code class="language-bash">rustup default nightly
+</code></pre>
+
+<p>updating rust toolchains</p>
+
+<pre><code class="language-bash">rustup update
+</code></pre>
+
+<h2 id="rustup-components">Rustup Components</h2>
+
+<p>List components which can be installed on your system</p>
+
+<pre><code class="language-bash">rustup component list
+</code></pre>
+
+<h2 id="install-components">Install components</h2>
+
+<p>Install clippy tool used for compiling code with hints</p>
+
+<pre><code class="language-bash">rustup component add clippy
+</code></pre>
+
+<p>Install rust-fmt tool used for auto code formatting</p>
+
+<pre><code class="language-bash">rustup component add rust-fmt
+</code></pre>
+
+<p>Install rls tool used for rust lanuage server for ide&rsquo;s</p>
+
+<pre><code class="language-bash">rustup component add rls
+</code></pre>
+
+<h2 id="tools">Tools</h2>
+
+<h3 id="cargo-bloat">Cargo-bloat</h3>
+
+<p>website <a href="https://github.com/RazrFalcon/cargo-bloat">https://github.com/RazrFalcon/cargo-bloat</a></p>
+
+<p>Install cargo-bloat tool</p>
+
+<pre><code class="language-bash">cargo install cargo-bloat
+</code></pre>
+
+<p>To get size of the release</p>
+
+<pre><code class="language-bash">cargo bloat --release
+</code></pre>
+
+<h2 id="make-binary-size-smaller">make binary size smaller</h2>
+
+<p>File <code>Cargo.toml</code> add to bottom of the file.</p>
+
+<pre><code class="language-toml">[profile.release]
+debug = false
+lto = true
+opt-level = 'z'
+</code></pre>
+
+<p>Remove debug symbols from the binary to make it smaller</p>
+
+<pre><code class="language-bash">strip -d rustbinary
+</code></pre>
+
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://tommyshem.github.io/2019/01/22/rust-notes/" data-id="e90cef7343a40bdb9ec0163d0293c982" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+
+    
+<nav id="article-nav">
+    
+    <a href="https://tommyshem.github.io/2018/09/23/gitlab-api-notes/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Older
+      </strong>
+      <div class="article-nav-title">Gitlab API Notes</div>
+    </a>
+    
+
+    
+    <a href="https://tommyshem.github.io/2019/01/23/binary-notes/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Newer
+      </strong>
+      <div class="article-nav-title">Binary Notes</div>
+    </a>
+    
+</nav>
+
+
+</article>
+
+
+
+    </section>
+
+   	
+    	<aside id="sidebar">
+    
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Recents
+    </h3>
+    <div class="widget">
+        <ul id="recent-post">
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/01/23/binary-notes/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://tommyshem.github.io/images/blog/vscode-debug-screen.png)" alt="Rust Notes" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/bin-tools">
+                        bin-tools
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/01/23/binary-notes/" class="title">Binary Notes</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-01-23 11:00:00 &#43;0000 UTC" itemprop="datePublished">2019-01-23</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/01/22/rust-notes/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://tommyshem.github.io/images/blog/vscode-debug-screen.png)" alt="Rust Notes" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/rust">
+                        rust
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/01/22/rust-notes/" class="title">Rust Notes</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-01-22 14:00:00 &#43;0000 UTC" itemprop="datePublished">2019-01-22</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2018/09/23/gitlab-api-notes/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://tommyshem.github.io/images/blog/vscode-debug-screen.png)" alt="Rust Notes" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/gitlab">
+                        gitlab
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2018/09/23/gitlab-api-notes/" class="title">Gitlab API Notes</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-09-23 18:30:00 &#43;0000 UTC" itemprop="datePublished">2018-09-23</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2018/09/10/visual-code-notes/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://tommyshem.github.io/images/blog/vim-screenshot.png)" alt="Rust Notes" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/visual-code">
+                        visual-code
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2018/09/10/visual-code-notes/" class="title">Visual Code Notes</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-09-10 10:30:00 &#43;0200 &#43;0200" itemprop="datePublished">2018-09-10</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2018/08/31/mac-os-notes/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://tommyshem.github.io/images/blog/mac-os-screenshot.png)" alt="Rust Notes" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/mac-os">
+                        Mac-OS
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2018/08/31/mac-os-notes/" class="title">Mac OS Notes</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-08-31 10:30:00 &#43;0200 &#43;0200" itemprop="datePublished">2018-08-31</time>
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/android">
+                    android
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/bin-tools">
+                    bin-tools
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/docker">
+                    docker
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/fitbit">
+                    fitbit
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/git">
+                    git
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/github">
+                    github
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/gitlab">
+                    gitlab
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/gtk">
+                    gtk
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/hugo">
+                    hugo
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/mac-os">
+                    mac-os
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/mac-os-x">
+                    mac-os-x
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/node">
+                    node
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/rust">
+                    rust
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/solus">
+                    solus
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/swift">
+                    swift
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/terminal">
+                    terminal
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/visual-code">
+                    visual-code
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/vscode">
+                    vscode
+                </a>
+                <span class="category-list-count">4</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tags
+    </h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/aspell">
+                    aspell
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/bin">
+                    bin
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/binary-size">
+                    binary-size
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/cli">
+                    cli
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/delve">
+                    delve
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/dlv">
+                    dlv
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/docker">
+                    docker
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/editor-font">
+                    editor-font
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/elf">
+                    elf
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/finder">
+                    finder
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/fitbit">
+                    fitbit
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/git">
+                    git
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/github">
+                    github
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/gitlab-api">
+                    gitlab-api
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/gnome">
+                    gnome
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/go">
+                    go
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/gtk">
+                    gtk
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/hugo">
+                    hugo
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/ignore">
+                    ignore
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/linux">
+                    linux
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/mac">
+                    mac
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/mac-os-x">
+                    mac-os-x
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/neovim-terminal">
+                    neovim-terminal
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/node-js">
+                    node-js
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/pages">
+                    pages
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/rust">
+                    rust
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/rust-notes">
+                    rust-notes
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/setup">
+                    setup
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/solus">
+                    solus
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/swift">
+                    swift
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/tasks">
+                    tasks
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/termux-terminal">
+                    termux-terminal
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/vim-terminal">
+                    vim-terminal
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/vscode">
+                    vscode
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tag cloud
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="https://tommyshem.github.io/tags/aspell" style="font-size: 12px;">aspell</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/bin" style="font-size: 12px;">bin</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/binary-size" style="font-size: 12px;">binary-size</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/cli" style="font-size: 12px;">cli</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/delve" style="font-size: 12px;">delve</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/dlv" style="font-size: 12px;">dlv</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/docker" style="font-size: 12px;">docker</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/editor-font" style="font-size: 12px;">editor-font</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/elf" style="font-size: 12px;">elf</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/finder" style="font-size: 12px;">finder</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/fitbit" style="font-size: 12px;">fitbit</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/git" style="font-size: 12px;">git</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/github" style="font-size: 12px;">github</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/gitlab-api" style="font-size: 12px;">gitlab-api</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/gnome" style="font-size: 12px;">gnome</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/go" style="font-size: 12px;">go</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/gtk" style="font-size: 12px;">gtk</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/hugo" style="font-size: 12px;">hugo</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/ignore" style="font-size: 12px;">ignore</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/linux" style="font-size: 12px;">linux</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/mac" style="font-size: 12px;">mac</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/mac-os-x" style="font-size: 12px;">mac-os-x</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/neovim-terminal" style="font-size: 12px;">neovim-terminal</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/node-js" style="font-size: 12px;">node-js</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/pages" style="font-size: 12px;">pages</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/rust" style="font-size: 12px;">rust</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/rust-notes" style="font-size: 12px;">rust-notes</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/setup" style="font-size: 12px;">setup</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/solus" style="font-size: 12px;">solus</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/swift" style="font-size: 12px;">swift</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/tasks" style="font-size: 12px;">tasks</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/termux-terminal" style="font-size: 12px;">termux-terminal</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/vim-terminal" style="font-size: 12px;">vim-terminal</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/vscode" style="font-size: 12px;">vscode</a>
+        
+    </div>
+</div>
+
+
+
+
+
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+    
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019
+      Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>.
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://tommyshem.github.io/fancybox/jquery.fancybox.pack.js"></script>
+<script src="https://tommyshem.github.io/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/categories/docker/</link>
+    <description>Recent content in docker on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sun, 12 Aug 2018 21:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker Notes</title>
+      <link>https://tommyshem.github.io/2018/08/12/docker-notes/</link>
+      <pubDate>Sun, 12 Aug 2018 21:00:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/2018/08/12/docker-notes/</guid>
+      <description>Docker Notes Start docker daemon manualy sudo dockerd  Start daemon with systemd when docker is installed for the first time sudo systemctl start docker  check docker is running docker info  Restart docker daemon sudo systemctl restart docker  run docker without sudo Warning security attack can be done if you do the following see website
+https://docs.docker.com/install/linux/linux-postinstall/#manage-docker-as-a-non-root-user
+To create the docker group and add your user:
+Create the docker group.</description>
+    </item>
+    
+  </channel>
+</rss>

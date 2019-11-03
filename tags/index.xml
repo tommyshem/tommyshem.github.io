@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/tags/</link>
+    <description>Recent content in Tags on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sun, 03 Nov 2019 14:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>bin</title>
+      <link>https://tommyshem.github.io/tags/bin/</link>
+      <pubDate>Sun, 03 Nov 2019 14:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/bin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>elf</title>
+      <link>https://tommyshem.github.io/tags/elf/</link>
+      <pubDate>Sun, 03 Nov 2019 14:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/elf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>terminal</title>
+      <link>https://tommyshem.github.io/tags/terminal/</link>
+      <pubDate>Sun, 03 Nov 2019 14:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/terminal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>extension testing</title>
+      <link>https://tommyshem.github.io/tags/extension-testing/</link>
+      <pubDate>Sat, 13 Jul 2019 20:30:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/extension-testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>andriod studio</title>
+      <link>https://tommyshem.github.io/tags/andriod-studio/</link>
+      <pubDate>Sat, 02 Mar 2019 20:13:48 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/andriod-studio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>console</title>
+      <link>https://tommyshem.github.io/tags/console/</link>
+      <pubDate>Thu, 07 Feb 2019 09:17:39 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/console/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://tommyshem.github.io/tags/javascript/</link>
+      <pubDate>Thu, 07 Feb 2019 09:17:39 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>log</title>
+      <link>https://tommyshem.github.io/tags/log/</link>
+      <pubDate>Thu, 07 Feb 2019 09:17:39 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/log/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rust</title>
+      <link>https://tommyshem.github.io/tags/rust/</link>
+      <pubDate>Sun, 27 Jan 2019 09:24:55 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>binary size</title>
+      <link>https://tommyshem.github.io/tags/binary-size/</link>
+      <pubDate>Wed, 23 Jan 2019 11:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/binary-size/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gitlab api</title>
+      <link>https://tommyshem.github.io/tags/gitlab-api/</link>
+      <pubDate>Sun, 23 Sep 2018 18:30:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/gitlab-api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>editor font</title>
+      <link>https://tommyshem.github.io/tags/editor-font/</link>
+      <pubDate>Mon, 10 Sep 2018 10:30:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/editor-font/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mac</title>
+      <link>https://tommyshem.github.io/tags/mac/</link>
+      <pubDate>Fri, 31 Aug 2018 10:30:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>neovim terminal</title>
+      <link>https://tommyshem.github.io/tags/neovim-terminal/</link>
+      <pubDate>Fri, 31 Aug 2018 10:30:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/neovim-terminal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim terminal</title>
+      <link>https://tommyshem.github.io/tags/vim-terminal/</link>
+      <pubDate>Fri, 31 Aug 2018 10:30:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/vim-terminal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>termux terminal</title>
+      <link>https://tommyshem.github.io/tags/termux-terminal/</link>
+      <pubDate>Wed, 29 Aug 2018 12:00:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/termux-terminal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://tommyshem.github.io/tags/docker/</link>
+      <pubDate>Sun, 12 Aug 2018 21:00:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>node js</title>
+      <link>https://tommyshem.github.io/tags/node-js/</link>
+      <pubDate>Mon, 09 Jul 2018 19:00:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/node-js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://tommyshem.github.io/tags/github/</link>
+      <pubDate>Tue, 13 Mar 2018 15:15:30 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>solus</title>
+      <link>https://tommyshem.github.io/tags/solus/</link>
+      <pubDate>Sun, 11 Mar 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/solus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gtk</title>
+      <link>https://tommyshem.github.io/tags/gtk/</link>
+      <pubDate>Sun, 04 Mar 2018 17:30:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/gtk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>swift</title>
+      <link>https://tommyshem.github.io/tags/swift/</link>
+      <pubDate>Sun, 04 Mar 2018 17:30:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/swift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://tommyshem.github.io/tags/git/</link>
+      <pubDate>Fri, 23 Feb 2018 18:30:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://tommyshem.github.io/tags/linux/</link>
+      <pubDate>Fri, 23 Feb 2018 18:30:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gnome</title>
+      <link>https://tommyshem.github.io/tags/gnome/</link>
+      <pubDate>Sun, 18 Feb 2018 18:19:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/gnome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aspell</title>
+      <link>https://tommyshem.github.io/tags/aspell/</link>
+      <pubDate>Sun, 11 Feb 2018 18:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/aspell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cli</title>
+      <link>https://tommyshem.github.io/tags/cli/</link>
+      <pubDate>Sun, 11 Feb 2018 18:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/cli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fitbit</title>
+      <link>https://tommyshem.github.io/tags/fitbit/</link>
+      <pubDate>Sun, 04 Feb 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/fitbit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>https://tommyshem.github.io/tags/go/</link>
+      <pubDate>Sun, 04 Feb 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ignore</title>
+      <link>https://tommyshem.github.io/tags/ignore/</link>
+      <pubDate>Mon, 29 Jan 2018 19:30:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/ignore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>drive</title>
+      <link>https://tommyshem.github.io/tags/drive/</link>
+      <pubDate>Sun, 28 Jan 2018 21:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/drive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mount</title>
+      <link>https://tommyshem.github.io/tags/mount/</link>
+      <pubDate>Sun, 28 Jan 2018 21:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/mount/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nautilus</title>
+      <link>https://tommyshem.github.io/tags/nautilus/</link>
+      <pubDate>Sun, 28 Jan 2018 21:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/nautilus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://tommyshem.github.io/tags/hugo/</link>
+      <pubDate>Sun, 28 Jan 2018 17:15:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pages</title>
+      <link>https://tommyshem.github.io/tags/pages/</link>
+      <pubDate>Sun, 28 Jan 2018 17:15:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/pages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>delve</title>
+      <link>https://tommyshem.github.io/tags/delve/</link>
+      <pubDate>Sun, 28 Jan 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/delve/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dlv</title>
+      <link>https://tommyshem.github.io/tags/dlv/</link>
+      <pubDate>Sun, 28 Jan 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/dlv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>setup</title>
+      <link>https://tommyshem.github.io/tags/setup/</link>
+      <pubDate>Sun, 28 Jan 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/setup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tasks</title>
+      <link>https://tommyshem.github.io/tags/tasks/</link>
+      <pubDate>Sun, 28 Jan 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/tasks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vscode</title>
+      <link>https://tommyshem.github.io/tags/vscode/</link>
+      <pubDate>Sun, 28 Jan 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>finder</title>
+      <link>https://tommyshem.github.io/tags/finder/</link>
+      <pubDate>Fri, 26 Jan 2018 19:00:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/finder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mac OS x</title>
+      <link>https://tommyshem.github.io/tags/mac-os-x/</link>
+      <pubDate>Fri, 26 Jan 2018 19:00:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/mac-os-x/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rust notes</title>
+      <link>https://tommyshem.github.io/tags/rust-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/tags/rust-notes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

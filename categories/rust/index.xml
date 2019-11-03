@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rust on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/categories/rust/</link>
+    <description>Recent content in rust on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sun, 27 Jan 2019 09:24:55 +0000</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/categories/rust/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rust Strings</title>
+      <link>https://tommyshem.github.io/2019/01/27/rust-strings/</link>
+      <pubDate>Sun, 27 Jan 2019 09:24:55 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2019/01/27/rust-strings/</guid>
+      <description>Rust String Notes Rust String Examples A String can be passed back from inside a function because it passes the ownership on.
+fn test() -&amp;gt; String { let mystring = String::from(&amp;quot;test string&amp;quot;) // create string mystring	}  &amp;amp;Str a string slice can not be passed back from inside a function if the string it points to was created inside the function
+fn test() -&amp;gt; &amp;amp;str { let mystring = String::from(&amp;quot;test string&amp;quot;) // create string &amp;amp;mystring // Not allowed as it can not pass ownership from string created inside function.</description>
+    </item>
+    
+    <item>
+      <title>Rust Notes</title>
+      <link>https://tommyshem.github.io/1/01/01/rust-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/1/01/01/rust-notes/</guid>
+      <description>Rust Notes Rust playground website https://play.rust-lang.org/
+Tutorials websites https://stevedonovan.github.io/rust-gentle-intro/1-basics.html
+Setup dev env https://hoverbear.org/2017/03/03/setting-up-a-rust-devenv/
+Setup rust with Rustup website https://rustup.rs/
+website on how to use it https://rust-lang-nursery.github.io/edition-guide/rust-2018/rustup-for-managing-rust-versions.html
+curl https://sh.rustup.rs -sSf | sh  location of all rustup install and files $HOME/.cargo/bin
+Rustup use Install bash completions (Optional)
+rustup completions bash &amp;gt; /etc/bash_completion.d/rustup.bash-completion  Updating rustup
+rustup self update  Install stable toolchain
+rustup install stable  Nightly Install Nightly toolchain</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gitlab on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/categories/gitlab/</link>
+    <description>Recent content in gitlab on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sun, 23 Sep 2018 18:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/categories/gitlab/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gitlab API Notes</title>
+      <link>https://tommyshem.github.io/2018/09/23/gitlab-api-notes/</link>
+      <pubDate>Sun, 23 Sep 2018 18:30:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2018/09/23/gitlab-api-notes/</guid>
+      <description>General information about api&amp;rsquo;s and tools to test website https://www.guru99.com/testing-rest-api-manually.html
+Gitlab API Docs Gitlab website for information https://docs.gitlab.com/ee/api/README.html
+Testing with curl curl &amp;quot;https://gitlab.gnome.org/api/v4/  then use the docs on the website for the endpoints and just add onto the above curl command.
+example to get list of projects.
+curl &amp;quot;https://gitlab.gnome.org/api/v4/projects&amp;quot;  Firefox extension website for the extension https://addons.mozilla.org/en-GB/firefox/addon/rester/
+Software mto install on windows, mac and linux website for the software https://insomnia.</description>
+    </item>
+    
+  </channel>
+</rss>

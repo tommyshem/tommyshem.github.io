@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac-OS on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/categories/mac-os/</link>
+    <description>Recent content in Mac-OS on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Fri, 31 Aug 2018 10:30:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/categories/mac-os/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mac OS Notes</title>
+      <link>https://tommyshem.github.io/2018/08/31/mac-os-notes/</link>
+      <pubDate>Fri, 31 Aug 2018 10:30:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/2018/08/31/mac-os-notes/</guid>
+      <description>Mac Os tips and Notes Take screen shotes website with pictures and more info https://www.wikihow.com/Take-a-Screenshot-on-a-Mac
+Run the grab software and a icon will be in the dock right click for options to capture.
+In short the combination keys below to take screenshots. cmd + shift + 3 for complete screen capture and save a file to desktop
+cmd + shift + 4 for selection of the screen capture and save a file to desktop</description>
+    </item>
+    
+  </channel>
+</rss>

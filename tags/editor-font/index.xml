@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>editor font on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/tags/editor-font/</link>
+    <description>Recent content in editor font on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Mon, 10 Sep 2018 10:30:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/tags/editor-font/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Visual Code Notes</title>
+      <link>https://tommyshem.github.io/2018/09/10/visual-code-notes/</link>
+      <pubDate>Mon, 10 Sep 2018 10:30:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/2018/09/10/visual-code-notes/</guid>
+      <description>Visual Code Setup visual code with a font with programming ligatures Install manualy or on linux First you will need a font with ligatures.
+font fira code github https://github.com/tonsky/FiraCode
+Install from github or package manager.
+Mac os install using homebrew brew tap caskroom/fonts brew cask install font-fira-code  Visual code setup In the menu goto File &amp;gt; Preferences &amp;gt; User Settings
+Add below to the settings.json file
+{ &amp;quot;editor.fontFamily&amp;quot;: &amp;quot;Fira Code&amp;quot;, &amp;quot;editor.</description>
+    </item>
+    
+  </channel>
+</rss>

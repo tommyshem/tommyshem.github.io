@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/categories/linux/</link>
+    <description>Recent content in linux on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sun, 28 Jan 2018 21:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Mount a drive on linux</title>
+      <link>https://tommyshem.github.io/2018/01/28/how-to-mount-a-drive-on-linux/</link>
+      <pubDate>Sun, 28 Jan 2018 21:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2018/01/28/how-to-mount-a-drive-on-linux/</guid>
+      <description>Mount drive Find device you want to mount
+fdisk -l  Make a folder that will be the mount point.
+Example using data as the mount point
+sudo mkdir /home/yourusernamehere/data  Mount the device drive, example using /dev/sdb1. Use the one you need to mount
+sudo mount /dev/sdb1 /home/yourusernamehere/data  Now you can access the drive at /media/data.
+Auto-mount at boot We want the drive to auto-mount at boot.</description>
+    </item>
+    
+  </channel>
+</rss>

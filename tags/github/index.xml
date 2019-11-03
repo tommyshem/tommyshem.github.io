@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/tags/github/</link>
+    <description>Recent content in github on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Tue, 13 Mar 2018 15:15:30 +0000</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Clone all my github repositories in to current directory.</title>
+      <link>https://tommyshem.github.io/2018/03/13/clone-all-my-github-repositories-in-to-current-directory./</link>
+      <pubDate>Tue, 13 Mar 2018 15:15:30 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2018/03/13/clone-all-my-github-repositories-in-to-current-directory./</guid>
+      <description> Clone all my Github repositories in to the current directory with one bash line. curl -s https://api.github.com/users/tommyshem/repos | grep \&amp;quot;clone_url\&amp;quot; | awk &#39;{print $2}&#39; | sed -e &#39;s/&amp;quot;//g&#39; -e &#39;s/,//g&#39; | xargs -n1 git clone  or you can use this one if jq command is installed on your system
+curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs -n1 git clone  </description>
+    </item>
+    
+    <item>
+      <title>Setup Hugo with github pages.</title>
+      <link>https://tommyshem.github.io/2018/01/28/setup-hugo-with-github-pages./</link>
+      <pubDate>Sun, 28 Jan 2018 17:15:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2018/01/28/setup-hugo-with-github-pages./</guid>
+      <description>Read this hugo website
+Then change baseURL in config.toml to your github page or your css will not work. e.g baseurl = &amp;ldquo;https://tommyshem.github.io/&amp;quot;</description>
+    </item>
+    
+  </channel>
+</rss>

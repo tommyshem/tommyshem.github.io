@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/tags/javascript/</link>
+    <description>Recent content in javascript on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Thu, 07 Feb 2019 09:17:39 +0000</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started in Javascript</title>
+      <link>https://tommyshem.github.io/2019/02/07/getting-started-in-javascript/</link>
+      <pubDate>Thu, 07 Feb 2019 09:17:39 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2019/02/07/getting-started-in-javascript/</guid>
+      <description>Getting started with javascript in chrome Inline javascript is faster than loading external files but external files are easier to update if in larger projects or the same code is used in many html files.
+Basic inline javascript in a html file &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Getting started with Javascript&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1 id=&amp;quot;header&amp;quot;&amp;gt;Intro to Javascript&amp;lt;/h1&amp;gt; &amp;lt;!-- Javascript goes in the script tags --&amp;gt; &amp;lt;script&amp;gt; var header = document.</description>
+    </item>
+    
+    <item>
+      <title>Javascript Console.log</title>
+      <link>https://tommyshem.github.io/2019/02/07/javascript-console.log/</link>
+      <pubDate>Thu, 07 Feb 2019 09:17:39 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2019/02/07/javascript-console.log/</guid>
+      <description>Console log basics For testing create a html file index.html
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Getting started with Javascript&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1 id=&amp;quot;header&amp;quot;&amp;gt;Intro to Javascript&amp;lt;/h1&amp;gt; &amp;lt;!-- Javascript file location in relative to this html file location --&amp;gt; &amp;lt;script src=&amp;quot;test.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  File test.js
+// console.log can print any variables out eg object strings numbers boolean etc // variable var firstname; firstname = &amp;quot;Bill&amp;quot;; // Print firstname contents to console console.</description>
+    </item>
+    
+  </channel>
+</rss>

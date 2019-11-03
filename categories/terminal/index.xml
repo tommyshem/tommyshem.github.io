@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>terminal on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/categories/terminal/</link>
+    <description>Recent content in terminal on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Fri, 31 Aug 2018 10:30:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/categories/terminal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Neovim setup and Notes</title>
+      <link>https://tommyshem.github.io/2018/08/31/neovim-setup-and-notes/</link>
+      <pubDate>Fri, 31 Aug 2018 10:30:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/2018/08/31/neovim-setup-and-notes/</guid>
+      <description>Neovim  Neovim setup files Install vim-plug Vim plug minimum file needed to load plugins Install plugins Update plugins Remove plugin Install python support for neovim plugins Keyboard for vim and Neovim. Quit without saving Close window Insert mode Command mode   Neovim Website https://neovim.io/
+Fully compatible with Vim&amp;rsquo;s editing model and the Vimscript language.
+Neovim setup files You need a settings file in the correct location for your custom settings for neovim.</description>
+    </item>
+    
+    <item>
+      <title>Vim setup and Notes</title>
+      <link>https://tommyshem.github.io/2018/08/31/vim-setup-and-notes/</link>
+      <pubDate>Fri, 31 Aug 2018 10:30:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/2018/08/31/vim-setup-and-notes/</guid>
+      <description> Vim setup </description>
+    </item>
+    
+    <item>
+      <title>How to spell check on Linux command line</title>
+      <link>https://tommyshem.github.io/2018/02/11/how-to-spell-check-on-linux-command-line/</link>
+      <pubDate>Sun, 11 Feb 2018 18:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2018/02/11/how-to-spell-check-on-linux-command-line/</guid>
+      <description>spell check on Linux command line</description>
+    </item>
+    
+  </channel>
+</rss>

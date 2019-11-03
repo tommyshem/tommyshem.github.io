@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gtk on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/tags/gtk/</link>
+    <description>Recent content in gtk on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sun, 04 Mar 2018 17:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/tags/gtk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Swift GTK&#43;3</title>
+      <link>https://tommyshem.github.io/2018/03/04/swift-gtk-3/</link>
+      <pubDate>Sun, 04 Mar 2018 17:30:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2018/03/04/swift-gtk-3/</guid>
+      <description>Setup using docker to compile code on linux as not using Ubuntu as operating system. Install docker on your linux system by the normal way.
+Go to docker hub, Swift Image web address https://hub.docker.com/_/swift/ for for info.
+Download the Swift docker image from docker hub from the terminal. Using the command below.
+sudo docker pull swift  Create the swift docker container from the Image and Attach it, the name (swiftfun) can be changed to anything you want to.</description>
+    </item>
+    
+    <item>
+      <title>How to make gtk apps</title>
+      <link>https://tommyshem.github.io/2018/02/18/how-to-make-gtk-apps/</link>
+      <pubDate>Sun, 18 Feb 2018 18:19:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2018/02/18/how-to-make-gtk-apps/</guid>
+      <description>C Gtk example example from https://developer.gnome.org/gtk3/stable/gtk-getting-started.html#id-1.2.3.5
+&amp;rdquo;&amp;lsquo;c #include 
+static void activate (GtkApplication* app, gpointer user_data) { GtkWidget *window;
+window = gtk_application_window_new (app); gtk_window_set_title (GTK_WINDOW (window), &amp;ldquo;Window&amp;rdquo;); gtk_window_set_default_size (GTK_WINDOW (window), 400, 400); gtk_widget_show_all (window); }
+int main (int argc, char **argv) { GtkApplication *app; int status;
+app = gtk_application_new (&amp;ldquo;org.gtk.example&amp;rdquo;, G_APPLICATION_FLAGS_NONE); g_signal_connect (app, &amp;ldquo;activate&amp;rdquo;, G_CALLBACK (activate), NULL); status = g_application_run (G_APPLICATION (app), argc, argv); g_object_unref (app);
+return status; } &amp;ldquo;&amp;rsquo;</description>
+    </item>
+    
+  </channel>
+</rss>

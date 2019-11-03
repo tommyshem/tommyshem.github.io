@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mac OS x on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/tags/mac-os-x/</link>
+    <description>Recent content in mac OS x on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Fri, 26 Jan 2018 19:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/tags/mac-os-x/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to make mac os x finder suck less</title>
+      <link>https://tommyshem.github.io/2018/01/26/how-to-make-mac-os-x-finder-suck-less/</link>
+      <pubDate>Fri, 26 Jan 2018 19:00:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/2018/01/26/how-to-make-mac-os-x-finder-suck-less/</guid>
+      <description>How to customize mac os x finder from below blog post. Original website post</description>
+    </item>
+    
+  </channel>
+</rss>

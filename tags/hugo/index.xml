@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sun, 28 Jan 2018 17:15:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setup Hugo with github pages.</title>
+      <link>https://tommyshem.github.io/2018/01/28/setup-hugo-with-github-pages./</link>
+      <pubDate>Sun, 28 Jan 2018 17:15:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2018/01/28/setup-hugo-with-github-pages./</guid>
+      <description>Read this hugo website
+Then change baseURL in config.toml to your github page or your css will not work. e.g baseurl = &amp;ldquo;https://tommyshem.github.io/&amp;quot;</description>
+    </item>
+    
+  </channel>
+</rss>

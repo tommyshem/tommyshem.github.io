@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>terminal on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/tags/terminal/</link>
+    <description>Recent content in terminal on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sun, 03 Nov 2019 14:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Binary Command Tool Notes</title>
+      <link>https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/</link>
+      <pubDate>Sun, 03 Nov 2019 14:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/</guid>
+      <description>Linux binary Command Tool Notes Linux Commands for binary files gdb - debugger
+nm - lookup symbols
+objdump - object dump
+file - info on the file format
+dumpelf - show elf heads
+strip - strip the symbols from binary
+strings - show strings from the binary
+readelf - show elf headers
+ldd - show dynamic libs
+lddtree - show dynamic libs
+hexdump - show all hex for binary</description>
+    </item>
+    
+  </channel>
+</rss>

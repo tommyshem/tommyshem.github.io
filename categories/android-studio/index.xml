@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>android studio on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/categories/android-studio/</link>
+    <description>Recent content in android studio on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sat, 02 Mar 2019 20:13:48 +0000</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/categories/android-studio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Android Studio Notes</title>
+      <link>https://tommyshem.github.io/2019/03/02/android-studio-notes/</link>
+      <pubDate>Sat, 02 Mar 2019 20:13:48 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2019/03/02/android-studio-notes/</guid>
+      <description>Android Studio Notes on Arch Linux Install packages qemu for the android emulator.
+sudo pacman -S qemu virt-manager virt-viewer dnsmasq iptables vde2 bridge-utils openbsd-netcat  Install Android Studio from the website https://developer.android.com/studio#downloads</description>
+    </item>
+    
+  </channel>
+</rss>
