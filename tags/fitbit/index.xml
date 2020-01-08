@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fitbit on Tom&#39;s Things</title>
@@ -28,7 +28,7 @@ OAuth 2.0: Access/Refresh Token Request URI https://api.fitbit.com/oauth2/token
 Test website for fitbit data https://dev.fitbit.com/apps/oauthinteractivetutorial?clientEncodedId=22CLYW&amp;amp;clientSecret=3f453c0d41e0eb317b19aaa9e4389ce7&amp;amp;redirectUri=http://localhost:8189/auth_code
 fetbit web API tester https://dev.fitbit.com/build/reference/web-api/explore/
 http://localhost:8189/auth_code #access_token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2RDdNTVMiLCJhdWQiOiIyMkNMWVciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&amp;amp;user_id=6D7MMS&amp;amp;scope=settings+sleep+location+social+weight+nutrition+activity+heartrate+profile&amp;amp;token_type=Bearer&amp;amp;expires_in=86400
-Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2RDdNTVMiLCJhdWQiOiIyMkNMWVciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&amp;amp;user_id=6D7MMS&amp;amp;scope=settings+sleep+location+social+weight+nutrition+activity+heartrate+profile&amp;amp;token_type=Bearer&amp;amp;expires_in=86400  test with curl curl -i -H &amp;quot;Authorization: Bearer eyJhbGciOiJIUdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.</description>
+Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2RDdNTVMiLCJhdWQiOiIyMkNMWVciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&amp;amp;user_id=6D7MMS&amp;amp;scope=settings+sleep+location+social+weight+nutrition+activity+heartrate+profile&amp;amp;token_type=Bearer&amp;amp;expires_in=86400 test with curl curl -i -H &amp;#34;Authorization: Bearer eyJhbGciOiJIUdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.</description>
     </item>
     
   </channel>

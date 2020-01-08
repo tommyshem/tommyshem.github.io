@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>extension testing on Tom&#39;s Things</title>
@@ -19,8 +19,8 @@
       <guid>https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/</guid>
       <description>Visual Code Testing Get code scope VS Code comes with a built-in tool to easily obtain the scope of a piece of syntax.
 Press ctrl + shift + P, for the command pallette to show up, then type dev, and choose &amp;lsquo;Developer: Inspect TM Scopes&amp;rsquo; option.
-This will show you the selected token&amp;rsquo;s scope. There are four sections:
-Custom theme highlighting keywords in the settings file &amp;ldquo;editor.tokenColorCustomizations&amp;rdquo;: { &amp;ldquo;[One Dark Pro]&amp;rdquo;: { &amp;ldquo;textMateRules&amp;rdquo;: [ { &amp;ldquo;scope&amp;rdquo;: [ &amp;ldquo;keyword.</description>
+This will show you the selected token&#39;s scope. There are four sections:
+Custom theme highlighting keywords in the settings file &amp;ldquo;editor.tokenColorCustomizations&amp;rdquo;: { &amp;ldquo;[One Dark Pro]&amp;quot;: { &amp;ldquo;textMateRules&amp;rdquo;: [ { &amp;ldquo;scope&amp;rdquo;: [ &amp;ldquo;keyword.</description>
     </item>
     
   </channel>

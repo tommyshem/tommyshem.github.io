@@ -1,14 +1,94 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://tommyshem.github.io/tags/c/</loc>
-    <lastmod>2019-11-03T17:00:00+00:00</lastmod>
+    <loc>https://tommyshem.github.io/categories/</loc>
+    <lastmod>2020-01-07T15:27:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/2020/01/07/compression/</loc>
+    <lastmod>2020-01-07T15:27:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/compression/</loc>
+    <lastmod>2020-01-07T15:27:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/linux/</loc>
+    <lastmod>2020-01-07T15:27:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/categories/linuxnotes/</loc>
+    <lastmod>2020-01-07T15:27:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/post/</loc>
+    <lastmod>2020-01-07T15:27:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/</loc>
+    <lastmod>2020-01-07T15:27:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/</loc>
+    <lastmod>2020-01-07T15:27:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/2019/12/28/enable-sudoers/</loc>
+    <lastmod>2019-12-28T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/categories/linux-notes/</loc>
+    <lastmod>2019-12-28T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/sudo/</loc>
+    <lastmod>2019-12-28T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/console/</loc>
+    <lastmod>2019-12-02T09:17:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/categories/javascript/</loc>
+    <lastmod>2019-12-02T09:17:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/javascript/</loc>
+    <lastmod>2019-12-02T09:17:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/</loc>
+    <lastmod>2019-12-02T09:17:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/log/</loc>
+    <lastmod>2019-12-02T09:17:39+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://tommyshem.github.io/categories/c/</loc>
+    <lastmod>2019-11-03T17:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/c/</loc>
     <lastmod>2019-11-03T17:00:00+00:00</lastmod>
   </url>
   
@@ -23,26 +103,6 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/</loc>
-    <lastmod>2019-11-03T17:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tommyshem.github.io/post/</loc>
-    <lastmod>2019-11-03T17:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tommyshem.github.io/tags/</loc>
-    <lastmod>2019-11-03T17:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tommyshem.github.io/</loc>
-    <lastmod>2019-11-03T17:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://tommyshem.github.io/tags/git/</loc>
     <lastmod>2019-11-03T15:30:00+00:00</lastmod>
   </url>
@@ -53,12 +113,12 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/github/</loc>
+    <loc>https://tommyshem.github.io/tags/github/</loc>
     <lastmod>2019-11-03T15:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/github/</loc>
+    <loc>https://tommyshem.github.io/categories/github/</loc>
     <lastmod>2019-11-03T15:30:00+00:00</lastmod>
   </url>
   
@@ -118,22 +178,7 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/console/</loc>
-    <lastmod>2019-02-07T09:17:39+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://tommyshem.github.io/2019/02/07/getting-started-in-javascript/</loc>
-    <lastmod>2019-02-07T09:17:39+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tommyshem.github.io/tags/javascript/</loc>
-    <lastmod>2019-02-07T09:17:39+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tommyshem.github.io/categories/javascript/</loc>
     <lastmod>2019-02-07T09:17:39+00:00</lastmod>
   </url>
   
@@ -143,17 +188,12 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/log/</loc>
-    <lastmod>2019-02-07T09:17:39+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tommyshem.github.io/tags/rust/</loc>
+    <loc>https://tommyshem.github.io/categories/rust/</loc>
     <lastmod>2019-01-27T09:24:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/rust/</loc>
+    <loc>https://tommyshem.github.io/tags/rust/</loc>
     <lastmod>2019-01-27T09:24:55+00:00</lastmod>
   </url>
   
@@ -253,12 +293,12 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/docker/</loc>
+    <loc>https://tommyshem.github.io/categories/docker/</loc>
     <lastmod>2018-08-12T21:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/docker/</loc>
+    <loc>https://tommyshem.github.io/tags/docker/</loc>
     <lastmod>2018-08-12T21:00:00+02:00</lastmod>
   </url>
   
@@ -338,11 +378,6 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/linux/</loc>
-    <lastmod>2018-02-23T18:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://tommyshem.github.io/categories/swift/</loc>
     <lastmod>2018-02-23T18:30:00+00:00</lastmod>
   </url>
@@ -378,12 +413,12 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/fitbit/</loc>
+    <loc>https://tommyshem.github.io/tags/fitbit/</loc>
     <lastmod>2018-02-04T09:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/fitbit/</loc>
+    <loc>https://tommyshem.github.io/categories/fitbit/</loc>
     <lastmod>2018-02-04T09:00:00+00:00</lastmod>
   </url>
   
@@ -419,11 +454,6 @@
   
   <url>
     <loc>https://tommyshem.github.io/2018/01/28/how-to-mount-a-drive-on-linux/</loc>
-    <lastmod>2018-01-28T21:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tommyshem.github.io/categories/linux-notes/</loc>
     <lastmod>2018-01-28T21:00:00+00:00</lastmod>
   </url>
   
@@ -529,6 +559,30 @@
   
   <url>
     <loc>https://tommyshem.github.io/1/01/01/android-termux-youtube-downloader-notes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/1/01/01/arch-linux-aur-build-package-notes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/arch-linux/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/categories/aur/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/aur/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/rsync/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/1/01/01/rsync-notes/</loc>
   </url>
   
   <url>

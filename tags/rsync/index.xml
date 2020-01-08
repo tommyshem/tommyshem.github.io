@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rsync on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/tags/rsync/</link>
+    <description>Recent content in rsync on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    
+	<atom:link href="https://tommyshem.github.io/tags/rsync/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rsync Notes</title>
+      <link>https://tommyshem.github.io/1/01/01/rsync-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/1/01/01/rsync-notes/</guid>
+      <description>Rsync Notes Understanding the output of rsync &amp;ndash;itemize-changes As you may know the rsync&#39;s &amp;ndash;delete options if misused could make severe damage.
+To prevent this you can use the &amp;ndash;itemize-change and the &amp;ndash;dry-run options to figure out how the command will behave before launching the real one.
+The output will be something like that:
+.d..t..g... ./ .f...p.g... Something.pdf .f.....g... md5sum-2010-02-21.txt .f...p.g... prova.rb .d.....g... .metadata/ .f...p.g... .metadata/.lock .f...p.g... .metadata/.log .f...p.g... .metadata/version.ini &amp;gt;f+++++++++ Parameter_Usage.</description>
+    </item>
+    
+  </channel>
+</rss>

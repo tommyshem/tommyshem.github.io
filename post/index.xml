@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Tom&#39;s Things</title>
@@ -6,10 +6,47 @@
     <description>Recent content in Posts on Tom&#39;s Things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sun, 03 Nov 2019 17:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jan 2020 15:27:08 +0000</lastBuildDate>
     
 	<atom:link href="https://tommyshem.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Compression</title>
+      <link>https://tommyshem.github.io/2020/01/07/compression/</link>
+      <pubDate>Tue, 07 Jan 2020 15:27:08 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2020/01/07/compression/</guid>
+      <description>Compression Notes I tested 7z command it works fast but when testing it did not save user name.
+But it is still ok for backing up your own files.
+You can add and remove files from the compressed file
+Below command used.
+Compress all current folders and files 7z a filenamehere.7z ./ Decompress 7z e filenamehere.7z list files in compressed file 7z l filenamehere.7z Mount image fuse-7z-ng files.7z /media/my_compressed_files Tested tar with new compression zstd from facebook Note need sudo for root files to be copied</description>
+    </item>
+    
+    <item>
+      <title>Enable Sudoers</title>
+      <link>https://tommyshem.github.io/2019/12/28/enable-sudoers/</link>
+      <pubDate>Sat, 28 Dec 2019 21:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2019/12/28/enable-sudoers/</guid>
+      <description>Arch Linux resources website https://wiki.archlinux.org/index.php/Users_and_groups
+Enable sudoers Notes Settings Open settings.
+visudo Uncomment the wheel group, this allows all users in the wheel group to run all commands.
+%wheel ALL=(ALL) ALL Add user Add user to the wheel group, change userName to the user name you require.
+useradd -m -G wheel -s /bin/bash userName Protect the user account with a password passwd userName Adding a system user useradd -r -s /usr/bin/nologin userName Changing user login names usermod -l userNewName userOldName Changing user&#39;s home dir usermod -d /new/home/dir -m userName Test if sudo works by entering the command sudo whoami If you get something like this (below), then sudo is working for the set account.</description>
+    </item>
+    
+    <item>
+      <title>Javascript Function Name logging</title>
+      <link>https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/</link>
+      <pubDate>Mon, 02 Dec 2019 09:17:39 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/</guid>
+      <description>Logging function name with a debug function.
+Sample Example below.
+#!/usr/bin/gjs  // Used for debugging when tracking unknown function calls function GetFunctionName(){ print( &amp;#34;This Function Name : &amp;#34; + arguments.callee.name); print (&amp;#34;Called from function : &amp;#34; + GetFunctionName.caller.name); } // Test function function FunctionC(){ // Print this function name 	print ( &amp;#34;Fuction Name : &amp;#34; + arguments.callee.name ); // Print this function name from function call 	GetFunctionName(); } // Call test function FunctionC(); </description>
+    </item>
     
     <item>
       <title>C Tools Notes</title>
@@ -17,7 +54,7 @@
       <pubDate>Sun, 03 Nov 2019 17:00:00 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/2019/11/03/c-tools-notes/</guid>
-      <description> clang compiler error flags -wall -wextra -W -Weverything  List of Trace commands pref ngrep dstat htop opensnoop strace time wireshark tcpdump flamegraghs  </description>
+      <description>clang compiler error flags -wall -wextra -W -Weverything List of Trace commands pref ngrep dstat htop opensnoop strace time wireshark tcpdump flamegraghs </description>
     </item>
     
     <item>
@@ -28,7 +65,7 @@
       <guid>https://tommyshem.github.io/2019/11/03/git-clear-local-and-remote-repo-and-start-over/</guid>
       <description>Git clear local and remote repo and start over Create a new folder and copy the files you need if any into the new folder.
 Example below with no files
-mkdir project-name-here cd project-name-here git init git remote add origin git@github.com:user/project-here.git git add . git commit -m &amp;quot;Initial commit&amp;quot; git push -u origin master --force  You can clone the repo and delete .git folder so there is no commit history on local copy and github repo.</description>
+mkdir project-name-here cd project-name-here git init git remote add origin git@github.com:user/project-here.git git add . git commit -m &amp;#34;Initial commit&amp;#34; git push -u origin master --force You can clone the repo and delete .git folder so there is no commit history on local copy and github repo.</description>
     </item>
     
     <item>
@@ -47,7 +84,8 @@ strings - show strings from the binary
 readelf - show elf headers
 ldd - show dynamic libs
 lddtree - show dynamic libs
-hexdump - show all hex for binary</description>
+hexdump - show all hex for binary
+symtree - symbols tree</description>
     </item>
     
     <item>
@@ -58,8 +96,8 @@ hexdump - show all hex for binary</description>
       <guid>https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/</guid>
       <description>Visual Code Testing Get code scope VS Code comes with a built-in tool to easily obtain the scope of a piece of syntax.
 Press ctrl + shift + P, for the command pallette to show up, then type dev, and choose &amp;lsquo;Developer: Inspect TM Scopes&amp;rsquo; option.
-This will show you the selected token&amp;rsquo;s scope. There are four sections:
-Custom theme highlighting keywords in the settings file &amp;ldquo;editor.tokenColorCustomizations&amp;rdquo;: { &amp;ldquo;[One Dark Pro]&amp;rdquo;: { &amp;ldquo;textMateRules&amp;rdquo;: [ { &amp;ldquo;scope&amp;rdquo;: [ &amp;ldquo;keyword.</description>
+This will show you the selected token&#39;s scope. There are four sections:
+Custom theme highlighting keywords in the settings file &amp;ldquo;editor.tokenColorCustomizations&amp;rdquo;: { &amp;ldquo;[One Dark Pro]&amp;quot;: { &amp;ldquo;textMateRules&amp;rdquo;: [ { &amp;ldquo;scope&amp;rdquo;: [ &amp;ldquo;keyword.</description>
     </item>
     
     <item>
@@ -69,7 +107,7 @@ Custom theme highlighting keywords in the settings file &amp;ldquo;editor.tokenC
       
       <guid>https://tommyshem.github.io/2019/03/02/android-studio-notes/</guid>
       <description>Android Studio Notes on Arch Linux Install packages qemu for the android emulator.
-sudo pacman -S qemu virt-manager virt-viewer dnsmasq iptables vde2 bridge-utils openbsd-netcat  Install Android Studio from the website https://developer.android.com/studio#downloads</description>
+sudo pacman -S qemu virt-manager virt-viewer dnsmasq iptables vde2 bridge-utils openbsd-netcat Install Android Studio from the website https://developer.android.com/studio#downloads</description>
     </item>
     
     <item>
@@ -79,7 +117,7 @@ sudo pacman -S qemu virt-manager virt-viewer dnsmasq iptables vde2 bridge-utils 
       
       <guid>https://tommyshem.github.io/2019/02/07/getting-started-in-javascript/</guid>
       <description>Getting started with javascript in chrome Inline javascript is faster than loading external files but external files are easier to update if in larger projects or the same code is used in many html files.
-Basic inline javascript in a html file &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Getting started with Javascript&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1 id=&amp;quot;header&amp;quot;&amp;gt;Intro to Javascript&amp;lt;/h1&amp;gt; &amp;lt;!-- Javascript goes in the script tags --&amp;gt; &amp;lt;script&amp;gt; var header = document.</description>
+Basic inline javascript in a html file &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Getting started with Javascript&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1 id=&amp;#34;header&amp;#34;&amp;gt;Intro to Javascript&amp;lt;/h1&amp;gt; &amp;lt;!--Javascript goes in the script tags --&amp;gt; &amp;lt;script&amp;gt; var header = document.getElementById(&amp;#39;header&amp;#39;); setTimeout(function () { header.</description>
     </item>
     
     <item>
@@ -89,8 +127,8 @@ Basic inline javascript in a html file &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;htm
       
       <guid>https://tommyshem.github.io/2019/02/07/javascript-console.log/</guid>
       <description>Console log basics For testing create a html file index.html
-&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Getting started with Javascript&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1 id=&amp;quot;header&amp;quot;&amp;gt;Intro to Javascript&amp;lt;/h1&amp;gt; &amp;lt;!-- Javascript file location in relative to this html file location --&amp;gt; &amp;lt;script src=&amp;quot;test.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  File test.js
-// console.log can print any variables out eg object strings numbers boolean etc // variable var firstname; firstname = &amp;quot;Bill&amp;quot;; // Print firstname contents to console console.</description>
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Getting started with Javascript&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1 id=&amp;#34;header&amp;#34;&amp;gt;Intro to Javascript&amp;lt;/h1&amp;gt; &amp;lt;!--Javascript file location in relative to this html file location --&amp;gt; &amp;lt;script src=&amp;#34;test.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; File test.js
+// console.log can print any variables out eg object strings numbers boolean etc  // variable var firstname; firstname = &amp;#34;Bill&amp;#34;; // Print firstname contents to console console.</description>
     </item>
     
     <item>
@@ -100,8 +138,8 @@ Basic inline javascript in a html file &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;htm
       
       <guid>https://tommyshem.github.io/2019/01/27/rust-strings/</guid>
       <description>Rust String Notes Rust String Examples A String can be passed back from inside a function because it passes the ownership on.
-fn test() -&amp;gt; String { let mystring = String::from(&amp;quot;test string&amp;quot;) // create string mystring	}  &amp;amp;Str a string slice can not be passed back from inside a function if the string it points to was created inside the function
-fn test() -&amp;gt; &amp;amp;str { let mystring = String::from(&amp;quot;test string&amp;quot;) // create string &amp;amp;mystring // Not allowed as it can not pass ownership from string created inside function.</description>
+fn test() -&amp;gt; String { let mystring = String::from(&amp;#34;test string&amp;#34;) // create string mystring	} &amp;amp;Str a string slice can not be passed back from inside a function if the string it points to was created inside the function
+fn test() -&amp;gt; &amp;amp;str { let mystring = String::from(&amp;#34;test string&amp;#34;) // create string &amp;amp;mystring // Not allowed as it can not pass ownership from string created inside function.</description>
     </item>
     
     <item>
@@ -110,7 +148,7 @@ fn test() -&amp;gt; &amp;amp;str { let mystring = String::from(&amp;quot;test st
       <pubDate>Wed, 23 Jan 2019 11:00:00 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/2019/01/23/binary-notes/</guid>
-      <description>Linux bin sizes Notes Size of the sections in the binary file - works with any compiled file to elf format - used on linux. size -A -t -d target/release/recode_rs | sort -k 2 -n  Readelf command Display any needed linked dynamically libraries in the exec progam, for it to run. readelf -d exec-filename-here  Display all information on the elf binary file readelf -a exec-filename-here  objdump command  file command file -d file-name-here  Website for bloaty command tool https://github.</description>
+      <description>Linux bin sizes Notes Size of the sections in the binary file - works with any compiled file to elf format - used on linux. size -A -t -d target/release/recode_rs | sort -k 2 -n Readelf command Display any needed linked dynamically libraries in the exec progam, for it to run. readelf -d exec-filename-here Display all information on the elf binary file readelf -a exec-filename-here objdump command file command file -d file-name-here Website for bloaty command tool https://github.</description>
     </item>
     
     <item>
@@ -119,12 +157,13 @@ fn test() -&amp;gt; &amp;amp;str { let mystring = String::from(&amp;quot;test st
       <pubDate>Sun, 23 Sep 2018 18:30:00 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/2018/09/23/gitlab-api-notes/</guid>
-      <description>General information about api&amp;rsquo;s and tools to test website https://www.guru99.com/testing-rest-api-manually.html
+      <description>General information about api&#39;s and tools to test website https://www.guru99.com/testing-rest-api-manually.html
 Gitlab API Docs Gitlab website for information https://docs.gitlab.com/ee/api/README.html
-Testing with curl curl &amp;quot;https://gitlab.gnome.org/api/v4/  then use the docs on the website for the endpoints and just add onto the above curl command.
+Testing with curl curl &amp;#34;https://gitlab.gnome.org/api/v4/ then use the docs on the website for the endpoints and just add onto the above curl command.
 example to get list of projects.
-curl &amp;quot;https://gitlab.gnome.org/api/v4/projects&amp;quot;  Firefox extension website for the extension https://addons.mozilla.org/en-GB/firefox/addon/rester/
-Software mto install on windows, mac and linux website for the software https://insomnia.</description>
+curl &amp;#34;https://gitlab.gnome.org/api/v4/projects&amp;#34; Firefox extension website for the extension https://addons.mozilla.org/en-GB/firefox/addon/rester/
+Software mto install on windows, mac and linux website for the software https://insomnia.rest/
+Electron app Advanced rest client github website https://github.</description>
     </item>
     
     <item>
@@ -136,9 +175,9 @@ Software mto install on windows, mac and linux website for the software https://
       <description>Visual Code Setup visual code with a font with programming ligatures Install manualy or on linux First you will need a font with ligatures.
 font fira code github https://github.com/tonsky/FiraCode
 Install from github or package manager.
-Mac os install using homebrew brew tap caskroom/fonts brew cask install font-fira-code  Visual code setup In the menu goto File &amp;gt; Preferences &amp;gt; User Settings
+Mac os install using homebrew brew tap caskroom/fonts brew cask install font-fira-code Visual code setup In the menu goto File &amp;gt; Preferences &amp;gt; User Settings
 Add below to the settings.json file
-{ &amp;quot;editor.fontFamily&amp;quot;: &amp;quot;Fira Code&amp;quot;, &amp;quot;editor.</description>
+{ &amp;#34;editor.fontFamily&amp;#34;: &amp;#34;Fira Code&amp;#34;, &amp;#34;editor.</description>
     </item>
     
     <item>
@@ -159,8 +198,8 @@ cmd + shift + 4 for selection of the screen capture and save a file to desktop</
       <pubDate>Fri, 31 Aug 2018 10:30:00 +0200</pubDate>
       
       <guid>https://tommyshem.github.io/2018/08/31/neovim-setup-and-notes/</guid>
-      <description>Neovim  Neovim setup files Install vim-plug Vim plug minimum file needed to load plugins Install plugins Update plugins Remove plugin Install python support for neovim plugins Keyboard for vim and Neovim. Quit without saving Close window Insert mode Command mode   Neovim Website https://neovim.io/
-Fully compatible with Vim&amp;rsquo;s editing model and the Vimscript language.
+      <description>Neovim  Neovim setup files Install vim-plug  Vim plug minimum file needed to load plugins Install plugins Update plugins Remove plugin Install python support for neovim plugins   Keyboard for vim and Neovim.  Quit without saving Close window Insert mode Command mode      Neovim Website https://neovim.io/
+Fully compatible with Vim&#39;s editing model and the Vimscript language.
 Neovim setup files You need a settings file in the correct location for your custom settings for neovim.</description>
     </item>
     
@@ -170,7 +209,7 @@ Neovim setup files You need a settings file in the correct location for your cus
       <pubDate>Fri, 31 Aug 2018 10:30:00 +0200</pubDate>
       
       <guid>https://tommyshem.github.io/2018/08/31/vim-setup-and-notes/</guid>
-      <description> Vim setup </description>
+      <description>Vim setup </description>
     </item>
     
     <item>
@@ -194,10 +233,11 @@ Updating Packages on your device You will need to update the repo database and t
       <pubDate>Sun, 12 Aug 2018 21:00:00 +0200</pubDate>
       
       <guid>https://tommyshem.github.io/2018/08/12/docker-notes/</guid>
-      <description>Docker Notes Start docker daemon manualy sudo dockerd  Start daemon with systemd when docker is installed for the first time sudo systemctl start docker  check docker is running docker info  Restart docker daemon sudo systemctl restart docker  run docker without sudo Warning security attack can be done if you do the following see website
+      <description>Docker Notes Start docker daemon manualy sudo dockerd Start daemon with systemd when docker is installed for the first time sudo systemctl start docker check docker is running docker info Restart docker daemon sudo systemctl restart docker run docker without sudo Warning security attack can be done if you do the following see website
 https://docs.docker.com/install/linux/linux-postinstall/#manage-docker-as-a-non-root-user
 To create the docker group and add your user:
-Create the docker group.</description>
+Create the docker group.
+sudo groupadd docker Add your user to the docker group.</description>
     </item>
     
     <item>
@@ -207,7 +247,7 @@ Create the docker group.</description>
       
       <guid>https://tommyshem.github.io/2018/07/09/node-tips-and-tricks/</guid>
       <description>To find where global libraries are installed, you can type
-```bash npm list -g &amp;ldquo;&amp;rsquo;</description>
+npm list -g &amp;#39;&amp;#39;&amp;#39; </description>
     </item>
     
     <item>
@@ -216,8 +256,8 @@ Create the docker group.</description>
       <pubDate>Tue, 13 Mar 2018 15:15:30 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/2018/03/13/clone-all-my-github-repositories-in-to-current-directory./</guid>
-      <description> Clone all my Github repositories in to the current directory with one bash line. curl -s https://api.github.com/users/tommyshem/repos | grep \&amp;quot;clone_url\&amp;quot; | awk &#39;{print $2}&#39; | sed -e &#39;s/&amp;quot;//g&#39; -e &#39;s/,//g&#39; | xargs -n1 git clone  or you can use this one if jq command is installed on your system
-curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs -n1 git clone  </description>
+      <description>Clone all my Github repositories in to the current directory with one bash line. curl -s https://api.github.com/users/tommyshem/repos | grep \&amp;#34;clone_url\&amp;#34; | awk &amp;#39;{print $2}&amp;#39; | sed -e &amp;#39;s/&amp;#34;//g&amp;#39; -e &amp;#39;s/,//g&amp;#39; | xargs -n1 git clone or you can use this one if jq command is installed on your system
+curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs -n1 git clone </description>
     </item>
     
     <item>
@@ -226,8 +266,8 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
       <pubDate>Tue, 13 Mar 2018 15:15:30 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/2018/03/13/clone-all-my-github-repositories-in-to-current-directory./</guid>
-      <description> Clone all my Github repositories in to the current directory with one bash line. curl -s https://api.github.com/users/tommyshem/repos | grep \&amp;quot;clone_url\&amp;quot; | awk &#39;{print $2}&#39; | sed -e &#39;s/&amp;quot;//g&#39; -e &#39;s/,//g&#39; | xargs -n1 git clone  or you can use this one if jq command is installed on your system
-curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs -n1 git clone  </description>
+      <description>Clone all my Github repositories in to the current directory with one bash line. curl -s https://api.github.com/users/tommyshem/repos | grep \&amp;#34;clone_url\&amp;#34; | awk &amp;#39;{print $2}&amp;#39; | sed -e &amp;#39;s/&amp;#34;//g&amp;#39; -e &amp;#39;s/,//g&amp;#39; | xargs -n1 git clone or you can use this one if jq command is installed on your system
+curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs -n1 git clone </description>
     </item>
     
     <item>
@@ -256,7 +296,7 @@ https://www.cyberciti.biz/faq/unix-linux-chroot-command-examples-usage-syntax/</
       <description>Setup using docker to compile code on linux as not using Ubuntu as operating system. Install docker on your linux system by the normal way.
 Go to docker hub, Swift Image web address https://hub.docker.com/_/swift/ for for info.
 Download the Swift docker image from docker hub from the terminal. Using the command below.
-sudo docker pull swift  Create the swift docker container from the Image and Attach it, the name (swiftfun) can be changed to anything you want to.</description>
+sudo docker pull swift Create the swift docker container from the Image and Attach it, the name (swiftfun) can be changed to anything you want to.</description>
     </item>
     
     <item>
@@ -267,8 +307,8 @@ sudo docker pull swift  Create the swift docker container from the Image and Att
       <guid>https://tommyshem.github.io/2018/02/23/git-tips/</guid>
       <description>Git tips website blog https://wesbos.com/git-hot-tips/
 Creating tags from the command line To create a tag on your current branch, run this:
-git tag &amp;lt;tagname&amp;gt;  If you want to include a description with your tag, add -a to create an annotated tag:
-git tag &amp;lt;tagname&amp;gt; -a  This will create a local tag with the current state of the branch you are on. When pushing to your remote repo, tags are NOT included by default.</description>
+git tag &amp;lt;tagname&amp;gt; If you want to include a description with your tag, add -a to create an annotated tag:
+git tag &amp;lt;tagname&amp;gt; -a This will create a local tag with the current state of the branch you are on. When pushing to your remote repo, tags are NOT included by default.</description>
     </item>
     
     <item>
@@ -277,9 +317,9 @@ git tag &amp;lt;tagname&amp;gt; -a  This will create a local tag with the curren
       <pubDate>Fri, 23 Feb 2018 18:30:00 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/2018/02/23/swift-on-linux-with-macos/</guid>
-      <description> Swift on linux Orignal blog website https://theswiftdev.com/2017/11/30/how-to-run-swift-on-linux/
+      <description>Swift on linux Orignal blog website https://theswiftdev.com/2017/11/30/how-to-run-swift-on-linux/
 website blog https://ashfurrow.com/blog/swift-on-line
-Notes docker run -p 8000:8000 -v /Users:Users --privileged -i -t --name swiftfun swiftdocker/swift:latest /bin/bash  docker start swiftfun docker attach swiftfun  </description>
+Notes docker run -p 8000:8000 -v /Users:Users --privileged -i -t --name swiftfun swiftdocker/swift:latest /bin/bash docker start swiftfun docker attach swiftfun </description>
     </item>
     
     <item>
@@ -289,12 +329,12 @@ Notes docker run -p 8000:8000 -v /Users:Users --privileged -i -t --name swiftfun
       
       <guid>https://tommyshem.github.io/2018/02/18/how-to-make-gtk-apps/</guid>
       <description>C Gtk example example from https://developer.gnome.org/gtk3/stable/gtk-getting-started.html#id-1.2.3.5
-&amp;rdquo;&amp;lsquo;c #include 
+&amp;lsquo;&amp;lsquo;&amp;lsquo;c #include &amp;lt;gtk/gtk.h&amp;gt;
 static void activate (GtkApplication* app, gpointer user_data) { GtkWidget *window;
 window = gtk_application_window_new (app); gtk_window_set_title (GTK_WINDOW (window), &amp;ldquo;Window&amp;rdquo;); gtk_window_set_default_size (GTK_WINDOW (window), 400, 400); gtk_widget_show_all (window); }
 int main (int argc, char **argv) { GtkApplication *app; int status;
 app = gtk_application_new (&amp;ldquo;org.gtk.example&amp;rdquo;, G_APPLICATION_FLAGS_NONE); g_signal_connect (app, &amp;ldquo;activate&amp;rdquo;, G_CALLBACK (activate), NULL); status = g_application_run (G_APPLICATION (app), argc, argv); g_object_unref (app);
-return status; } &amp;ldquo;&amp;rsquo;</description>
+return status; } &#39;&amp;rsquo;&amp;rsquo;</description>
     </item>
     
     <item>
@@ -323,7 +363,7 @@ OAuth 2.0: Access/Refresh Token Request URI https://api.fitbit.com/oauth2/token
 Test website for fitbit data https://dev.fitbit.com/apps/oauthinteractivetutorial?clientEncodedId=22CLYW&amp;amp;clientSecret=3f453c0d41e0eb317b19aaa9e4389ce7&amp;amp;redirectUri=http://localhost:8189/auth_code
 fetbit web API tester https://dev.fitbit.com/build/reference/web-api/explore/
 http://localhost:8189/auth_code #access_token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2RDdNTVMiLCJhdWQiOiIyMkNMWVciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&amp;amp;user_id=6D7MMS&amp;amp;scope=settings+sleep+location+social+weight+nutrition+activity+heartrate+profile&amp;amp;token_type=Bearer&amp;amp;expires_in=86400
-Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2RDdNTVMiLCJhdWQiOiIyMkNMWVciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&amp;amp;user_id=6D7MMS&amp;amp;scope=settings+sleep+location+social+weight+nutrition+activity+heartrate+profile&amp;amp;token_type=Bearer&amp;amp;expires_in=86400  test with curl curl -i -H &amp;quot;Authorization: Bearer eyJhbGciOiJIUdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.</description>
+Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2RDdNTVMiLCJhdWQiOiIyMkNMWVciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&amp;amp;user_id=6D7MMS&amp;amp;scope=settings+sleep+location+social+weight+nutrition+activity+heartrate+profile&amp;amp;token_type=Bearer&amp;amp;expires_in=86400 test with curl curl -i -H &amp;#34;Authorization: Bearer eyJhbGciOiJIUdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.</description>
     </item>
     
     <item>
@@ -353,11 +393,12 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
       
       <guid>https://tommyshem.github.io/2018/01/28/how-to-mount-a-drive-on-linux/</guid>
       <description>Mount drive Find device you want to mount
-fdisk -l  Make a folder that will be the mount point.
+fdisk -l Make a folder that will be the mount point.
 Example using data as the mount point
-sudo mkdir /home/yourusernamehere/data  Mount the device drive, example using /dev/sdb1. Use the one you need to mount
-sudo mount /dev/sdb1 /home/yourusernamehere/data  Now you can access the drive at /media/data.
-Auto-mount at boot We want the drive to auto-mount at boot.</description>
+sudo mkdir /home/yourusernamehere/data Mount the device drive, example using /dev/sdb1. Use the one you need to mount
+sudo mount /dev/sdb1 /home/yourusernamehere/data Now you can access the drive at /media/data.
+Auto-mount at boot We want the drive to auto-mount at boot.
+This means editing /etc/fstab.</description>
     </item>
     
     <item>
@@ -380,7 +421,8 @@ Then change baseURL in config.toml to your github page or your css will not work
 use flag attach or exec to run your program first before running the debugger.
 Visual studio Code Remote Debugging Orignal infomation from this webite
 delve debugger homepage
-Do not use this flag as vscode go plugin does not surport version 2 yet. --api-version=2</description>
+Do not use this flag as vscode go plugin does not surport version 2 yet. --api-version=2
+To remote debug using VS Code, you must first run a headless Delve server on the target machine.</description>
     </item>
     
     <item>
@@ -407,11 +449,11 @@ Do not use this flag as vscode go plugin does not surport version 2 yet. --api-v
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/1/01/01/</guid>
-      <description>title = &amp;ldquo;Go barcode&amp;rdquo; date = &amp;ldquo;2018-06-26T2:00:00&amp;rdquo; tags = [&amp;ldquo;go,barcode&amp;rdquo;] categories = [&amp;ldquo;go&amp;rdquo;] banner = &amp;ldquo;&amp;rdquo; +++
+      <description>title = &amp;ldquo;Go barcode&amp;rdquo; date = &amp;ldquo;2018-06-26T2:00:00&amp;rdquo; tags = [&amp;ldquo;go,barcode&amp;rdquo;] categories = [&amp;ldquo;go&amp;rdquo;] banner = &amp;quot;&amp;rdquo; +++
 Go Barcode website to go barcode package
 https://github.com/boombuler/barcode
-Go install packages go get github.com/boombuler/barcode go get github.com/boombuler/barcode/qr  Basic program
-package main import ( &amp;quot;image/png&amp;quot; &amp;quot;os&amp;quot; &amp;quot;github.com/boombuler/barcode&amp;quot; &amp;quot;github.com/boombuler/barcode/qr&amp;quot; ) func main() { // Create the barcode qrCode, _ := qr.Encode(&amp;quot;Hello World&amp;quot;, qr.M, qr.Auto) // Scale the barcode to 200x200 pixels qrCode, _ = barcode.</description>
+Go install packages go get github.com/boombuler/barcode go get github.com/boombuler/barcode/qr Basic program
+package main import ( &amp;#34;image/png&amp;#34; &amp;#34;os&amp;#34; &amp;#34;github.com/boombuler/barcode&amp;#34; &amp;#34;github.com/boombuler/barcode/qr&amp;#34; ) func main() { // Create the barcode  qrCode, _ := qr.Encode(&amp;#34;Hello World&amp;#34;, qr.M, qr.Auto) // Scale the barcode to 200x200 pixels  qrCode, _ = barcode.</description>
     </item>
     
     <item>
@@ -422,11 +464,33 @@ package main import ( &amp;quot;image/png&amp;quot; &amp;quot;os&amp;quot; &amp;
       <guid>https://tommyshem.github.io/1/01/01/android-termux-youtube-downloader-notes/</guid>
       <description>Downloading programming videos from YouTube with Termux on Android First read the Termux Notes and continue below.
 Install packages first from Termux Install python
-pkg install python  Install ffmpeg
-pkg install ffmpeg  Install and setting up youtube-dl First update pip
-pip install --upgrade pip  Install youtube-dl using pip
-pip install --upgrdae youtube-dl  Edit .bashrc file using micro editor or nano
-micro ~/.bashrc  Add alias to .</description>
+pkg install python Install ffmpeg
+pkg install ffmpeg Install and setting up youtube-dl First update pip
+pip install --upgrade pip Install youtube-dl using pip
+pip install --upgrdae youtube-dl Edit .bashrc file using micro editor or nano
+micro ~/.bashrc Add alias to .bashrc file so it downloads the best vidio format</description>
+    </item>
+    
+    <item>
+      <title>Arch linux AUR Build Package Notes</title>
+      <link>https://tommyshem.github.io/1/01/01/arch-linux-aur-build-package-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/1/01/01/arch-linux-aur-build-package-notes/</guid>
+      <description>Arch linux AUR build package Build Aur packages Make sure base build packages are installed before trying to make aur packages for the first time. pacman -Syu pacman -Sy base-devel Clone repo from AUR Get repo address from arch website AUR https://aur.archlinux.org/
+git clone https://aur.archlinux.org/packagename.git cd packagename makepkg -s </description>
+    </item>
+    
+    <item>
+      <title>Rsync Notes</title>
+      <link>https://tommyshem.github.io/1/01/01/rsync-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/1/01/01/rsync-notes/</guid>
+      <description>Rsync Notes Understanding the output of rsync &amp;ndash;itemize-changes As you may know the rsync&#39;s &amp;ndash;delete options if misused could make severe damage.
+To prevent this you can use the &amp;ndash;itemize-change and the &amp;ndash;dry-run options to figure out how the command will behave before launching the real one.
+The output will be something like that:
+.d..t..g... ./ .f...p.g... Something.pdf .f.....g... md5sum-2010-02-21.txt .f...p.g... prova.rb .d.....g... .metadata/ .f...p.g... .metadata/.lock .f...p.g... .metadata/.log .f...p.g... .metadata/version.ini &amp;gt;f+++++++++ Parameter_Usage.</description>
     </item>
     
     <item>
@@ -440,11 +504,12 @@ Tutorials websites https://stevedonovan.github.io/rust-gentle-intro/1-basics.htm
 Setup dev env https://hoverbear.org/2017/03/03/setting-up-a-rust-devenv/
 Setup rust with Rustup website https://rustup.rs/
 website on how to use it https://rust-lang-nursery.github.io/edition-guide/rust-2018/rustup-for-managing-rust-versions.html
-curl https://sh.rustup.rs -sSf | sh  location of all rustup install and files $HOME/.cargo/bin
+curl https://sh.rustup.rs -sSf | sh location of all rustup install and files $HOME/.cargo/bin
 Rustup use Install bash completions (Optional)
-rustup completions bash &amp;gt; /etc/bash_completion.d/rustup.bash-completion  Updating rustup
-rustup self update  Install stable toolchain
-rustup install stable  Nightly Install Nightly toolchain</description>
+rustup completions bash &amp;gt; /etc/bash_completion.d/rustup.bash-completion Updating rustup
+rustup self update Install stable toolchain
+rustup install stable Nightly Install Nightly toolchain
+rustup install nightly Set Nightly as default</description>
     </item>
     
   </channel>

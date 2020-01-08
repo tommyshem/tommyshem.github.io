@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on Tom&#39;s Things</title>
@@ -19,7 +19,7 @@
       <guid>https://tommyshem.github.io/2019/11/03/git-clear-local-and-remote-repo-and-start-over/</guid>
       <description>Git clear local and remote repo and start over Create a new folder and copy the files you need if any into the new folder.
 Example below with no files
-mkdir project-name-here cd project-name-here git init git remote add origin git@github.com:user/project-here.git git add . git commit -m &amp;quot;Initial commit&amp;quot; git push -u origin master --force  You can clone the repo and delete .git folder so there is no commit history on local copy and github repo.</description>
+mkdir project-name-here cd project-name-here git init git remote add origin git@github.com:user/project-here.git git add . git commit -m &amp;#34;Initial commit&amp;#34; git push -u origin master --force You can clone the repo and delete .git folder so there is no commit history on local copy and github repo.</description>
     </item>
     
     <item>
@@ -30,8 +30,8 @@ mkdir project-name-here cd project-name-here git init git remote add origin git@
       <guid>https://tommyshem.github.io/2018/02/23/git-tips/</guid>
       <description>Git tips website blog https://wesbos.com/git-hot-tips/
 Creating tags from the command line To create a tag on your current branch, run this:
-git tag &amp;lt;tagname&amp;gt;  If you want to include a description with your tag, add -a to create an annotated tag:
-git tag &amp;lt;tagname&amp;gt; -a  This will create a local tag with the current state of the branch you are on. When pushing to your remote repo, tags are NOT included by default.</description>
+git tag &amp;lt;tagname&amp;gt; If you want to include a description with your tag, add -a to create an annotated tag:
+git tag &amp;lt;tagname&amp;gt; -a This will create a local tag with the current state of the branch you are on. When pushing to your remote repo, tags are NOT included by default.</description>
     </item>
     
     <item>

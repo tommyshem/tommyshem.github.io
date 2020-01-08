@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
     <title>Neovim setup and Notes &middot; Tom&#39;s Things</title>
-    <meta name="generator" content="Hugo 0.58.3" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Tommy Shem">
@@ -21,8 +21,8 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     <meta property="og:title" content="Neovim setup and Notes" />
-<meta property="og:description" content="Neovim  Neovim setup files Install vim-plug Vim plug minimum file needed to load plugins Install plugins Update plugins Remove plugin Install python support for neovim plugins Keyboard for vim and Neovim. Quit without saving Close window Insert mode Command mode   Neovim Website https://neovim.io/
-Fully compatible with Vim&rsquo;s editing model and the Vimscript language.
+<meta property="og:description" content="Neovim  Neovim setup files Install vim-plug  Vim plug minimum file needed to load plugins Install plugins Update plugins Remove plugin Install python support for neovim plugins   Keyboard for vim and Neovim.  Quit without saving Close window Insert mode Command mode      Neovim Website https://neovim.io/
+Fully compatible with Vim&#39;s editing model and the Vimscript language.
 Neovim setup files You need a settings file in the correct location for your custom settings for neovim." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tommyshem.github.io/2018/08/31/neovim-setup-and-notes/" />
@@ -31,11 +31,9 @@ Neovim setup files You need a settings file in the correct location for your cus
 
     
     <meta itemprop="name" content="Neovim setup and Notes">
-<meta itemprop="description" content="Neovim  Neovim setup files Install vim-plug Vim plug minimum file needed to load plugins Install plugins Update plugins Remove plugin Install python support for neovim plugins Keyboard for vim and Neovim. Quit without saving Close window Insert mode Command mode   Neovim Website https://neovim.io/
-Fully compatible with Vim&rsquo;s editing model and the Vimscript language.
+<meta itemprop="description" content="Neovim  Neovim setup files Install vim-plug  Vim plug minimum file needed to load plugins Install plugins Update plugins Remove plugin Install python support for neovim plugins   Keyboard for vim and Neovim.  Quit without saving Close window Insert mode Command mode      Neovim Website https://neovim.io/
+Fully compatible with Vim&#39;s editing model and the Vimscript language.
 Neovim setup files You need a settings file in the correct location for your custom settings for neovim.">
-
-
 <meta itemprop="datePublished" content="2018-08-31T10:30:00&#43;02:00" />
 <meta itemprop="dateModified" content="2018-08-31T10:30:00&#43;02:00" />
 <meta itemprop="wordCount" content="275">
@@ -43,11 +41,10 @@ Neovim setup files You need a settings file in the correct location for your cus
 
 
 <meta itemprop="keywords" content="neovim terminal," />
-
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Neovim setup and Notes"/>
-<meta name="twitter:description" content="Neovim  Neovim setup files Install vim-plug Vim plug minimum file needed to load plugins Install plugins Update plugins Remove plugin Install python support for neovim plugins Keyboard for vim and Neovim. Quit without saving Close window Insert mode Command mode   Neovim Website https://neovim.io/
-Fully compatible with Vim&rsquo;s editing model and the Vimscript language.
+<meta name="twitter:description" content="Neovim  Neovim setup files Install vim-plug  Vim plug minimum file needed to load plugins Install plugins Update plugins Remove plugin Install python support for neovim plugins   Keyboard for vim and Neovim.  Quit without saving Close window Insert mode Command mode      Neovim Website https://neovim.io/
+Fully compatible with Vim&#39;s editing model and the Vimscript language.
 Neovim setup files You need a settings file in the correct location for your custom settings for neovim."/>
 
     
@@ -174,12 +171,12 @@ Neovim setup files You need a settings file in the correct location for your cus
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        36
+        41
         <span>Posts</span>
       </div>
       <div class="article-info-block">
         
-          45
+          50
         
         <span>
             Tags
@@ -311,129 +308,82 @@ Neovim setup files You need a settings file in the correct location for your cus
 </header>
 
         <div class="article-entry" itemprop="articleBody">
-            
-
-<ul>
+            <ul>
 <li><a href="#neovim">Neovim</a>
-
 <ul>
 <li><a href="#neovim-setup-files">Neovim setup files</a></li>
-<li><a href="#install-vim-plug">Install vim-plug</a></li>
+<li><a href="#install-vim-plug">Install vim-plug</a>
+<ul>
 <li><a href="#vim-plug-minimum-file-needed-to-load-plugins">Vim plug minimum file needed to load plugins</a></li>
 <li><a href="#install-plugins">Install plugins</a></li>
 <li><a href="#update-plugins">Update plugins</a></li>
 <li><a href="#remove-plugin">Remove plugin</a></li>
 <li><a href="#install-python-support-for-neovim-plugins">Install python support for neovim plugins</a></li>
-<li><a href="#keyboard-for-vim-and-neovim">Keyboard for vim and Neovim.</a></li>
+</ul>
+</li>
+<li><a href="#keyboard-for-vim-and-neovim">Keyboard for vim and Neovim.</a>
+<ul>
 <li><a href="#quit-without-saving">Quit without saving</a></li>
 <li><a href="#close-window">Close window</a></li>
 <li><a href="#insert-mode">Insert mode</a></li>
 <li><a href="#command-mode">Command mode</a></li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
+</li>
+</ul>
 <h1 id="neovim">Neovim</h1>
-
 <p>Website <a href="https://neovim.io/">https://neovim.io/</a></p>
-
-<p>Fully compatible with Vim&rsquo;s editing model and the Vimscript language.</p>
-
+<p>Fully compatible with Vim's editing model and the Vimscript language.</p>
 <h2 id="neovim-setup-files">Neovim setup files</h2>
-
 <p>You need a settings file in the correct location for your custom settings for neovim.</p>
-
 <p>Create user settings file if not already their.</p>
-
-<pre><code class="language-bash">~/.config/nvim/init.vim
-</code></pre>
-
-<p>Create folder for custom plugins for the user to use only.</p>
-
-<pre><code class="language-bash">~/.config/nvim/plugged
-</code></pre>
-
-<pre><code class="language-bash">~/.local/share/nvim/site/
-</code></pre>
-
-<p>Folder used for plugins that are used for all users</p>
-
-<pre><code class="language-bash"> ~/.local/share/nvim/plugged
-</code></pre>
-
-<h2 id="install-vim-plug">Install vim-plug</h2>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">~/.config/nvim/init.vim
+</code></pre></div><p>Create folder for custom plugins for the user to use only.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">~/.config/nvim/plugged
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">~/.local/share/nvim/site/
+</code></pre></div><p>Folder used for plugins that are used for all users</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> ~/.local/share/nvim/plugged
+</code></pre></div><h2 id="install-vim-plug">Install vim-plug</h2>
 <p>Website <a href="https://github.com/junegunn/vim-plug">https://github.com/junegunn/vim-plug</a></p>
-
-<pre><code class="language-bash">curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-</code></pre>
-
-<h3 id="vim-plug-minimum-file-needed-to-load-plugins">Vim plug minimum file needed to load plugins</h3>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+</code></pre></div><h3 id="vim-plug-minimum-file-needed-to-load-plugins">Vim plug minimum file needed to load plugins</h3>
 <p>Edit file ~/.config/nvim/init.vim</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#e6db74">&#34; Auto install vim-plug if not installed ready. Website https://github.com/junegunn/vim-plug
+</span><span style="color:#e6db74">if empty(glob(&#39;~/.local/share/nvim/site/autoload/plug.vim&#39;))
+</span><span style="color:#e6db74">  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+</span><span style="color:#e6db74">endif
+</span><span style="color:#e6db74">&#34;</span> Vim Plug location <span style="color:#66d9ef">for</span> loading plugins
+call plug#begin<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;~/.config/nvim/plugged&#39;</span><span style="color:#f92672">)</span>
 
-<pre><code class="language-bash">&quot; Auto install vim-plug if not installed ready. Website https://github.com/junegunn/vim-plug
-if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
-  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-endif
-&quot; Vim Plug location for loading plugins
-call plug#begin('~/.config/nvim/plugged')
-
-&quot; Nerdtree plugin with on demand loading
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-
-
-&quot; Initialize plugin system
-call plug#end()
-</code></pre>
-
-<h3 id="install-plugins">Install plugins</h3>
-
+<span style="color:#e6db74">&#34; Nerdtree plugin with on demand loading
+</span><span style="color:#e6db74">Plug &#39;scrooloose/nerdtree&#39;, { &#39;on&#39;:  &#39;NERDTreeToggle&#39; }
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">&#34;</span> Initialize plugin system
+call plug#end<span style="color:#f92672">(</span><span style="color:#f92672">)</span>
+</code></pre></div><h3 id="install-plugins">Install plugins</h3>
 <p>Run command in neovim <code>:PlugInstall</code> to install the plugins.</p>
-
 <h3 id="update-plugins">Update plugins</h3>
-
 <p>Run command in neovim <code>:PlugUpdate</code> to update the plugins.</p>
-
 <h3 id="remove-plugin">Remove plugin</h3>
-
 <p>Remove the plugin from the <code>~/.config/nvim/init.vim</code> file and then re-run neovim and run command in neovim <code>:PlugClean</code> to update the plugins.</p>
-
 <h3 id="install-python-support-for-neovim-plugins">Install python support for neovim plugins</h3>
-
 <p>Install python packages in ubuntu</p>
-
-<pre><code class="language-bash">sudo apt install python3-pip python3 python3-dev
-</code></pre>
-
-<p>Install the neovim python interface with pip3</p>
-
-<pre><code class="language-bash">pip3 install --user pynvim
-</code></pre>
-
-<h2 id="keyboard-for-vim-and-neovim">Keyboard for vim and Neovim.</h2>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install python3-pip python3 python3-dev
+</code></pre></div><p>Install the neovim python interface with pip3</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip3 install --user pynvim
+</code></pre></div><h2 id="keyboard-for-vim-and-neovim">Keyboard for vim and Neovim.</h2>
 <p>Press escape first then type below for which action you require.</p>
-
 <h3 id="quit-without-saving">Quit without saving</h3>
-
-<pre><code class="language-bash">`:qa!`
-</code></pre>
-
-<h3 id="close-window">Close window</h3>
-
-<pre><code class="language-bash">`:q`
-</code></pre>
-
-<h3 id="insert-mode">Insert mode</h3>
-
-<pre><code class="language-bash">`i`
-</code></pre>
-
-<h3 id="command-mode">Command mode</h3>
-
-<pre><code class="language-bash">`Esc` Esc key
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#e6db74">`</span>:qa!<span style="color:#e6db74">`</span>
+</code></pre></div><h3 id="close-window">Close window</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#e6db74">`</span>:q<span style="color:#e6db74">`</span>
+</code></pre></div><h3 id="insert-mode">Insert mode</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#e6db74">`</span>i<span style="color:#e6db74">`</span>
+</code></pre></div><h3 id="command-mode">Command mode</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#e6db74">`</span>Esc<span style="color:#e6db74">`</span> Esc key
+</code></pre></div>
         </div>
         <footer class="article-footer">
     <a data-url="https://tommyshem.github.io/2018/08/31/neovim-setup-and-notes/" data-id="ccc48716a5b85cc71cfad4dd6ff2bc24" class="article-share-link">
@@ -550,6 +500,84 @@ call plug#end()
             
             <li>
                 <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2020/01/07/compression/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linuxnotes">
+                        linuxNotes
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2020/01/07/compression/" class="title">Compression</a></p>
+                    <p class="item-date">
+                        <time datetime="2020-01-07 15:27:08 &#43;0000 UTC" itemprop="datePublished">2020-01-07</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/12/28/enable-sudoers/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://tommyshem.github.io/images/blog/Linux-Hosting-long.png)" alt="Neovim setup and Notes" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linux-notes">
+                        Linux Notes
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/12/28/enable-sudoers/" class="title">Enable Sudoers</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-12-28 21:00:00 &#43;0000 UTC" itemprop="datePublished">2019-12-28</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/javascript">
+                        javascript
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/" class="title">Javascript Function Name logging</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-12-02 09:17:39 &#43;0000 UTC" itemprop="datePublished">2019-12-02</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
                     <a href="https://tommyshem.github.io/2019/11/03/c-tools-notes/" class="thumbnail">
                     
                         <span style="background-image:url(https://tommyshem.github.io/images/blog/terminal.png)" alt="Neovim setup and Notes" class="thumbnail-image"></span>
@@ -600,84 +628,6 @@ call plug#end()
                 </div>
             </li>
             
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/" class="thumbnail">
-                    
-                        <span style="background-image:url(https://tommyshem.github.io/images/blog/vim-screenshot.png)" alt="Neovim setup and Notes" class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/bin-tools">
-                        bin-tools
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/" class="title">Binary Command Tool Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-11-03 14:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-03</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/" class="thumbnail">
-                    
-                        <span style="background-image:url(https://tommyshem.github.io/images/blog/tm-scope.png)" alt="Neovim setup and Notes" class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/visual-code">
-                        visual-code
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/" class="title">Visual Code Testing Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-07-13 20:30:00 &#43;0200 &#43;0200" itemprop="datePublished">2019-07-13</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/03/02/android-studio-notes/" class="thumbnail">
-                    
-                        <span class="thumbnail-image thumbnail-none"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/android-studio">
-                        android studio
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/03/02/android-studio-notes/" class="title">Android Studio Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-03-02 20:13:48 &#43;0000 GMT" itemprop="datePublished">2019-03-02</time>
-                    </p>
-                </div>
-            </li>
-            
         </ul>
     </div>
 </div>
@@ -703,6 +653,14 @@ call plug#end()
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/android-studio">
                     android-studio
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/aur">
+                    aur
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -784,7 +742,7 @@ call plug#end()
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/javascript">
                     javascript
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -792,7 +750,15 @@ call plug#end()
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/linux-notes">
                     linux-notes
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">4</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/linuxnotes">
+                    linuxnotes
+                </a>
+                <span class="category-list-count">1</span>
             </li>
             
             <li class="category-list-item">
@@ -894,8 +860,24 @@ call plug#end()
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/arch-linux">
+                    arch-linux
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/aspell">
                     aspell
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/aur">
+                    aur
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -942,10 +924,18 @@ call plug#end()
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/compression">
+                    compression
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/console">
                     console
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1089,7 +1079,7 @@ call plug#end()
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/javascript">
                     javascript
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -1097,7 +1087,7 @@ call plug#end()
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/linux">
                     linux
                 </a>
-                <span class="category-list-count">4</span>
+                <span class="category-list-count">6</span>
             </li>
             
             <li class="category-list-item">
@@ -1105,7 +1095,7 @@ call plug#end()
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/log">
                     log
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1166,6 +1156,14 @@ call plug#end()
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/rsync">
+                    rsync
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/rust">
                     rust
                 </a>
@@ -1192,6 +1190,14 @@ call plug#end()
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/solus">
                     solus
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/sudo">
+                    sudo
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -1264,7 +1270,13 @@ call plug#end()
         <a href="https://tommyshem.github.io/tags/andriod-studio" style="font-size: 12px;">andriod-studio</a>
         
         
+        <a href="https://tommyshem.github.io/tags/arch-linux" style="font-size: 12px;">arch-linux</a>
+        
+        
         <a href="https://tommyshem.github.io/tags/aspell" style="font-size: 12px;">aspell</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/aur" style="font-size: 12px;">aur</a>
         
         
         <a href="https://tommyshem.github.io/tags/bin" style="font-size: 12px;">bin</a>
@@ -1280,6 +1292,9 @@ call plug#end()
         
         
         <a href="https://tommyshem.github.io/tags/cli" style="font-size: 12px;">cli</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/compression" style="font-size: 12px;">compression</a>
         
         
         <a href="https://tommyshem.github.io/tags/console" style="font-size: 12px;">console</a>
@@ -1366,6 +1381,9 @@ call plug#end()
         <a href="https://tommyshem.github.io/tags/pages" style="font-size: 12px;">pages</a>
         
         
+        <a href="https://tommyshem.github.io/tags/rsync" style="font-size: 12px;">rsync</a>
+        
+        
         <a href="https://tommyshem.github.io/tags/rust" style="font-size: 12px;">rust</a>
         
         
@@ -1376,6 +1394,9 @@ call plug#end()
         
         
         <a href="https://tommyshem.github.io/tags/solus" style="font-size: 12px;">solus</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/sudo" style="font-size: 12px;">sudo</a>
         
         
         <a href="https://tommyshem.github.io/tags/swift" style="font-size: 12px;">swift</a>
@@ -1412,7 +1433,7 @@ call plug#end()
 <footer id="footer">
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019
+      &copy; 2020
       Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>.
     </div>
   </div>

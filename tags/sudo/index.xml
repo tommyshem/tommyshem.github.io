@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sudo on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/tags/sudo/</link>
+    <description>Recent content in sudo on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sat, 28 Dec 2019 21:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/tags/sudo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Enable Sudoers</title>
+      <link>https://tommyshem.github.io/2019/12/28/enable-sudoers/</link>
+      <pubDate>Sat, 28 Dec 2019 21:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2019/12/28/enable-sudoers/</guid>
+      <description>Arch Linux resources website https://wiki.archlinux.org/index.php/Users_and_groups
+Enable sudoers Notes Settings Open settings.
+visudo Uncomment the wheel group, this allows all users in the wheel group to run all commands.
+%wheel ALL=(ALL) ALL Add user Add user to the wheel group, change userName to the user name you require.
+useradd -m -G wheel -s /bin/bash userName Protect the user account with a password passwd userName Adding a system user useradd -r -s /usr/bin/nologin userName Changing user login names usermod -l userNewName userOldName Changing user&#39;s home dir usermod -d /new/home/dir -m userName Test if sudo works by entering the command sudo whoami If you get something like this (below), then sudo is working for the set account.</description>
+    </item>
+    
+  </channel>
+</rss>

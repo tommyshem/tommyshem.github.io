@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
     <title>Rust Notes &middot; Tom&#39;s Things</title>
-    <meta name="generator" content="Hugo 0.58.3" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Tommy Shem">
@@ -26,11 +26,12 @@ Tutorials websites https://stevedonovan.github.io/rust-gentle-intro/1-basics.htm
 Setup dev env https://hoverbear.org/2017/03/03/setting-up-a-rust-devenv/
 Setup rust with Rustup website https://rustup.rs/
 website on how to use it https://rust-lang-nursery.github.io/edition-guide/rust-2018/rustup-for-managing-rust-versions.html
-curl https://sh.rustup.rs -sSf | sh  location of all rustup install and files $HOME/.cargo/bin
+curl https://sh.rustup.rs -sSf | sh location of all rustup install and files $HOME/.cargo/bin
 Rustup use Install bash completions (Optional)
-rustup completions bash &gt; /etc/bash_completion.d/rustup.bash-completion  Updating rustup
-rustup self update  Install stable toolchain
-rustup install stable  Nightly Install Nightly toolchain" />
+rustup completions bash &gt; /etc/bash_completion.d/rustup.bash-completion Updating rustup
+rustup self update Install stable toolchain
+rustup install stable Nightly Install Nightly toolchain
+rustup install nightly Set Nightly as default" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tommyshem.github.io/1/01/01/rust-notes/" />
 
@@ -42,20 +43,18 @@ Tutorials websites https://stevedonovan.github.io/rust-gentle-intro/1-basics.htm
 Setup dev env https://hoverbear.org/2017/03/03/setting-up-a-rust-devenv/
 Setup rust with Rustup website https://rustup.rs/
 website on how to use it https://rust-lang-nursery.github.io/edition-guide/rust-2018/rustup-for-managing-rust-versions.html
-curl https://sh.rustup.rs -sSf | sh  location of all rustup install and files $HOME/.cargo/bin
+curl https://sh.rustup.rs -sSf | sh location of all rustup install and files $HOME/.cargo/bin
 Rustup use Install bash completions (Optional)
-rustup completions bash &gt; /etc/bash_completion.d/rustup.bash-completion  Updating rustup
-rustup self update  Install stable toolchain
-rustup install stable  Nightly Install Nightly toolchain">
-
-
+rustup completions bash &gt; /etc/bash_completion.d/rustup.bash-completion Updating rustup
+rustup self update Install stable toolchain
+rustup install stable Nightly Install Nightly toolchain
+rustup install nightly Set Nightly as default">
 
 <meta itemprop="wordCount" content="222">
 
 
 
 <meta itemprop="keywords" content="rust,rust notes," />
-
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Rust Notes"/>
 <meta name="twitter:description" content="Rust Notes Rust playground website https://play.rust-lang.org/
@@ -63,11 +62,12 @@ Tutorials websites https://stevedonovan.github.io/rust-gentle-intro/1-basics.htm
 Setup dev env https://hoverbear.org/2017/03/03/setting-up-a-rust-devenv/
 Setup rust with Rustup website https://rustup.rs/
 website on how to use it https://rust-lang-nursery.github.io/edition-guide/rust-2018/rustup-for-managing-rust-versions.html
-curl https://sh.rustup.rs -sSf | sh  location of all rustup install and files $HOME/.cargo/bin
+curl https://sh.rustup.rs -sSf | sh location of all rustup install and files $HOME/.cargo/bin
 Rustup use Install bash completions (Optional)
-rustup completions bash &gt; /etc/bash_completion.d/rustup.bash-completion  Updating rustup
-rustup self update  Install stable toolchain
-rustup install stable  Nightly Install Nightly toolchain"/>
+rustup completions bash &gt; /etc/bash_completion.d/rustup.bash-completion Updating rustup
+rustup self update Install stable toolchain
+rustup install stable Nightly Install Nightly toolchain
+rustup install nightly Set Nightly as default"/>
 
     
 
@@ -193,12 +193,12 @@ rustup install stable  Nightly Install Nightly toolchain"/>
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        36
+        41
         <span>Posts</span>
       </div>
       <div class="article-info-block">
         
-          45
+          50
         
         <span>
             Tags
@@ -334,142 +334,67 @@ rustup install stable  Nightly Install Nightly toolchain"/>
 </header>
 
         <div class="article-entry" itemprop="articleBody">
-            
-
-<h1 id="rust-notes">Rust Notes</h1>
-
+            <h1 id="rust-notes">Rust Notes</h1>
 <h2 id="rust-playground-website">Rust playground website</h2>
-
 <p><a href="https://play.rust-lang.org/">https://play.rust-lang.org/</a></p>
-
 <h2 id="tutorials-websites">Tutorials websites</h2>
-
 <p><a href="https://stevedonovan.github.io/rust-gentle-intro/1-basics.html">https://stevedonovan.github.io/rust-gentle-intro/1-basics.html</a></p>
-
 <h2 id="setup-dev-env">Setup dev env</h2>
-
 <p><a href="https://hoverbear.org/2017/03/03/setting-up-a-rust-devenv/">https://hoverbear.org/2017/03/03/setting-up-a-rust-devenv/</a></p>
-
 <h2 id="setup-rust-with-rustup">Setup rust with Rustup</h2>
-
 <p>website <a href="https://rustup.rs/">https://rustup.rs/</a></p>
-
 <p>website on how to use it <a href="https://rust-lang-nursery.github.io/edition-guide/rust-2018/rustup-for-managing-rust-versions.html">https://rust-lang-nursery.github.io/edition-guide/rust-2018/rustup-for-managing-rust-versions.html</a></p>
-
-<pre><code class="language-bash">curl https://sh.rustup.rs -sSf | sh
-</code></pre>
-
-<p>location of all rustup install and files $HOME/.cargo/bin</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl https://sh.rustup.rs -sSf | sh
+</code></pre></div><p>location of all rustup install and files $HOME/.cargo/bin</p>
 <h2 id="rustup-use">Rustup use</h2>
-
 <p>Install bash completions (Optional)</p>
-
-<pre><code class="language-bash">rustup completions bash &gt; /etc/bash_completion.d/rustup.bash-completion 
-</code></pre>
-
-<p>Updating rustup</p>
-
-<pre><code class="language-bash">rustup self update
-</code></pre>
-
-<p>Install stable toolchain</p>
-
-<pre><code class="language-bash">rustup install stable
-</code></pre>
-
-<h2 id="nightly">Nightly</h2>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rustup completions bash &gt; /etc/bash_completion.d/rustup.bash-completion 
+</code></pre></div><p>Updating rustup</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rustup self update
+</code></pre></div><p>Install stable toolchain</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rustup install stable
+</code></pre></div><h2 id="nightly">Nightly</h2>
 <p>Install Nightly toolchain</p>
-
-<pre><code class="language-bash">rustup install nightly
-</code></pre>
-
-<p>Set Nightly as default</p>
-
-<pre><code class="language-bash">rustup default nightly
-</code></pre>
-
-<p>updating rust toolchains</p>
-
-<pre><code class="language-bash">rustup update
-</code></pre>
-
-<h2 id="rustup-components">Rustup Components</h2>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rustup install nightly
+</code></pre></div><p>Set Nightly as default</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rustup default nightly
+</code></pre></div><p>updating rust toolchains</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rustup update
+</code></pre></div><h2 id="rustup-components">Rustup Components</h2>
 <p>List components which can be installed on your system</p>
-
-<pre><code class="language-bash">rustup component list
-</code></pre>
-
-<h2 id="install-components">Install components</h2>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rustup component list
+</code></pre></div><h2 id="install-components">Install components</h2>
 <p>Install clippy tool used for compiling code with hints</p>
-
-<pre><code class="language-bash">rustup component add clippy
-</code></pre>
-
-<p>Install rust-fmt tool used for auto code formatting</p>
-
-<pre><code class="language-bash">rustup component add rust-fmt
-</code></pre>
-
-<p>Install rls tool used for rust lanuage server for ide&rsquo;s</p>
-
-<pre><code class="language-bash">rustup component add rls
-</code></pre>
-
-<h2 id="ide-tools">IDE tools</h2>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rustup component add clippy
+</code></pre></div><p>Install rust-fmt tool used for auto code formatting</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rustup component add rust-fmt
+</code></pre></div><p>Install rls tool used for rust lanuage server for ide's</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rustup component add rls
+</code></pre></div><h2 id="ide-tools">IDE tools</h2>
 <p>racer <a href="https://github.com/racer-rust/racer">https://github.com/racer-rust/racer</a> - Code completeion</p>
-
 <p>Install with cargo</p>
-
-<pre><code class="language-bash">cargo +nightly install racer
-</code></pre>
-
-<h2 id="tools">Tools</h2>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cargo +nightly install racer
+</code></pre></div><h2 id="tools">Tools</h2>
 <h3 id="cargo-bloat">Cargo-bloat</h3>
-
 <p>website <a href="https://github.com/RazrFalcon/cargo-bloat">https://github.com/RazrFalcon/cargo-bloat</a></p>
-
 <p>Install cargo-bloat tool</p>
-
-<pre><code class="language-bash">cargo install cargo-bloat
-</code></pre>
-
-<p>To get size of the release</p>
-
-<pre><code class="language-bash">cargo bloat --release
-</code></pre>
-
-<p>website <a href="https://github.com/dtolnay/cargo-expand">https://github.com/dtolnay/cargo-expand</a>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cargo install cargo-bloat
+</code></pre></div><p>To get size of the release</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cargo bloat --release
+</code></pre></div><p>website <a href="https://github.com/dtolnay/cargo-expand">https://github.com/dtolnay/cargo-expand</a>
 Install cargo expand to expand code to the std output</p>
-
-<pre><code class="language-bash">cargo install cargo-expand
-</code></pre>
-
-<p>Run expand</p>
-
-<pre><code class="language-bash">cargo expand
-</code></pre>
-
-<h1 id="make-binary-size-smaller">make binary size smaller</h1>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cargo install cargo-expand
+</code></pre></div><p>Run expand</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cargo expand
+</code></pre></div><h1 id="make-binary-size-smaller">make binary size smaller</h1>
 <p>File <code>Cargo.toml</code> add to bottom of the file.</p>
-
-<pre><code class="language-toml">[profile.release]
-debug = false
-lto = true
-opt-level = 'z'
-</code></pre>
-
-<p>Remove debug symbols from the binary to make it smaller</p>
-
-<pre><code class="language-bash">strip -d rustbinary
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">profile</span>.<span style="color:#a6e22e">release</span>]
+<span style="color:#a6e22e">debug</span> = <span style="color:#66d9ef">false</span>
+<span style="color:#a6e22e">lto</span> = <span style="color:#66d9ef">true</span>
+<span style="color:#a6e22e">opt</span><span style="color:#960050;background-color:#1e0010">-</span><span style="color:#a6e22e">level</span> = <span style="color:#e6db74">&#39;z&#39;</span>
+</code></pre></div><p>Remove debug symbols from the binary to make it smaller</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">strip -d rustbinary
+</code></pre></div>
         </div>
         <footer class="article-footer">
     <a data-url="https://tommyshem.github.io/1/01/01/rust-notes/" data-id="85a83a9cd58d16ac03e2f53d09198f8b" class="article-share-link">
@@ -551,11 +476,11 @@ opt-level = 'z'
     
 
     
-    <a href="https://tommyshem.github.io/1/01/01/android-termux-youtube-downloader-notes/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="https://tommyshem.github.io/1/01/01/rsync-notes/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">
           Newer
       </strong>
-      <div class="article-nav-title">Android Termux YouTube Downloader Notes</div>
+      <div class="article-nav-title">Rsync Notes</div>
     </a>
     
 </nav>
@@ -576,6 +501,84 @@ opt-level = 'z'
     </h3>
     <div class="widget">
         <ul id="recent-post">
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2020/01/07/compression/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linuxnotes">
+                        linuxNotes
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2020/01/07/compression/" class="title">Compression</a></p>
+                    <p class="item-date">
+                        <time datetime="2020-01-07 15:27:08 &#43;0000 UTC" itemprop="datePublished">2020-01-07</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/12/28/enable-sudoers/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://tommyshem.github.io/images/blog/Linux-Hosting-long.png)" alt="Rust Notes" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linux-notes">
+                        Linux Notes
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/12/28/enable-sudoers/" class="title">Enable Sudoers</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-12-28 21:00:00 &#43;0000 UTC" itemprop="datePublished">2019-12-28</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/javascript">
+                        javascript
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/" class="title">Javascript Function Name logging</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-12-02 09:17:39 &#43;0000 UTC" itemprop="datePublished">2019-12-02</time>
+                    </p>
+                </div>
+            </li>
             
             <li>
                 <div class="item-thumbnail">
@@ -629,84 +632,6 @@ opt-level = 'z'
                 </div>
             </li>
             
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/" class="thumbnail">
-                    
-                        <span style="background-image:url(https://tommyshem.github.io/images/blog/vim-screenshot.png)" alt="Rust Notes" class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/bin-tools">
-                        bin-tools
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/" class="title">Binary Command Tool Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-11-03 14:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-03</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/" class="thumbnail">
-                    
-                        <span style="background-image:url(https://tommyshem.github.io/images/blog/tm-scope.png)" alt="Rust Notes" class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/visual-code">
-                        visual-code
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/" class="title">Visual Code Testing Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-07-13 20:30:00 &#43;0200 &#43;0200" itemprop="datePublished">2019-07-13</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/03/02/android-studio-notes/" class="thumbnail">
-                    
-                        <span class="thumbnail-image thumbnail-none"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/android-studio">
-                        android studio
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/03/02/android-studio-notes/" class="title">Android Studio Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-03-02 20:13:48 &#43;0000 GMT" itemprop="datePublished">2019-03-02</time>
-                    </p>
-                </div>
-            </li>
-            
         </ul>
     </div>
 </div>
@@ -732,6 +657,14 @@ opt-level = 'z'
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/android-studio">
                     android-studio
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/aur">
+                    aur
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -813,7 +746,7 @@ opt-level = 'z'
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/javascript">
                     javascript
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -821,7 +754,15 @@ opt-level = 'z'
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/linux-notes">
                     linux-notes
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">4</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/linuxnotes">
+                    linuxnotes
+                </a>
+                <span class="category-list-count">1</span>
             </li>
             
             <li class="category-list-item">
@@ -923,8 +864,24 @@ opt-level = 'z'
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/arch-linux">
+                    arch-linux
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/aspell">
                     aspell
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/aur">
+                    aur
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -971,10 +928,18 @@ opt-level = 'z'
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/compression">
+                    compression
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/console">
                     console
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1118,7 +1083,7 @@ opt-level = 'z'
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/javascript">
                     javascript
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -1126,7 +1091,7 @@ opt-level = 'z'
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/linux">
                     linux
                 </a>
-                <span class="category-list-count">4</span>
+                <span class="category-list-count">6</span>
             </li>
             
             <li class="category-list-item">
@@ -1134,7 +1099,7 @@ opt-level = 'z'
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/log">
                     log
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1195,6 +1160,14 @@ opt-level = 'z'
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/rsync">
+                    rsync
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/rust">
                     rust
                 </a>
@@ -1221,6 +1194,14 @@ opt-level = 'z'
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/solus">
                     solus
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/sudo">
+                    sudo
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -1293,7 +1274,13 @@ opt-level = 'z'
         <a href="https://tommyshem.github.io/tags/andriod-studio" style="font-size: 12px;">andriod-studio</a>
         
         
+        <a href="https://tommyshem.github.io/tags/arch-linux" style="font-size: 12px;">arch-linux</a>
+        
+        
         <a href="https://tommyshem.github.io/tags/aspell" style="font-size: 12px;">aspell</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/aur" style="font-size: 12px;">aur</a>
         
         
         <a href="https://tommyshem.github.io/tags/bin" style="font-size: 12px;">bin</a>
@@ -1309,6 +1296,9 @@ opt-level = 'z'
         
         
         <a href="https://tommyshem.github.io/tags/cli" style="font-size: 12px;">cli</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/compression" style="font-size: 12px;">compression</a>
         
         
         <a href="https://tommyshem.github.io/tags/console" style="font-size: 12px;">console</a>
@@ -1395,6 +1385,9 @@ opt-level = 'z'
         <a href="https://tommyshem.github.io/tags/pages" style="font-size: 12px;">pages</a>
         
         
+        <a href="https://tommyshem.github.io/tags/rsync" style="font-size: 12px;">rsync</a>
+        
+        
         <a href="https://tommyshem.github.io/tags/rust" style="font-size: 12px;">rust</a>
         
         
@@ -1405,6 +1398,9 @@ opt-level = 'z'
         
         
         <a href="https://tommyshem.github.io/tags/solus" style="font-size: 12px;">solus</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/sudo" style="font-size: 12px;">sudo</a>
         
         
         <a href="https://tommyshem.github.io/tags/swift" style="font-size: 12px;">swift</a>
@@ -1441,7 +1437,7 @@ opt-level = 'z'
 <footer id="footer">
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019
+      &copy; 2020
       Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>.
     </div>
   </div>

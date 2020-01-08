@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
     <title>How to make gtk apps &middot; Tom&#39;s Things</title>
-    <meta name="generator" content="Hugo 0.58.3" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Tommy Shem">
@@ -22,12 +22,12 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     <meta property="og:title" content="How to make gtk apps" />
 <meta property="og:description" content="C Gtk example example from https://developer.gnome.org/gtk3/stable/gtk-getting-started.html#id-1.2.3.5
-&rdquo;&lsquo;c #include 
+&lsquo;&lsquo;&lsquo;c #include &lt;gtk/gtk.h&gt;
 static void activate (GtkApplication* app, gpointer user_data) { GtkWidget *window;
 window = gtk_application_window_new (app); gtk_window_set_title (GTK_WINDOW (window), &ldquo;Window&rdquo;); gtk_window_set_default_size (GTK_WINDOW (window), 400, 400); gtk_widget_show_all (window); }
 int main (int argc, char **argv) { GtkApplication *app; int status;
 app = gtk_application_new (&ldquo;org.gtk.example&rdquo;, G_APPLICATION_FLAGS_NONE); g_signal_connect (app, &ldquo;activate&rdquo;, G_CALLBACK (activate), NULL); status = g_application_run (G_APPLICATION (app), argc, argv); g_object_unref (app);
-return status; } &ldquo;&rsquo;" />
+return status; } &#39;&rsquo;&rsquo;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tommyshem.github.io/2018/02/18/how-to-make-gtk-apps/" />
 <meta property="article:published_time" content="2018-02-18T18:19:00+00:00" />
@@ -36,31 +36,28 @@ return status; } &ldquo;&rsquo;" />
     
     <meta itemprop="name" content="How to make gtk apps">
 <meta itemprop="description" content="C Gtk example example from https://developer.gnome.org/gtk3/stable/gtk-getting-started.html#id-1.2.3.5
-&rdquo;&lsquo;c #include 
+&lsquo;&lsquo;&lsquo;c #include &lt;gtk/gtk.h&gt;
 static void activate (GtkApplication* app, gpointer user_data) { GtkWidget *window;
 window = gtk_application_window_new (app); gtk_window_set_title (GTK_WINDOW (window), &ldquo;Window&rdquo;); gtk_window_set_default_size (GTK_WINDOW (window), 400, 400); gtk_widget_show_all (window); }
 int main (int argc, char **argv) { GtkApplication *app; int status;
 app = gtk_application_new (&ldquo;org.gtk.example&rdquo;, G_APPLICATION_FLAGS_NONE); g_signal_connect (app, &ldquo;activate&rdquo;, G_CALLBACK (activate), NULL); status = g_application_run (G_APPLICATION (app), argc, argv); g_object_unref (app);
-return status; } &ldquo;&rsquo;">
-
-
+return status; } &#39;&rsquo;&rsquo;">
 <meta itemprop="datePublished" content="2018-02-18T18:19:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-02-18T18:19:00&#43;00:00" />
-<meta itemprop="wordCount" content="301">
+<meta itemprop="wordCount" content="302">
 
 
 
 <meta itemprop="keywords" content="linux,gnome,gtk," />
-
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How to make gtk apps"/>
 <meta name="twitter:description" content="C Gtk example example from https://developer.gnome.org/gtk3/stable/gtk-getting-started.html#id-1.2.3.5
-&rdquo;&lsquo;c #include 
+&lsquo;&lsquo;&lsquo;c #include &lt;gtk/gtk.h&gt;
 static void activate (GtkApplication* app, gpointer user_data) { GtkWidget *window;
 window = gtk_application_window_new (app); gtk_window_set_title (GTK_WINDOW (window), &ldquo;Window&rdquo;); gtk_window_set_default_size (GTK_WINDOW (window), 400, 400); gtk_widget_show_all (window); }
 int main (int argc, char **argv) { GtkApplication *app; int status;
 app = gtk_application_new (&ldquo;org.gtk.example&rdquo;, G_APPLICATION_FLAGS_NONE); g_signal_connect (app, &ldquo;activate&rdquo;, G_CALLBACK (activate), NULL); status = g_application_run (G_APPLICATION (app), argc, argv); g_object_unref (app);
-return status; } &ldquo;&rsquo;"/>
+return status; } &#39;&rsquo;&rsquo;"/>
 
     
 
@@ -186,12 +183,12 @@ return status; } &ldquo;&rsquo;"/>
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        36
+        41
         <span>Posts</span>
       </div>
       <div class="article-info-block">
         
-          45
+          50
         
         <span>
             Tags
@@ -285,7 +282,7 @@ return status; } &ldquo;&rsquo;"/>
             <i class="fa fa-calendar"></i>
             <time datetime="2018-02-18 18:19:00 &#43;0000 UTC" itemprop="datePublished">2018-02-18</time>
             &middot;
-            301
+            302
             words
             &middot;
             2
@@ -331,104 +328,84 @@ return status; } &ldquo;&rsquo;"/>
 </header>
 
         <div class="article-entry" itemprop="articleBody">
-            
-
-<h2 id="c-gtk-example">C Gtk example</h2>
-
+            <h2 id="c-gtk-example">C Gtk example</h2>
 <p>example from <a href="https://developer.gnome.org/gtk3/stable/gtk-getting-started.html#id-1.2.3.5">https://developer.gnome.org/gtk3/stable/gtk-getting-started.html#id-1.2.3.5</a></p>
-
-<p>&rdquo;&lsquo;c
-#include <gtk/gtk.h></p>
-
+<p>&lsquo;&lsquo;&lsquo;c
+#include &lt;gtk/gtk.h&gt;</p>
 <p>static void
 activate (GtkApplication* app,
-          gpointer        user_data)
+gpointer        user_data)
 {
-  GtkWidget *window;</p>
-
+GtkWidget *window;</p>
 <p>window = gtk_application_window_new (app);
-  gtk_window_set_title (GTK_WINDOW (window), &ldquo;Window&rdquo;);
-  gtk_window_set_default_size (GTK_WINDOW (window), 400, 400);
-  gtk_widget_show_all (window);
+gtk_window_set_title (GTK_WINDOW (window), &ldquo;Window&rdquo;);
+gtk_window_set_default_size (GTK_WINDOW (window), 400, 400);
+gtk_widget_show_all (window);
 }</p>
-
 <p>int
 main (int    argc,
-      char **argv)
+char **argv)
 {
-  GtkApplication *app;
-  int status;</p>
-
+GtkApplication *app;
+int status;</p>
 <p>app = gtk_application_new (&ldquo;org.gtk.example&rdquo;, G_APPLICATION_FLAGS_NONE);
-  g_signal_connect (app, &ldquo;activate&rdquo;, G_CALLBACK (activate), NULL);
-  status = g_application_run (G_APPLICATION (app), argc, argv);
-  g_object_unref (app);</p>
-
+g_signal_connect (app, &ldquo;activate&rdquo;, G_CALLBACK (activate), NULL);
+status = g_application_run (G_APPLICATION (app), argc, argv);
+g_object_unref (app);</p>
 <p>return status;
 }
-&ldquo;&rsquo;</p>
-
-<pre><code class="language-bash">gcc `pkg-config --cflags gtk+-3.0` -o example-0 example-0.c `pkg-config --libs gtk+-3.0` 
-</code></pre>
-
-<h2 id="go-gtk-example">Go Gtk example</h2>
-
+'&rsquo;&rsquo;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gcc <span style="color:#e6db74">`</span>pkg-config --cflags gtk+-3.0<span style="color:#e6db74">`</span> -o example-0 example-0.c <span style="color:#e6db74">`</span>pkg-config --libs gtk+-3.0<span style="color:#e6db74">`</span> 
+</code></pre></div><h2 id="go-gtk-example">Go Gtk example</h2>
 <p>Example from <a href="https://github.com/gotk3/gotk3">https://github.com/gotk3/gotk3</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
-<pre><code class="language-go">package main
+<span style="color:#f92672">import</span> (
+	<span style="color:#e6db74">&#34;log&#34;</span>
+	<span style="color:#e6db74">&#34;os&#34;</span>
 
-import (
-	&quot;log&quot;
-	&quot;os&quot;
-
-	&quot;github.com/gotk3/gotk3/glib&quot;
-	&quot;github.com/gotk3/gotk3/gtk&quot;
+	<span style="color:#e6db74">&#34;github.com/gotk3/gotk3/glib&#34;</span>
+	<span style="color:#e6db74">&#34;github.com/gotk3/gotk3/gtk&#34;</span>
 )
 
-// Simple Gtk3 Application written in go.
-// This application creates a window on the application callback activate.
-// More GtkApplication info can be found here -&gt; https://wiki.gnome.org/HowDoI/GtkApplication
-
-func main() {
-	// Create Gtk Application, change appID to your application domain name reversed.
-	const appID = &quot;org.gtk.example&quot;
-	application, err := gtk.ApplicationNew(appID, glib.APPLICATION_FLAGS_NONE)
-	// Check to make sure no errors when creating Gtk Application
-	if err != nil {
-		log.Fatal(&quot;Could not create application.&quot;, err)
+<span style="color:#75715e">// Simple Gtk3 Application written in go.
+</span><span style="color:#75715e"></span><span style="color:#75715e">// This application creates a window on the application callback activate.
+</span><span style="color:#75715e"></span><span style="color:#75715e">// More GtkApplication info can be found here -&gt; https://wiki.gnome.org/HowDoI/GtkApplication
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#75715e">// Create Gtk Application, change appID to your application domain name reversed.
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">appID</span> = <span style="color:#e6db74">&#34;org.gtk.example&#34;</span>
+	<span style="color:#a6e22e">application</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">gtk</span>.<span style="color:#a6e22e">ApplicationNew</span>(<span style="color:#a6e22e">appID</span>, <span style="color:#a6e22e">glib</span>.<span style="color:#a6e22e">APPLICATION_FLAGS_NONE</span>)
+	<span style="color:#75715e">// Check to make sure no errors when creating Gtk Application
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#e6db74">&#34;Could not create application.&#34;</span>, <span style="color:#a6e22e">err</span>)
 	}
 
-	// Application signals available
-	// startup -&gt; sets up the application when it first starts
-	// activate -&gt; shows the default first window of the application (like a new document). This corresponds to the application being launched by the desktop environment.
-	// open -&gt; opens files and shows them in a new window. This corresponds to someone trying to open a document (or documents) using the application from the file browser, or similar.
-	// shutdown -&gt;  performs shutdown tasks
-	// Setup activate signal with a closure function.
-	application.Connect(&quot;activate&quot;, func() {
-		// Create ApplicationWindow
-		appWindow, err := gtk.ApplicationWindowNew(application)
-		if err != nil {
-			log.Fatal(&quot;Could not create application window.&quot;, err)
+	<span style="color:#75715e">// Application signals available
+</span><span style="color:#75715e"></span>	<span style="color:#75715e">// startup -&gt; sets up the application when it first starts
+</span><span style="color:#75715e"></span>	<span style="color:#75715e">// activate -&gt; shows the default first window of the application (like a new document). This corresponds to the application being launched by the desktop environment.
+</span><span style="color:#75715e"></span>	<span style="color:#75715e">// open -&gt; opens files and shows them in a new window. This corresponds to someone trying to open a document (or documents) using the application from the file browser, or similar.
+</span><span style="color:#75715e"></span>	<span style="color:#75715e">// shutdown -&gt;  performs shutdown tasks
+</span><span style="color:#75715e"></span>	<span style="color:#75715e">// Setup activate signal with a closure function.
+</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">application</span>.<span style="color:#a6e22e">Connect</span>(<span style="color:#e6db74">&#34;activate&#34;</span>, <span style="color:#66d9ef">func</span>() {
+		<span style="color:#75715e">// Create ApplicationWindow
+</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">appWindow</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">gtk</span>.<span style="color:#a6e22e">ApplicationWindowNew</span>(<span style="color:#a6e22e">application</span>)
+		<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+			<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#e6db74">&#34;Could not create application window.&#34;</span>, <span style="color:#a6e22e">err</span>)
 		}
-		// Set ApplicationWindow Properties
-		appWindow.SetTitle(&quot;Window&quot;)
-		appWindow.SetDefaultSize(400, 400)
-		appWindow.Show()
+		<span style="color:#75715e">// Set ApplicationWindow Properties
+</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">appWindow</span>.<span style="color:#a6e22e">SetTitle</span>(<span style="color:#e6db74">&#34;Window&#34;</span>)
+		<span style="color:#a6e22e">appWindow</span>.<span style="color:#a6e22e">SetDefaultSize</span>(<span style="color:#ae81ff">400</span>, <span style="color:#ae81ff">400</span>)
+		<span style="color:#a6e22e">appWindow</span>.<span style="color:#a6e22e">Show</span>()
 	})
-	// Run Gtk application
-	application.Run(os.Args)
+	<span style="color:#75715e">// Run Gtk application
+</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">application</span>.<span style="color:#a6e22e">Run</span>(<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Args</span>)
 }
 
-</code></pre>
-
-<pre><code class="language-bash">go build
-</code></pre>
-
-<h2 id="vala-gtk-example">Vala Gtk example</h2>
-
-<pre><code class="language-bash">valac --pkg gtk+-3.0 gtk-sync-sample.vala
-</code></pre>
-
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">go build
+</code></pre></div><h2 id="vala-gtk-example">Vala Gtk example</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">valac --pkg gtk+-3.0 gtk-sync-sample.vala
+</code></pre></div>
         </div>
         <footer class="article-footer">
     <a data-url="https://tommyshem.github.io/2018/02/18/how-to-make-gtk-apps/" data-id="cba45e5679c246852da10ff0f5a34407" class="article-share-link">
@@ -545,6 +522,84 @@ func main() {
             
             <li>
                 <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2020/01/07/compression/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linuxnotes">
+                        linuxNotes
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2020/01/07/compression/" class="title">Compression</a></p>
+                    <p class="item-date">
+                        <time datetime="2020-01-07 15:27:08 &#43;0000 UTC" itemprop="datePublished">2020-01-07</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/12/28/enable-sudoers/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://tommyshem.github.io/images/blog/Linux-Hosting-long.png)" alt="How to make gtk apps" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linux-notes">
+                        Linux Notes
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/12/28/enable-sudoers/" class="title">Enable Sudoers</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-12-28 21:00:00 &#43;0000 UTC" itemprop="datePublished">2019-12-28</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/javascript">
+                        javascript
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/" class="title">Javascript Function Name logging</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-12-02 09:17:39 &#43;0000 UTC" itemprop="datePublished">2019-12-02</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
                     <a href="https://tommyshem.github.io/2019/11/03/c-tools-notes/" class="thumbnail">
                     
                         <span style="background-image:url(https://tommyshem.github.io/images/blog/terminal.png)" alt="How to make gtk apps" class="thumbnail-image"></span>
@@ -595,84 +650,6 @@ func main() {
                 </div>
             </li>
             
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/" class="thumbnail">
-                    
-                        <span style="background-image:url(https://tommyshem.github.io/images/blog/vim-screenshot.png)" alt="How to make gtk apps" class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/bin-tools">
-                        bin-tools
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/" class="title">Binary Command Tool Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-11-03 14:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-03</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/" class="thumbnail">
-                    
-                        <span style="background-image:url(https://tommyshem.github.io/images/blog/tm-scope.png)" alt="How to make gtk apps" class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/visual-code">
-                        visual-code
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/" class="title">Visual Code Testing Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-07-13 20:30:00 &#43;0200 &#43;0200" itemprop="datePublished">2019-07-13</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/03/02/android-studio-notes/" class="thumbnail">
-                    
-                        <span class="thumbnail-image thumbnail-none"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/android-studio">
-                        android studio
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/03/02/android-studio-notes/" class="title">Android Studio Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-03-02 20:13:48 &#43;0000 GMT" itemprop="datePublished">2019-03-02</time>
-                    </p>
-                </div>
-            </li>
-            
         </ul>
     </div>
 </div>
@@ -698,6 +675,14 @@ func main() {
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/android-studio">
                     android-studio
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/aur">
+                    aur
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -779,7 +764,7 @@ func main() {
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/javascript">
                     javascript
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -787,7 +772,15 @@ func main() {
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/linux-notes">
                     linux-notes
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">4</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/linuxnotes">
+                    linuxnotes
+                </a>
+                <span class="category-list-count">1</span>
             </li>
             
             <li class="category-list-item">
@@ -889,8 +882,24 @@ func main() {
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/arch-linux">
+                    arch-linux
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/aspell">
                     aspell
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/aur">
+                    aur
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -937,10 +946,18 @@ func main() {
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/compression">
+                    compression
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/console">
                     console
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1084,7 +1101,7 @@ func main() {
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/javascript">
                     javascript
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -1092,7 +1109,7 @@ func main() {
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/linux">
                     linux
                 </a>
-                <span class="category-list-count">4</span>
+                <span class="category-list-count">6</span>
             </li>
             
             <li class="category-list-item">
@@ -1100,7 +1117,7 @@ func main() {
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/log">
                     log
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1161,6 +1178,14 @@ func main() {
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/rsync">
+                    rsync
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/rust">
                     rust
                 </a>
@@ -1187,6 +1212,14 @@ func main() {
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/solus">
                     solus
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/sudo">
+                    sudo
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -1259,7 +1292,13 @@ func main() {
         <a href="https://tommyshem.github.io/tags/andriod-studio" style="font-size: 12px;">andriod-studio</a>
         
         
+        <a href="https://tommyshem.github.io/tags/arch-linux" style="font-size: 12px;">arch-linux</a>
+        
+        
         <a href="https://tommyshem.github.io/tags/aspell" style="font-size: 12px;">aspell</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/aur" style="font-size: 12px;">aur</a>
         
         
         <a href="https://tommyshem.github.io/tags/bin" style="font-size: 12px;">bin</a>
@@ -1275,6 +1314,9 @@ func main() {
         
         
         <a href="https://tommyshem.github.io/tags/cli" style="font-size: 12px;">cli</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/compression" style="font-size: 12px;">compression</a>
         
         
         <a href="https://tommyshem.github.io/tags/console" style="font-size: 12px;">console</a>
@@ -1361,6 +1403,9 @@ func main() {
         <a href="https://tommyshem.github.io/tags/pages" style="font-size: 12px;">pages</a>
         
         
+        <a href="https://tommyshem.github.io/tags/rsync" style="font-size: 12px;">rsync</a>
+        
+        
         <a href="https://tommyshem.github.io/tags/rust" style="font-size: 12px;">rust</a>
         
         
@@ -1371,6 +1416,9 @@ func main() {
         
         
         <a href="https://tommyshem.github.io/tags/solus" style="font-size: 12px;">solus</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/sudo" style="font-size: 12px;">sudo</a>
         
         
         <a href="https://tommyshem.github.io/tags/swift" style="font-size: 12px;">swift</a>
@@ -1407,7 +1455,7 @@ func main() {
 <footer id="footer">
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019
+      &copy; 2020
       Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>.
     </div>
   </div>

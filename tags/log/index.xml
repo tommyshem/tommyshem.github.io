@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>log on Tom&#39;s Things</title>
@@ -6,10 +6,21 @@
     <description>Recent content in log on Tom&#39;s Things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 07 Feb 2019 09:17:39 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Dec 2019 09:17:39 +0000</lastBuildDate>
     
 	<atom:link href="https://tommyshem.github.io/tags/log/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Javascript Function Name logging</title>
+      <link>https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/</link>
+      <pubDate>Mon, 02 Dec 2019 09:17:39 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/</guid>
+      <description>Logging function name with a debug function.
+Sample Example below.
+#!/usr/bin/gjs  // Used for debugging when tracking unknown function calls function GetFunctionName(){ print( &amp;#34;This Function Name : &amp;#34; + arguments.callee.name); print (&amp;#34;Called from function : &amp;#34; + GetFunctionName.caller.name); } // Test function function FunctionC(){ // Print this function name 	print ( &amp;#34;Fuction Name : &amp;#34; + arguments.callee.name ); // Print this function name from function call 	GetFunctionName(); } // Call test function FunctionC(); </description>
+    </item>
     
     <item>
       <title>Javascript Console.log</title>
@@ -18,8 +29,8 @@
       
       <guid>https://tommyshem.github.io/2019/02/07/javascript-console.log/</guid>
       <description>Console log basics For testing create a html file index.html
-&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Getting started with Javascript&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1 id=&amp;quot;header&amp;quot;&amp;gt;Intro to Javascript&amp;lt;/h1&amp;gt; &amp;lt;!-- Javascript file location in relative to this html file location --&amp;gt; &amp;lt;script src=&amp;quot;test.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  File test.js
-// console.log can print any variables out eg object strings numbers boolean etc // variable var firstname; firstname = &amp;quot;Bill&amp;quot;; // Print firstname contents to console console.</description>
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Getting started with Javascript&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1 id=&amp;#34;header&amp;#34;&amp;gt;Intro to Javascript&amp;lt;/h1&amp;gt; &amp;lt;!--Javascript file location in relative to this html file location --&amp;gt; &amp;lt;script src=&amp;#34;test.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; File test.js
+// console.log can print any variables out eg object strings numbers boolean etc  // variable var firstname; firstname = &amp;#34;Bill&amp;#34;; // Print firstname contents to console console.</description>
     </item>
     
   </channel>

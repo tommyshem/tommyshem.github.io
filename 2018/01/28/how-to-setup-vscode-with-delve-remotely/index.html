@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
     <title>How to setup vscode with delve remotely &middot; Tom&#39;s Things</title>
-    <meta name="generator" content="Hugo 0.58.3" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Tommy Shem">
@@ -25,7 +25,8 @@
 use flag attach or exec to run your program first before running the debugger.
 Visual studio Code Remote Debugging Orignal infomation from this webite
 delve debugger homepage
-Do not use this flag as vscode go plugin does not surport version 2 yet. --api-version=2" />
+Do not use this flag as vscode go plugin does not surport version 2 yet. --api-version=2
+To remote debug using VS Code, you must first run a headless Delve server on the target machine." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tommyshem.github.io/2018/01/28/how-to-setup-vscode-with-delve-remotely/" />
 <meta property="article:published_time" content="2018-01-28T09:00:00+00:00" />
@@ -37,9 +38,8 @@ Do not use this flag as vscode go plugin does not surport version 2 yet. --api-v
 use flag attach or exec to run your program first before running the debugger.
 Visual studio Code Remote Debugging Orignal infomation from this webite
 delve debugger homepage
-Do not use this flag as vscode go plugin does not surport version 2 yet. --api-version=2">
-
-
+Do not use this flag as vscode go plugin does not surport version 2 yet. --api-version=2
+To remote debug using VS Code, you must first run a headless Delve server on the target machine.">
 <meta itemprop="datePublished" content="2018-01-28T09:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-01-28T09:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="311">
@@ -47,14 +47,14 @@ Do not use this flag as vscode go plugin does not surport version 2 yet. --api-v
 
 
 <meta itemprop="keywords" content="vscode,delve,dlv,setup,go," />
-
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How to setup vscode with delve remotely"/>
 <meta name="twitter:description" content="Compile your project first if it is complex to compile Compile your project as normal but add this flag to get better debugging infomation -gcflags=&quot;-N -l&quot;.
 use flag attach or exec to run your program first before running the debugger.
 Visual studio Code Remote Debugging Orignal infomation from this webite
 delve debugger homepage
-Do not use this flag as vscode go plugin does not surport version 2 yet. --api-version=2"/>
+Do not use this flag as vscode go plugin does not surport version 2 yet. --api-version=2
+To remote debug using VS Code, you must first run a headless Delve server on the target machine."/>
 
     
 
@@ -180,12 +180,12 @@ Do not use this flag as vscode go plugin does not surport version 2 yet. --api-v
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        36
+        41
         <span>Posts</span>
       </div>
       <div class="article-info-block">
         
-          45
+          50
         
         <span>
             Tags
@@ -333,67 +333,42 @@ Do not use this flag as vscode go plugin does not surport version 2 yet. --api-v
 </header>
 
         <div class="article-entry" itemprop="articleBody">
-            
-
-<h1 id="compile-your-project-first-if-it-is-complex-to-compile">Compile your project first if it is complex to compile</h1>
-
+            <h1 id="compile-your-project-first-if-it-is-complex-to-compile">Compile your project first if it is complex to compile</h1>
 <p>Compile your project as normal but add this flag to get better debugging infomation <code>-gcflags=&quot;-N -l&quot;</code>.</p>
-
 <p>use flag <code>attach</code> or <code>exec</code> to run your program first before running the debugger.</p>
-
 <h2 id="visual-studio-code-remote-debugging">Visual studio Code Remote Debugging</h2>
-
 <p><a href="https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code/6dfa2007bfa59c070429005f5cb3bea72c74f125">Orignal infomation from this webite</a></p>
-
 <p><a href="https://github.com/derekparker/delve">delve debugger homepage</a></p>
-
 <p>Do not use this flag as vscode go plugin does not surport version 2 yet.
 <code>--api-version=2</code></p>
-
 <p>To remote debug using VS Code, you must first run a headless Delve server on the target machine.
 To do this open a terminal and type in below example in your project folder to compile and debug your project.</p>
-
 <p>dlv flags which can be changed.</p>
-
 <p><code>debug</code> flag means compile and begin debugging main package in current directory, or the package specified. <a href="https://github.com/derekparker/delve/blob/master/Documentation/usage/dlv_debug.md">usage</a></p>
-
 <p><code>$ dlv debug --headless --listen=:2345 --log</code></p>
-
 <p><code>exec &lt;path/to/binary&gt;</code> flag means execute a precompiled binary, and begin a debug session. <a href="https://github.com/derekparker/delve/blob/master/Documentation/usage/dlv_exec.md">usage</a></p>
-
 <p><code>$ dlv exec /tmp/test/testfile --headless --listen=:2345 --log</code></p>
-
 <p><code>attach pid &lt;pid number&gt;</code> attach to running process pid number and begin debugging. <a href="https://github.com/derekparker/delve/blob/master/Documentation/usage/dlv_attach.md">usage</a></p>
-
 <p>Get pid number of the program running.
 <code>$ pgrep programName</code></p>
-
 <p><code>$ dlv attach 1234 --headless --listen=:2345 --log</code></p>
-
 <h3 id="any-arguments-that-you-want-to-pass-to-the-program-you-are-debugging-must-be-passed-to-this-delve-server-that-runs-on-the-target-machine">Any arguments that you want to pass to the program you are debugging must be passed to this Delve server that runs on the target machine</h3>
-
 <p>For example:</p>
-
 <p><code>$ dlv debug --headless --listen=:2345 --log -- -myArg=123</code></p>
-
 <p>Then, create a remote debug configuration in VS Code launch.json.</p>
-
-<pre><code class="language-json">{
-    &quot;name&quot;: &quot;Remote&quot;,
-    &quot;type&quot;: &quot;go&quot;,
-    &quot;request&quot;: &quot;launch&quot;,
-    &quot;mode&quot;: &quot;remote&quot;,
-    &quot;remotePath&quot;: &quot;${workspaceRoot}&quot;,
-    &quot;port&quot;: 2345,
-    &quot;host&quot;: &quot;127.0.0.1&quot;,
-    &quot;program&quot;: &quot;${workspaceRoot}&quot;,
-    &quot;env&quot;: {}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Remote&#34;</span>,
+    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;go&#34;</span>,
+    <span style="color:#f92672">&#34;request&#34;</span>: <span style="color:#e6db74">&#34;launch&#34;</span>,
+    <span style="color:#f92672">&#34;mode&#34;</span>: <span style="color:#e6db74">&#34;remote&#34;</span>,
+    <span style="color:#f92672">&#34;remotePath&#34;</span>: <span style="color:#e6db74">&#34;${workspaceRoot}&#34;</span>,
+    <span style="color:#f92672">&#34;port&#34;</span>: <span style="color:#ae81ff">2345</span>,
+    <span style="color:#f92672">&#34;host&#34;</span>: <span style="color:#e6db74">&#34;127.0.0.1&#34;</span>,
+    <span style="color:#f92672">&#34;program&#34;</span>: <span style="color:#e6db74">&#34;${workspaceRoot}&#34;</span>,
+    <span style="color:#f92672">&#34;env&#34;</span>: {}
 }
-</code></pre>
-
-<p>When you launch the debugger with this new Remote target selected, VS Code will send debugging commands to the dlv server you started previously instead of launching it&rsquo;s own dlv instance against your app.
+</code></pre></div><p>When you launch the debugger with this new Remote target selected, VS Code will send debugging commands to the dlv server you started previously instead of launching it's own dlv instance against your app.
 The above example runs both the headless dlv server and the VS Code debugger locally on the same machine.</p>
-
 <p><a href="https://code.visualstudio.com/docs/editor/debugging">debugging website info</a></p>
 
         </div>
@@ -512,6 +487,84 @@ The above example runs both the headless dlv server and the VS Code debugger l
             
             <li>
                 <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2020/01/07/compression/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linuxnotes">
+                        linuxNotes
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2020/01/07/compression/" class="title">Compression</a></p>
+                    <p class="item-date">
+                        <time datetime="2020-01-07 15:27:08 &#43;0000 UTC" itemprop="datePublished">2020-01-07</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/12/28/enable-sudoers/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://tommyshem.github.io/images/blog/Linux-Hosting-long.png)" alt="How to setup vscode with delve remotely" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linux-notes">
+                        Linux Notes
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/12/28/enable-sudoers/" class="title">Enable Sudoers</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-12-28 21:00:00 &#43;0000 UTC" itemprop="datePublished">2019-12-28</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/javascript">
+                        javascript
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/" class="title">Javascript Function Name logging</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-12-02 09:17:39 &#43;0000 UTC" itemprop="datePublished">2019-12-02</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
                     <a href="https://tommyshem.github.io/2019/11/03/c-tools-notes/" class="thumbnail">
                     
                         <span style="background-image:url(https://tommyshem.github.io/images/blog/terminal.png)" alt="How to setup vscode with delve remotely" class="thumbnail-image"></span>
@@ -562,84 +615,6 @@ The above example runs both the headless dlv server and the VS Code debugger l
                 </div>
             </li>
             
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/" class="thumbnail">
-                    
-                        <span style="background-image:url(https://tommyshem.github.io/images/blog/vim-screenshot.png)" alt="How to setup vscode with delve remotely" class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/bin-tools">
-                        bin-tools
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/" class="title">Binary Command Tool Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-11-03 14:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-03</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/" class="thumbnail">
-                    
-                        <span style="background-image:url(https://tommyshem.github.io/images/blog/tm-scope.png)" alt="How to setup vscode with delve remotely" class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/visual-code">
-                        visual-code
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/" class="title">Visual Code Testing Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-07-13 20:30:00 &#43;0200 &#43;0200" itemprop="datePublished">2019-07-13</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/03/02/android-studio-notes/" class="thumbnail">
-                    
-                        <span class="thumbnail-image thumbnail-none"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/android-studio">
-                        android studio
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/03/02/android-studio-notes/" class="title">Android Studio Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-03-02 20:13:48 &#43;0000 GMT" itemprop="datePublished">2019-03-02</time>
-                    </p>
-                </div>
-            </li>
-            
         </ul>
     </div>
 </div>
@@ -665,6 +640,14 @@ The above example runs both the headless dlv server and the VS Code debugger l
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/android-studio">
                     android-studio
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/aur">
+                    aur
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -746,7 +729,7 @@ The above example runs both the headless dlv server and the VS Code debugger l
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/javascript">
                     javascript
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -754,7 +737,15 @@ The above example runs both the headless dlv server and the VS Code debugger l
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/linux-notes">
                     linux-notes
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">4</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/linuxnotes">
+                    linuxnotes
+                </a>
+                <span class="category-list-count">1</span>
             </li>
             
             <li class="category-list-item">
@@ -856,8 +847,24 @@ The above example runs both the headless dlv server and the VS Code debugger l
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/arch-linux">
+                    arch-linux
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/aspell">
                     aspell
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/aur">
+                    aur
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -904,10 +911,18 @@ The above example runs both the headless dlv server and the VS Code debugger l
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/compression">
+                    compression
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/console">
                     console
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1051,7 +1066,7 @@ The above example runs both the headless dlv server and the VS Code debugger l
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/javascript">
                     javascript
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -1059,7 +1074,7 @@ The above example runs both the headless dlv server and the VS Code debugger l
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/linux">
                     linux
                 </a>
-                <span class="category-list-count">4</span>
+                <span class="category-list-count">6</span>
             </li>
             
             <li class="category-list-item">
@@ -1067,7 +1082,7 @@ The above example runs both the headless dlv server and the VS Code debugger l
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/log">
                     log
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1128,6 +1143,14 @@ The above example runs both the headless dlv server and the VS Code debugger l
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/rsync">
+                    rsync
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/rust">
                     rust
                 </a>
@@ -1154,6 +1177,14 @@ The above example runs both the headless dlv server and the VS Code debugger l
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/solus">
                     solus
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/sudo">
+                    sudo
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -1226,7 +1257,13 @@ The above example runs both the headless dlv server and the VS Code debugger l
         <a href="https://tommyshem.github.io/tags/andriod-studio" style="font-size: 12px;">andriod-studio</a>
         
         
+        <a href="https://tommyshem.github.io/tags/arch-linux" style="font-size: 12px;">arch-linux</a>
+        
+        
         <a href="https://tommyshem.github.io/tags/aspell" style="font-size: 12px;">aspell</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/aur" style="font-size: 12px;">aur</a>
         
         
         <a href="https://tommyshem.github.io/tags/bin" style="font-size: 12px;">bin</a>
@@ -1242,6 +1279,9 @@ The above example runs both the headless dlv server and the VS Code debugger l
         
         
         <a href="https://tommyshem.github.io/tags/cli" style="font-size: 12px;">cli</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/compression" style="font-size: 12px;">compression</a>
         
         
         <a href="https://tommyshem.github.io/tags/console" style="font-size: 12px;">console</a>
@@ -1328,6 +1368,9 @@ The above example runs both the headless dlv server and the VS Code debugger l
         <a href="https://tommyshem.github.io/tags/pages" style="font-size: 12px;">pages</a>
         
         
+        <a href="https://tommyshem.github.io/tags/rsync" style="font-size: 12px;">rsync</a>
+        
+        
         <a href="https://tommyshem.github.io/tags/rust" style="font-size: 12px;">rust</a>
         
         
@@ -1338,6 +1381,9 @@ The above example runs both the headless dlv server and the VS Code debugger l
         
         
         <a href="https://tommyshem.github.io/tags/solus" style="font-size: 12px;">solus</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/sudo" style="font-size: 12px;">sudo</a>
         
         
         <a href="https://tommyshem.github.io/tags/swift" style="font-size: 12px;">swift</a>
@@ -1374,7 +1420,7 @@ The above example runs both the headless dlv server and the VS Code debugger l
 <footer id="footer">
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019
+      &copy; 2020
       Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>.
     </div>
   </div>

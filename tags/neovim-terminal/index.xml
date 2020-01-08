@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>neovim terminal on Tom&#39;s Things</title>
@@ -17,8 +17,8 @@
       <pubDate>Fri, 31 Aug 2018 10:30:00 +0200</pubDate>
       
       <guid>https://tommyshem.github.io/2018/08/31/neovim-setup-and-notes/</guid>
-      <description>Neovim  Neovim setup files Install vim-plug Vim plug minimum file needed to load plugins Install plugins Update plugins Remove plugin Install python support for neovim plugins Keyboard for vim and Neovim. Quit without saving Close window Insert mode Command mode   Neovim Website https://neovim.io/
-Fully compatible with Vim&amp;rsquo;s editing model and the Vimscript language.
+      <description>Neovim  Neovim setup files Install vim-plug  Vim plug minimum file needed to load plugins Install plugins Update plugins Remove plugin Install python support for neovim plugins   Keyboard for vim and Neovim.  Quit without saving Close window Insert mode Command mode      Neovim Website https://neovim.io/
+Fully compatible with Vim&#39;s editing model and the Vimscript language.
 Neovim setup files You need a settings file in the correct location for your custom settings for neovim.</description>
     </item>
     

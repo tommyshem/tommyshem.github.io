@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rust on Tom&#39;s Things</title>
@@ -18,8 +18,8 @@
       
       <guid>https://tommyshem.github.io/2019/01/27/rust-strings/</guid>
       <description>Rust String Notes Rust String Examples A String can be passed back from inside a function because it passes the ownership on.
-fn test() -&amp;gt; String { let mystring = String::from(&amp;quot;test string&amp;quot;) // create string mystring	}  &amp;amp;Str a string slice can not be passed back from inside a function if the string it points to was created inside the function
-fn test() -&amp;gt; &amp;amp;str { let mystring = String::from(&amp;quot;test string&amp;quot;) // create string &amp;amp;mystring // Not allowed as it can not pass ownership from string created inside function.</description>
+fn test() -&amp;gt; String { let mystring = String::from(&amp;#34;test string&amp;#34;) // create string mystring	} &amp;amp;Str a string slice can not be passed back from inside a function if the string it points to was created inside the function
+fn test() -&amp;gt; &amp;amp;str { let mystring = String::from(&amp;#34;test string&amp;#34;) // create string &amp;amp;mystring // Not allowed as it can not pass ownership from string created inside function.</description>
     </item>
     
     <item>
@@ -33,11 +33,12 @@ Tutorials websites https://stevedonovan.github.io/rust-gentle-intro/1-basics.htm
 Setup dev env https://hoverbear.org/2017/03/03/setting-up-a-rust-devenv/
 Setup rust with Rustup website https://rustup.rs/
 website on how to use it https://rust-lang-nursery.github.io/edition-guide/rust-2018/rustup-for-managing-rust-versions.html
-curl https://sh.rustup.rs -sSf | sh  location of all rustup install and files $HOME/.cargo/bin
+curl https://sh.rustup.rs -sSf | sh location of all rustup install and files $HOME/.cargo/bin
 Rustup use Install bash completions (Optional)
-rustup completions bash &amp;gt; /etc/bash_completion.d/rustup.bash-completion  Updating rustup
-rustup self update  Install stable toolchain
-rustup install stable  Nightly Install Nightly toolchain</description>
+rustup completions bash &amp;gt; /etc/bash_completion.d/rustup.bash-completion Updating rustup
+rustup self update Install stable toolchain
+rustup install stable Nightly Install Nightly toolchain
+rustup install nightly Set Nightly as default</description>
     </item>
     
   </channel>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>binary size on Tom&#39;s Things</title>
@@ -17,7 +17,7 @@
       <pubDate>Wed, 23 Jan 2019 11:00:00 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/2019/01/23/binary-notes/</guid>
-      <description>Linux bin sizes Notes Size of the sections in the binary file - works with any compiled file to elf format - used on linux. size -A -t -d target/release/recode_rs | sort -k 2 -n  Readelf command Display any needed linked dynamically libraries in the exec progam, for it to run. readelf -d exec-filename-here  Display all information on the elf binary file readelf -a exec-filename-here  objdump command  file command file -d file-name-here  Website for bloaty command tool https://github.</description>
+      <description>Linux bin sizes Notes Size of the sections in the binary file - works with any compiled file to elf format - used on linux. size -A -t -d target/release/recode_rs | sort -k 2 -n Readelf command Display any needed linked dynamically libraries in the exec progam, for it to run. readelf -d exec-filename-here Display all information on the elf binary file readelf -a exec-filename-here objdump command file command file -d file-name-here Website for bloaty command tool https://github.</description>
     </item>
     
   </channel>

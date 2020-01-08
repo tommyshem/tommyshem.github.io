@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
     <title>Make a Fitbit App &middot; Tom&#39;s Things</title>
-    <meta name="generator" content="Hugo 0.58.3" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Tommy Shem">
@@ -32,7 +32,7 @@ OAuth 2.0: Access/Refresh Token Request URI https://api.fitbit.com/oauth2/token
 Test website for fitbit data https://dev.fitbit.com/apps/oauthinteractivetutorial?clientEncodedId=22CLYW&amp;clientSecret=3f453c0d41e0eb317b19aaa9e4389ce7&amp;redirectUri=http://localhost:8189/auth_code
 fetbit web API tester https://dev.fitbit.com/build/reference/web-api/explore/
 http://localhost:8189/auth_code #access_token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2RDdNTVMiLCJhdWQiOiIyMkNMWVciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&amp;user_id=6D7MMS&amp;scope=settings&#43;sleep&#43;location&#43;social&#43;weight&#43;nutrition&#43;activity&#43;heartrate&#43;profile&amp;token_type=Bearer&amp;expires_in=86400
-Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2RDdNTVMiLCJhdWQiOiIyMkNMWVciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&amp;user_id=6D7MMS&amp;scope=settings&#43;sleep&#43;location&#43;social&#43;weight&#43;nutrition&#43;activity&#43;heartrate&#43;profile&amp;token_type=Bearer&amp;expires_in=86400  test with curl curl -i -H &quot;Authorization: Bearer eyJhbGciOiJIUdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9." />
+Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2RDdNTVMiLCJhdWQiOiIyMkNMWVciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&amp;user_id=6D7MMS&amp;scope=settings&#43;sleep&#43;location&#43;social&#43;weight&#43;nutrition&#43;activity&#43;heartrate&#43;profile&amp;token_type=Bearer&amp;expires_in=86400 test with curl curl -i -H &#34;Authorization: Bearer eyJhbGciOiJIUdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tommyshem.github.io/2018/02/04/make-a-fitbit-app/" />
 <meta property="article:published_time" content="2018-02-04T09:00:00+00:00" />
@@ -51,9 +51,7 @@ OAuth 2.0: Access/Refresh Token Request URI https://api.fitbit.com/oauth2/token
 Test website for fitbit data https://dev.fitbit.com/apps/oauthinteractivetutorial?clientEncodedId=22CLYW&amp;clientSecret=3f453c0d41e0eb317b19aaa9e4389ce7&amp;redirectUri=http://localhost:8189/auth_code
 fetbit web API tester https://dev.fitbit.com/build/reference/web-api/explore/
 http://localhost:8189/auth_code #access_token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2RDdNTVMiLCJhdWQiOiIyMkNMWVciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&amp;user_id=6D7MMS&amp;scope=settings&#43;sleep&#43;location&#43;social&#43;weight&#43;nutrition&#43;activity&#43;heartrate&#43;profile&amp;token_type=Bearer&amp;expires_in=86400
-Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2RDdNTVMiLCJhdWQiOiIyMkNMWVciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&amp;user_id=6D7MMS&amp;scope=settings&#43;sleep&#43;location&#43;social&#43;weight&#43;nutrition&#43;activity&#43;heartrate&#43;profile&amp;token_type=Bearer&amp;expires_in=86400  test with curl curl -i -H &quot;Authorization: Bearer eyJhbGciOiJIUdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.">
-
-
+Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2RDdNTVMiLCJhdWQiOiIyMkNMWVciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&amp;user_id=6D7MMS&amp;scope=settings&#43;sleep&#43;location&#43;social&#43;weight&#43;nutrition&#43;activity&#43;heartrate&#43;profile&amp;token_type=Bearer&amp;expires_in=86400 test with curl curl -i -H &#34;Authorization: Bearer eyJhbGciOiJIUdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.">
 <meta itemprop="datePublished" content="2018-02-04T09:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-02-04T09:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="80">
@@ -61,7 +59,6 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
 
 
 <meta itemprop="keywords" content="fitbit,go," />
-
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Make a Fitbit App"/>
 <meta name="twitter:description" content="Register new App website for register app https://dev.fitbit.com/apps/new 
@@ -75,7 +72,7 @@ OAuth 2.0: Access/Refresh Token Request URI https://api.fitbit.com/oauth2/token
 Test website for fitbit data https://dev.fitbit.com/apps/oauthinteractivetutorial?clientEncodedId=22CLYW&amp;clientSecret=3f453c0d41e0eb317b19aaa9e4389ce7&amp;redirectUri=http://localhost:8189/auth_code
 fetbit web API tester https://dev.fitbit.com/build/reference/web-api/explore/
 http://localhost:8189/auth_code #access_token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2RDdNTVMiLCJhdWQiOiIyMkNMWVciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&amp;user_id=6D7MMS&amp;scope=settings&#43;sleep&#43;location&#43;social&#43;weight&#43;nutrition&#43;activity&#43;heartrate&#43;profile&amp;token_type=Bearer&amp;expires_in=86400
-Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2RDdNTVMiLCJhdWQiOiIyMkNMWVciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&amp;user_id=6D7MMS&amp;scope=settings&#43;sleep&#43;location&#43;social&#43;weight&#43;nutrition&#43;activity&#43;heartrate&#43;profile&amp;token_type=Bearer&amp;expires_in=86400  test with curl curl -i -H &quot;Authorization: Bearer eyJhbGciOiJIUdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9."/>
+Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2RDdNTVMiLCJhdWQiOiIyMkNMWVciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&amp;user_id=6D7MMS&amp;scope=settings&#43;sleep&#43;location&#43;social&#43;weight&#43;nutrition&#43;activity&#43;heartrate&#43;profile&amp;token_type=Bearer&amp;expires_in=86400 test with curl curl -i -H &#34;Authorization: Bearer eyJhbGciOiJIUdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9."/>
 
     
 
@@ -201,12 +198,12 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        36
+        41
         <span>Posts</span>
       </div>
       <div class="article-info-block">
         
-          45
+          50
         
         <span>
             Tags
@@ -342,61 +339,36 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
 </header>
 
         <div class="article-entry" itemprop="articleBody">
-            
-
-<h1 id="register-new-app">Register new App</h1>
-
+            <h1 id="register-new-app">Register new App</h1>
 <p>website for register app <a href="https://dev.fitbit.com/apps/new"> https://dev.fitbit.com/apps/new </a></p>
-
 <h2 id="go-github-projectsswagger-inspector-i">Go github projectsSwagger Inspector i</h2>
-
 <p><a href="https://github.com/stapelberg/fitbit-backup">https://github.com/stapelberg/fitbit-backup</a>
 <a href="https://github.com/ippoippo/bulkfitbitdownloader">https://github.com/ippoippo/bulkfitbitdownloader</a></p>
-
 <h2 id="my-app-details">My App details</h2>
-
 <p><a href="https://dev.fitbit.com/apps/details/22CLYW">https://dev.fitbit.com/apps/details/22CLYW</a></p>
-
 <p>OAuth 2.0 Client ID
 22CLYW</p>
-
 <p>Client Secret
 3f453c0d41e0eb317b19aaa9e4389ce7</p>
-
 <p>Callback URL
-<a href="http://localhost:8189/auth_code">http://localhost:8189/auth_code</a></p>
-
+http://localhost:8189/auth_code</p>
 <p>OAuth 2.0: Authorization URI
 <a href="https://www.fitbit.com/oauth2/authorize">https://www.fitbit.com/oauth2/authorize</a></p>
-
 <p>OAuth 2.0: Access/Refresh Token Request URI
 <a href="https://api.fitbit.com/oauth2/token">https://api.fitbit.com/oauth2/token</a></p>
-
 <h2 id="test-website-for-fitbit-data">Test website for fitbit data</h2>
-
 <p><a href="https://dev.fitbit.com/apps/oauthinteractivetutorial?clientEncodedId=22CLYW&amp;clientSecret=3f453c0d41e0eb317b19aaa9e4389ce7&amp;redirectUri=http://localhost:8189/auth_code">https://dev.fitbit.com/apps/oauthinteractivetutorial?clientEncodedId=22CLYW&amp;clientSecret=3f453c0d41e0eb317b19aaa9e4389ce7&amp;redirectUri=http://localhost:8189/auth_code</a></p>
-
 <h2 id="fetbit-web-api-tester">fetbit web API tester</h2>
-
 <p><a href="https://dev.fitbit.com/build/reference/web-api/explore/">https://dev.fitbit.com/build/reference/web-api/explore/</a></p>
-
-<p><a href="http://localhost:8189/auth_code">http://localhost:8189/auth_code</a>
+<p>http://localhost:8189/auth_code
 #access_token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2RDdNTVMiLCJhdWQiOiIyMkNMWVciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&amp;user_id=6D7MMS&amp;scope=settings+sleep+location+social+weight+nutrition+activity+heartrate+profile&amp;token_type=Bearer&amp;expires_in=86400</p>
-
 <h2 id="command-for-testing-in-cli">Command for testing in cli.</h2>
-
-<pre><code class="language-bash">curl -i localhost:8189/auth_code#access_token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2RDdNTVMiLCJhdWQiOiIyMkNMWVciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&amp;user_id=6D7MMS&amp;scope=settings+sleep+location+social+weight+nutrition+activity+heartrate+profile&amp;token_type=Bearer&amp;expires_in=86400
-</code></pre>
-
-<h2 id="test-with-curl">test with curl</h2>
-
-<pre><code class="language-bash">curl -i -H &quot;Authorization: Bearer eyJhbGciOiJIUdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&quot; https://api.fitbit.com/1/user/-/profile.json
-</code></pre>
-
-<pre><code class="language-javascript">var url = 'http://localhost:3000/_oauth/google#access_token=ya29.5HxuYol1Io8JLeGePDznbfkkwu_PC4uodKwG8_1clFYAn9AgdOV1WGpOTNQP3s76HAsn7Y4zWw&amp;token_type=Bearer&amp;expires_in=3600',
-    access_token = url.match(/\#(?:access_token)\=([\S\s]*?)\&amp;/)[1];
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -i localhost:8189/auth_code#access_token<span style="color:#f92672">=</span>eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2RDdNTVMiLCJhdWQiOiIyMkNMWVciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&amp;user_id<span style="color:#f92672">=</span>6D7MMS&amp;scope<span style="color:#f92672">=</span>settings+sleep+location+social+weight+nutrition+activity+heartrate+profile&amp;token_type<span style="color:#f92672">=</span>Bearer&amp;expires_in<span style="color:#f92672">=</span><span style="color:#ae81ff">86400</span>
+</code></pre></div><h2 id="test-with-curl">test with curl</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -i -H <span style="color:#e6db74">&#34;Authorization: Bearer eyJhbGciOiJIUdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTE3ODE5MTE1LCJpYXQiOjE1MTc3MzI3MTV9.dfzgRPybQOwii8HePCE14Ba7wAfqYXK6QaF3-PgaXjQ&#34;</span> https://api.fitbit.com/1/user/-/profile.json
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;http://localhost:3000/_oauth/google#access_token=ya29.5HxuYol1Io8JLeGePDznbfkkwu_PC4uodKwG8_1clFYAn9AgdOV1WGpOTNQP3s76HAsn7Y4zWw&amp;token_type=Bearer&amp;expires_in=3600&#39;</span>,
+    <span style="color:#a6e22e">access_token</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">url</span>.<span style="color:#a6e22e">match</span>(<span style="color:#e6db74">/\#(?:access_token)\=([\S\s]*?)\&amp;/</span>)[<span style="color:#ae81ff">1</span>];
+</code></pre></div>
         </div>
         <footer class="article-footer">
     <a data-url="https://tommyshem.github.io/2018/02/04/make-a-fitbit-app/" data-id="7359f646df6b8816a07e45f5c5994b6e" class="article-share-link">
@@ -513,6 +485,84 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
             
             <li>
                 <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2020/01/07/compression/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linuxnotes">
+                        linuxNotes
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2020/01/07/compression/" class="title">Compression</a></p>
+                    <p class="item-date">
+                        <time datetime="2020-01-07 15:27:08 &#43;0000 UTC" itemprop="datePublished">2020-01-07</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/12/28/enable-sudoers/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://tommyshem.github.io/images/blog/Linux-Hosting-long.png)" alt="Make a Fitbit App" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linux-notes">
+                        Linux Notes
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/12/28/enable-sudoers/" class="title">Enable Sudoers</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-12-28 21:00:00 &#43;0000 UTC" itemprop="datePublished">2019-12-28</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/javascript">
+                        javascript
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/" class="title">Javascript Function Name logging</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-12-02 09:17:39 &#43;0000 UTC" itemprop="datePublished">2019-12-02</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
                     <a href="https://tommyshem.github.io/2019/11/03/c-tools-notes/" class="thumbnail">
                     
                         <span style="background-image:url(https://tommyshem.github.io/images/blog/terminal.png)" alt="Make a Fitbit App" class="thumbnail-image"></span>
@@ -563,84 +613,6 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
                 </div>
             </li>
             
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/" class="thumbnail">
-                    
-                        <span style="background-image:url(https://tommyshem.github.io/images/blog/vim-screenshot.png)" alt="Make a Fitbit App" class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/bin-tools">
-                        bin-tools
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/" class="title">Binary Command Tool Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-11-03 14:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-03</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/" class="thumbnail">
-                    
-                        <span style="background-image:url(https://tommyshem.github.io/images/blog/tm-scope.png)" alt="Make a Fitbit App" class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/visual-code">
-                        visual-code
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/" class="title">Visual Code Testing Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-07-13 20:30:00 &#43;0200 &#43;0200" itemprop="datePublished">2019-07-13</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/03/02/android-studio-notes/" class="thumbnail">
-                    
-                        <span class="thumbnail-image thumbnail-none"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/android-studio">
-                        android studio
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/03/02/android-studio-notes/" class="title">Android Studio Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-03-02 20:13:48 &#43;0000 GMT" itemprop="datePublished">2019-03-02</time>
-                    </p>
-                </div>
-            </li>
-            
         </ul>
     </div>
 </div>
@@ -666,6 +638,14 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/android-studio">
                     android-studio
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/aur">
+                    aur
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -747,7 +727,7 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/javascript">
                     javascript
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -755,7 +735,15 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/linux-notes">
                     linux-notes
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">4</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/linuxnotes">
+                    linuxnotes
+                </a>
+                <span class="category-list-count">1</span>
             </li>
             
             <li class="category-list-item">
@@ -857,8 +845,24 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/arch-linux">
+                    arch-linux
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/aspell">
                     aspell
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/aur">
+                    aur
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -905,10 +909,18 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/compression">
+                    compression
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/console">
                     console
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1052,7 +1064,7 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/javascript">
                     javascript
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -1060,7 +1072,7 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/linux">
                     linux
                 </a>
-                <span class="category-list-count">4</span>
+                <span class="category-list-count">6</span>
             </li>
             
             <li class="category-list-item">
@@ -1068,7 +1080,7 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/log">
                     log
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1129,6 +1141,14 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/rsync">
+                    rsync
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/rust">
                     rust
                 </a>
@@ -1155,6 +1175,14 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/solus">
                     solus
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/sudo">
+                    sudo
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -1227,7 +1255,13 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
         <a href="https://tommyshem.github.io/tags/andriod-studio" style="font-size: 12px;">andriod-studio</a>
         
         
+        <a href="https://tommyshem.github.io/tags/arch-linux" style="font-size: 12px;">arch-linux</a>
+        
+        
         <a href="https://tommyshem.github.io/tags/aspell" style="font-size: 12px;">aspell</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/aur" style="font-size: 12px;">aur</a>
         
         
         <a href="https://tommyshem.github.io/tags/bin" style="font-size: 12px;">bin</a>
@@ -1243,6 +1277,9 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
         
         
         <a href="https://tommyshem.github.io/tags/cli" style="font-size: 12px;">cli</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/compression" style="font-size: 12px;">compression</a>
         
         
         <a href="https://tommyshem.github.io/tags/console" style="font-size: 12px;">console</a>
@@ -1329,6 +1366,9 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
         <a href="https://tommyshem.github.io/tags/pages" style="font-size: 12px;">pages</a>
         
         
+        <a href="https://tommyshem.github.io/tags/rsync" style="font-size: 12px;">rsync</a>
+        
+        
         <a href="https://tommyshem.github.io/tags/rust" style="font-size: 12px;">rust</a>
         
         
@@ -1339,6 +1379,9 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
         
         
         <a href="https://tommyshem.github.io/tags/solus" style="font-size: 12px;">solus</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/sudo" style="font-size: 12px;">sudo</a>
         
         
         <a href="https://tommyshem.github.io/tags/swift" style="font-size: 12px;">swift</a>
@@ -1375,7 +1418,7 @@ Command for testing in cli. curl -i localhost:8189/auth_code#access_token=eyJhbG
 <footer id="footer">
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019
+      &copy; 2020
       Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>.
     </div>
   </div>

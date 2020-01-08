@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AUR on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/categories/aur/</link>
+    <description>Recent content in AUR on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    
+	<atom:link href="https://tommyshem.github.io/categories/aur/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Arch linux AUR Build Package Notes</title>
+      <link>https://tommyshem.github.io/1/01/01/arch-linux-aur-build-package-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/1/01/01/arch-linux-aur-build-package-notes/</guid>
+      <description>Arch linux AUR build package Build Aur packages Make sure base build packages are installed before trying to make aur packages for the first time. pacman -Syu pacman -Sy base-devel Clone repo from AUR Get repo address from arch website AUR https://aur.archlinux.org/
+git clone https://aur.archlinux.org/packagename.git cd packagename makepkg -s </description>
+    </item>
+    
+  </channel>
+</rss>

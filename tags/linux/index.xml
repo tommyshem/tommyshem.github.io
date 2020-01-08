@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>linux on Tom&#39;s Things</title>
@@ -6,10 +6,36 @@
     <description>Recent content in linux on Tom&#39;s Things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Fri, 23 Feb 2018 18:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jan 2020 15:27:08 +0000</lastBuildDate>
     
 	<atom:link href="https://tommyshem.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Compression</title>
+      <link>https://tommyshem.github.io/2020/01/07/compression/</link>
+      <pubDate>Tue, 07 Jan 2020 15:27:08 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2020/01/07/compression/</guid>
+      <description>Compression Notes I tested 7z command it works fast but when testing it did not save user name.
+But it is still ok for backing up your own files.
+You can add and remove files from the compressed file
+Below command used.
+Compress all current folders and files 7z a filenamehere.7z ./ Decompress 7z e filenamehere.7z list files in compressed file 7z l filenamehere.7z Mount image fuse-7z-ng files.7z /media/my_compressed_files Tested tar with new compression zstd from facebook Note need sudo for root files to be copied</description>
+    </item>
+    
+    <item>
+      <title>Enable Sudoers</title>
+      <link>https://tommyshem.github.io/2019/12/28/enable-sudoers/</link>
+      <pubDate>Sat, 28 Dec 2019 21:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2019/12/28/enable-sudoers/</guid>
+      <description>Arch Linux resources website https://wiki.archlinux.org/index.php/Users_and_groups
+Enable sudoers Notes Settings Open settings.
+visudo Uncomment the wheel group, this allows all users in the wheel group to run all commands.
+%wheel ALL=(ALL) ALL Add user Add user to the wheel group, change userName to the user name you require.
+useradd -m -G wheel -s /bin/bash userName Protect the user account with a password passwd userName Adding a system user useradd -r -s /usr/bin/nologin userName Changing user login names usermod -l userNewName userOldName Changing user&#39;s home dir usermod -d /new/home/dir -m userName Test if sudo works by entering the command sudo whoami If you get something like this (below), then sudo is working for the set account.</description>
+    </item>
     
     <item>
       <title>Swift on Linux with MacOS</title>
@@ -17,9 +43,9 @@
       <pubDate>Fri, 23 Feb 2018 18:30:00 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/2018/02/23/swift-on-linux-with-macos/</guid>
-      <description> Swift on linux Orignal blog website https://theswiftdev.com/2017/11/30/how-to-run-swift-on-linux/
+      <description>Swift on linux Orignal blog website https://theswiftdev.com/2017/11/30/how-to-run-swift-on-linux/
 website blog https://ashfurrow.com/blog/swift-on-line
-Notes docker run -p 8000:8000 -v /Users:Users --privileged -i -t --name swiftfun swiftdocker/swift:latest /bin/bash  docker start swiftfun docker attach swiftfun  </description>
+Notes docker run -p 8000:8000 -v /Users:Users --privileged -i -t --name swiftfun swiftdocker/swift:latest /bin/bash docker start swiftfun docker attach swiftfun </description>
     </item>
     
     <item>
@@ -29,12 +55,12 @@ Notes docker run -p 8000:8000 -v /Users:Users --privileged -i -t --name swiftfun
       
       <guid>https://tommyshem.github.io/2018/02/18/how-to-make-gtk-apps/</guid>
       <description>C Gtk example example from https://developer.gnome.org/gtk3/stable/gtk-getting-started.html#id-1.2.3.5
-&amp;rdquo;&amp;lsquo;c #include 
+&amp;lsquo;&amp;lsquo;&amp;lsquo;c #include &amp;lt;gtk/gtk.h&amp;gt;
 static void activate (GtkApplication* app, gpointer user_data) { GtkWidget *window;
 window = gtk_application_window_new (app); gtk_window_set_title (GTK_WINDOW (window), &amp;ldquo;Window&amp;rdquo;); gtk_window_set_default_size (GTK_WINDOW (window), 400, 400); gtk_widget_show_all (window); }
 int main (int argc, char **argv) { GtkApplication *app; int status;
 app = gtk_application_new (&amp;ldquo;org.gtk.example&amp;rdquo;, G_APPLICATION_FLAGS_NONE); g_signal_connect (app, &amp;ldquo;activate&amp;rdquo;, G_CALLBACK (activate), NULL); status = g_application_run (G_APPLICATION (app), argc, argv); g_object_unref (app);
-return status; } &amp;ldquo;&amp;rsquo;</description>
+return status; } &#39;&amp;rsquo;&amp;rsquo;</description>
     </item>
     
     <item>

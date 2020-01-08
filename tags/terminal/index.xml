@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>terminal on Tom&#39;s Things</title>
@@ -27,7 +27,8 @@ strings - show strings from the binary
 readelf - show elf headers
 ldd - show dynamic libs
 lddtree - show dynamic libs
-hexdump - show all hex for binary</description>
+hexdump - show all hex for binary
+symtree - symbols tree</description>
     </item>
     
   </channel>

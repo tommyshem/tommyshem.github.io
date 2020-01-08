@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>compression on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/tags/compression/</link>
+    <description>Recent content in compression on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Tue, 07 Jan 2020 15:27:08 +0000</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/tags/compression/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compression</title>
+      <link>https://tommyshem.github.io/2020/01/07/compression/</link>
+      <pubDate>Tue, 07 Jan 2020 15:27:08 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2020/01/07/compression/</guid>
+      <description>Compression Notes I tested 7z command it works fast but when testing it did not save user name.
+But it is still ok for backing up your own files.
+You can add and remove files from the compressed file
+Below command used.
+Compress all current folders and files 7z a filenamehere.7z ./ Decompress 7z e filenamehere.7z list files in compressed file 7z l filenamehere.7z Mount image fuse-7z-ng files.7z /media/my_compressed_files Tested tar with new compression zstd from facebook Note need sudo for root files to be copied</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
     <title>Android Termux Notes &middot; Tom&#39;s Things</title>
-    <meta name="generator" content="Hugo 0.58.3" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Tommy Shem">
@@ -42,8 +42,6 @@ Install Termux Go to Play store and install from there or go to the temux websit
 Termux Wiki page https://wiki.termux.com/wiki/Main_Page for more information.
 Add repos from the Community Repositories https://wiki.termux.com/wiki/Package_Management#its-pointless_.28live_the_dream.29
 Updating Packages on your device You will need to update the repo database and the upgrade any packages which need updating before you can start using the package manager.">
-
-
 <meta itemprop="datePublished" content="2018-08-29T12:00:00&#43;02:00" />
 <meta itemprop="dateModified" content="2018-08-29T12:00:00&#43;02:00" />
 <meta itemprop="wordCount" content="270">
@@ -51,7 +49,6 @@ Updating Packages on your device You will need to update the repo database and t
 
 
 <meta itemprop="keywords" content="termux terminal," />
-
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Android Termux Notes"/>
 <meta name="twitter:description" content="Termux on Github Termux github website https://github.com/termux
@@ -186,12 +183,12 @@ Updating Packages on your device You will need to update the repo database and t
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        36
+        41
         <span>Posts</span>
       </div>
       <div class="article-info-block">
         
-          45
+          50
         
         <span>
             Tags
@@ -323,76 +320,38 @@ Updating Packages on your device You will need to update the repo database and t
 </header>
 
         <div class="article-entry" itemprop="articleBody">
-            
-
-<h2 id="termux-on-github">Termux on Github</h2>
-
+            <h2 id="termux-on-github">Termux on Github</h2>
 <p>Termux github website <a href="https://github.com/termux">https://github.com/termux</a></p>
-
 <p>Termux github packages <a href="https://github.com/termux/termux-packages/">https://github.com/termux/termux-packages/</a></p>
-
 <p>Termux building packages with docker <a href="https://github.com/termux/termux-packages/blob/master/README.md">https://github.com/termux/termux-packages/blob/master/README.md</a></p>
-
 <h2 id="install-termux">Install Termux</h2>
-
 <p>Go to Play store and install from there or go to the temux website <a href="https://termux.com">https://termux.com</a> for different install methods.</p>
-
 <p>Termux Wiki page <a href="https://wiki.termux.com/wiki/Main_Page">https://wiki.termux.com/wiki/Main_Page</a> for more information.</p>
-
 <p>Add repos from the Community Repositories <a href="https://wiki.termux.com/wiki/Package_Management#its-pointless_.28live_the_dream.29">https://wiki.termux.com/wiki/Package_Management#its-pointless_.28live_the_dream.29</a></p>
-
 <h2 id="updating-packages-on-your-device">Updating Packages on your device</h2>
-
 <p>You will need to update the repo database and the upgrade any packages which need updating before you can start using the package manager.</p>
-
-<pre><code class="language-bash">pkg update
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pkg update
 pkg upgrade
-</code></pre>
-
-<h2 id="getting-a-list-of-all-packages-which-can-be-installed-on-to-your-device">Getting a list of all packages which can be installed on to your device</h2>
-
-<pre><code class="language-bash">pkg list-all
-</code></pre>
-
-<h2 id="installing-new-packages">Installing new packages</h2>
-
+</code></pre></div><h2 id="getting-a-list-of-all-packages-which-can-be-installed-on-to-your-device">Getting a list of all packages which can be installed on to your device</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pkg list-all
+</code></pre></div><h2 id="installing-new-packages">Installing new packages</h2>
 <p>Install package on to the device with the command below just change the name of the packagenamehere to the package you want to install.</p>
-
-<pre><code class="language-bash">pkg install packagenamehere
-</code></pre>
-
-<h2 id="list-installed-packages-on-the-device">List installed packages on the device</h2>
-
-<pre><code class="language-bash">pkg list-installed
-</code></pre>
-
-<h2 id="remove-package-from-the-device">Remove package from the device</h2>
-
-<pre><code class="language-bash">pkg uninstall packagenamehere
-</code></pre>
-
-<h2 id="add-repo-below-and-rust-and-cargo-packages-will-be-added-to-package-list">Add repo below and rust and cargo packages will be added to package list</h2>
-
-<pre><code class="language-bash">pkg install wget
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pkg install packagenamehere
+</code></pre></div><h2 id="list-installed-packages-on-the-device">List installed packages on the device</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pkg list-installed
+</code></pre></div><h2 id="remove-package-from-the-device">Remove package from the device</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pkg uninstall packagenamehere
+</code></pre></div><h2 id="add-repo-below-and-rust-and-cargo-packages-will-be-added-to-package-list">Add repo below and rust and cargo packages will be added to package list</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pkg install wget
 wget https://its-pointless.github.io/setup-pointless-repo.sh
 bash setup-pointless-repo.sh
-</code></pre>
-
-<h2 id="to-access-external-storage-you-need-to-type-in-the-below-command-in-termux-terminal">To access external storage you need to type in the below command in termux terminal</h2>
-
-<pre><code class="language-bash">termux-setup-storage
-</code></pre>
-
-<p>A dialog box will popup and prompting you to allow access, to the external card data.</p>
-
+</code></pre></div><h2 id="to-access-external-storage-you-need-to-type-in-the-below-command-in-termux-terminal">To access external storage you need to type in the below command in termux terminal</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">termux-setup-storage
+</code></pre></div><p>A dialog box will popup and prompting you to allow access, to the external card data.</p>
 <p>This will give permission to termux to use the external storage through <code>~/storage/external-1</code></p>
-
 <p>This only has to be done once.</p>
-
 <h3 id="note-external-storage-can-only-be-used-for-files-and-images-which-dont-need-to-be-run-as-a-command-as-no-file-attributes">Note external storage can only be used for files and images which dont need to be run as a command as no file attributes</h3>
-
 <h3 id="as-it-is-not-ext4-formated-and-protected-by-android">As it is not ext4 formated and protected by android</h3>
-
 <p>install full linux distro in termux following instructions on this github page <a href="https://github.com/YadominJinta/atilo">https://github.com/YadominJinta/atilo</a>
 github website <a href="https://github.com/YadominJinta/atilo">https://github.com/YadominJinta/atilo</a></p>
 
@@ -512,6 +471,84 @@ github website <a href="https://github.com/YadominJinta/atilo">https://github.co
             
             <li>
                 <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2020/01/07/compression/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linuxnotes">
+                        linuxNotes
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2020/01/07/compression/" class="title">Compression</a></p>
+                    <p class="item-date">
+                        <time datetime="2020-01-07 15:27:08 &#43;0000 UTC" itemprop="datePublished">2020-01-07</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/12/28/enable-sudoers/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://tommyshem.github.io/images/blog/Linux-Hosting-long.png)" alt="Android Termux Notes" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linux-notes">
+                        Linux Notes
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/12/28/enable-sudoers/" class="title">Enable Sudoers</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-12-28 21:00:00 &#43;0000 UTC" itemprop="datePublished">2019-12-28</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/javascript">
+                        javascript
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/" class="title">Javascript Function Name logging</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-12-02 09:17:39 &#43;0000 UTC" itemprop="datePublished">2019-12-02</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
                     <a href="https://tommyshem.github.io/2019/11/03/c-tools-notes/" class="thumbnail">
                     
                         <span style="background-image:url(https://tommyshem.github.io/images/blog/terminal.png)" alt="Android Termux Notes" class="thumbnail-image"></span>
@@ -562,84 +599,6 @@ github website <a href="https://github.com/YadominJinta/atilo">https://github.co
                 </div>
             </li>
             
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/" class="thumbnail">
-                    
-                        <span style="background-image:url(https://tommyshem.github.io/images/blog/vim-screenshot.png)" alt="Android Termux Notes" class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/bin-tools">
-                        bin-tools
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/" class="title">Binary Command Tool Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-11-03 14:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-03</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/" class="thumbnail">
-                    
-                        <span style="background-image:url(https://tommyshem.github.io/images/blog/tm-scope.png)" alt="Android Termux Notes" class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/visual-code">
-                        visual-code
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/" class="title">Visual Code Testing Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-07-13 20:30:00 &#43;0200 &#43;0200" itemprop="datePublished">2019-07-13</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/03/02/android-studio-notes/" class="thumbnail">
-                    
-                        <span class="thumbnail-image thumbnail-none"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/android-studio">
-                        android studio
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/03/02/android-studio-notes/" class="title">Android Studio Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-03-02 20:13:48 &#43;0000 GMT" itemprop="datePublished">2019-03-02</time>
-                    </p>
-                </div>
-            </li>
-            
         </ul>
     </div>
 </div>
@@ -665,6 +624,14 @@ github website <a href="https://github.com/YadominJinta/atilo">https://github.co
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/android-studio">
                     android-studio
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/aur">
+                    aur
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -746,7 +713,7 @@ github website <a href="https://github.com/YadominJinta/atilo">https://github.co
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/javascript">
                     javascript
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -754,7 +721,15 @@ github website <a href="https://github.com/YadominJinta/atilo">https://github.co
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/linux-notes">
                     linux-notes
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">4</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/linuxnotes">
+                    linuxnotes
+                </a>
+                <span class="category-list-count">1</span>
             </li>
             
             <li class="category-list-item">
@@ -856,8 +831,24 @@ github website <a href="https://github.com/YadominJinta/atilo">https://github.co
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/arch-linux">
+                    arch-linux
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/aspell">
                     aspell
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/aur">
+                    aur
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -904,10 +895,18 @@ github website <a href="https://github.com/YadominJinta/atilo">https://github.co
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/compression">
+                    compression
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/console">
                     console
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1051,7 +1050,7 @@ github website <a href="https://github.com/YadominJinta/atilo">https://github.co
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/javascript">
                     javascript
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -1059,7 +1058,7 @@ github website <a href="https://github.com/YadominJinta/atilo">https://github.co
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/linux">
                     linux
                 </a>
-                <span class="category-list-count">4</span>
+                <span class="category-list-count">6</span>
             </li>
             
             <li class="category-list-item">
@@ -1067,7 +1066,7 @@ github website <a href="https://github.com/YadominJinta/atilo">https://github.co
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/log">
                     log
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1128,6 +1127,14 @@ github website <a href="https://github.com/YadominJinta/atilo">https://github.co
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/rsync">
+                    rsync
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/rust">
                     rust
                 </a>
@@ -1154,6 +1161,14 @@ github website <a href="https://github.com/YadominJinta/atilo">https://github.co
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/solus">
                     solus
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/sudo">
+                    sudo
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -1226,7 +1241,13 @@ github website <a href="https://github.com/YadominJinta/atilo">https://github.co
         <a href="https://tommyshem.github.io/tags/andriod-studio" style="font-size: 12px;">andriod-studio</a>
         
         
+        <a href="https://tommyshem.github.io/tags/arch-linux" style="font-size: 12px;">arch-linux</a>
+        
+        
         <a href="https://tommyshem.github.io/tags/aspell" style="font-size: 12px;">aspell</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/aur" style="font-size: 12px;">aur</a>
         
         
         <a href="https://tommyshem.github.io/tags/bin" style="font-size: 12px;">bin</a>
@@ -1242,6 +1263,9 @@ github website <a href="https://github.com/YadominJinta/atilo">https://github.co
         
         
         <a href="https://tommyshem.github.io/tags/cli" style="font-size: 12px;">cli</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/compression" style="font-size: 12px;">compression</a>
         
         
         <a href="https://tommyshem.github.io/tags/console" style="font-size: 12px;">console</a>
@@ -1328,6 +1352,9 @@ github website <a href="https://github.com/YadominJinta/atilo">https://github.co
         <a href="https://tommyshem.github.io/tags/pages" style="font-size: 12px;">pages</a>
         
         
+        <a href="https://tommyshem.github.io/tags/rsync" style="font-size: 12px;">rsync</a>
+        
+        
         <a href="https://tommyshem.github.io/tags/rust" style="font-size: 12px;">rust</a>
         
         
@@ -1338,6 +1365,9 @@ github website <a href="https://github.com/YadominJinta/atilo">https://github.co
         
         
         <a href="https://tommyshem.github.io/tags/solus" style="font-size: 12px;">solus</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/sudo" style="font-size: 12px;">sudo</a>
         
         
         <a href="https://tommyshem.github.io/tags/swift" style="font-size: 12px;">swift</a>
@@ -1374,7 +1404,7 @@ github website <a href="https://github.com/YadominJinta/atilo">https://github.co
 <footer id="footer">
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019
+      &copy; 2020
       Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>.
     </div>
   </div>

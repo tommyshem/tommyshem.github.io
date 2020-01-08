@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
     <title>Git ignore &middot; Tom&#39;s Things</title>
-    <meta name="generator" content="Hugo 0.58.3" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Tommy Shem">
@@ -34,8 +34,6 @@
 <meta itemprop="description" content="content from this website
 .gitignore file
 .gitignore entry Ignores every… target/ … folder (due to the trailing /) recursively target … file or folder named target recursively /target … file or folder named target in the top-most directory (due to the leading /) /target/ … folder named target in the top-most directory (leading and trailing /) *.class … every file or folder ending with .class recursively #comment … comment in the file">
-
-
 <meta itemprop="datePublished" content="2018-01-29T19:30:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-01-29T19:30:00&#43;00:00" />
 <meta itemprop="wordCount" content="267">
@@ -43,7 +41,6 @@
 
 
 <meta itemprop="keywords" content="git,ignore," />
-
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Git ignore"/>
 <meta name="twitter:description" content="content from this website
@@ -174,12 +171,12 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        36
+        41
         <span>Posts</span>
       </div>
       <div class="article-info-block">
         
-          45
+          50
         
         <span>
             Tags
@@ -315,12 +312,8 @@
 </header>
 
         <div class="article-entry" itemprop="articleBody">
-            
-
-<p><a href="https://labs.consol.de/development/git/2017/02/22/gitignore.html">content from this website</a></p>
-
+            <p><a href="https://labs.consol.de/development/git/2017/02/22/gitignore.html">content from this website</a></p>
 <p><code>.gitignore</code> file</p>
-
 <p>.gitignore entry     Ignores every…
 target/              … folder (due to the trailing /) recursively
 target               … file or folder named target recursively
@@ -328,35 +321,20 @@ target               … file or folder named target recursively
 /target/             … folder named target in the top-most directory (leading and trailing /)
 *.class              … every file or folder ending with .class recursively
 #comment             … comment in the file</p>
-
 <p>#comment             …nothing, this is a comment (first character is a #)</p>
-
 <h2 id="global-ignore-for-all-projects">global ignore for all projects</h2>
-
 <p>Moreover, you can define repository specific rules which are not committed to the Git repository, i.e. these are specific to your local copy. These rules go into the file .git/info/exclude which is created by default in every Git repository with no entries.</p>
-
 <p>One useful file you can define yourself is a global ignore file. It doesn’t have a default location or file name. You can define it yourself with the following command:</p>
-
 <p><code>$ git config --global core.excludesfile ~/.gitignore_global</code></p>
-
 <p>Every rule which goes into this file applies to every Git repository in your user account. This is especially useful for OS-specific files like .DS_Store on MacOS or thumbs.db on Windows.</p>
-
 <p><a href="https://stackoverflow.com/questions/45015742/git-ignore-untracked-files-in-submodule">website</a>
 In .gitmodules add ignore = all to submodule.</p>
-
-<p>There more options for ignore, you can read them in git help config, search submodule.<name>.ignore.</p>
-
+<p>There more options for ignore, you can read them in git help config, search submodule.<!-- raw HTML omitted -->.ignore.</p>
 <h2 id="find-all-executable-files-in-folders">Find all executable files in folders.</h2>
-
-<pre><code class="language-bash">find . -perm /111 -type f | sed 's#^./##' | grep -vE &quot;\.(git)&quot;
-</code></pre>
-
-<h2 id="delete-all-executable-files-in-folders">Delete all executable files in folders.</h2>
-
-<pre><code class="language-bash">find . -perm /111 -type f | grep -vE &quot;\.(git)&quot; | xargs rm -f
-</code></pre>
-
-<p>script for adding files to .gitignore <a href="https://gist.github.com/tommyshem/ce917551d61a9d88159d710a2648a6f2">https://gist.github.com/tommyshem/ce917551d61a9d88159d710a2648a6f2</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find . -perm /111 -type f | sed <span style="color:#e6db74">&#39;s#^./##&#39;</span> | grep -vE <span style="color:#e6db74">&#34;\.(git)&#34;</span>
+</code></pre></div><h2 id="delete-all-executable-files-in-folders">Delete all executable files in folders.</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find . -perm /111 -type f | grep -vE <span style="color:#e6db74">&#34;\.(git)&#34;</span> | xargs rm -f
+</code></pre></div><p>script for adding files to .gitignore <a href="https://gist.github.com/tommyshem/ce917551d61a9d88159d710a2648a6f2">https://gist.github.com/tommyshem/ce917551d61a9d88159d710a2648a6f2</a></p>
 
         </div>
         <footer class="article-footer">
@@ -474,6 +452,84 @@ In .gitmodules add ignore = all to submodule.</p>
             
             <li>
                 <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2020/01/07/compression/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linuxnotes">
+                        linuxNotes
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2020/01/07/compression/" class="title">Compression</a></p>
+                    <p class="item-date">
+                        <time datetime="2020-01-07 15:27:08 &#43;0000 UTC" itemprop="datePublished">2020-01-07</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/12/28/enable-sudoers/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://tommyshem.github.io/images/blog/Linux-Hosting-long.png)" alt="Git ignore" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linux-notes">
+                        Linux Notes
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/12/28/enable-sudoers/" class="title">Enable Sudoers</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-12-28 21:00:00 &#43;0000 UTC" itemprop="datePublished">2019-12-28</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/javascript">
+                        javascript
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/" class="title">Javascript Function Name logging</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-12-02 09:17:39 &#43;0000 UTC" itemprop="datePublished">2019-12-02</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
                     <a href="https://tommyshem.github.io/2019/11/03/c-tools-notes/" class="thumbnail">
                     
                         <span style="background-image:url(https://tommyshem.github.io/images/blog/terminal.png)" alt="Git ignore" class="thumbnail-image"></span>
@@ -524,84 +580,6 @@ In .gitmodules add ignore = all to submodule.</p>
                 </div>
             </li>
             
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/" class="thumbnail">
-                    
-                        <span style="background-image:url(https://tommyshem.github.io/images/blog/vim-screenshot.png)" alt="Git ignore" class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/bin-tools">
-                        bin-tools
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/" class="title">Binary Command Tool Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-11-03 14:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-03</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/" class="thumbnail">
-                    
-                        <span style="background-image:url(https://tommyshem.github.io/images/blog/tm-scope.png)" alt="Git ignore" class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/visual-code">
-                        visual-code
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/" class="title">Visual Code Testing Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-07-13 20:30:00 &#43;0200 &#43;0200" itemprop="datePublished">2019-07-13</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/03/02/android-studio-notes/" class="thumbnail">
-                    
-                        <span class="thumbnail-image thumbnail-none"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/android-studio">
-                        android studio
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/03/02/android-studio-notes/" class="title">Android Studio Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-03-02 20:13:48 &#43;0000 GMT" itemprop="datePublished">2019-03-02</time>
-                    </p>
-                </div>
-            </li>
-            
         </ul>
     </div>
 </div>
@@ -627,6 +605,14 @@ In .gitmodules add ignore = all to submodule.</p>
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/android-studio">
                     android-studio
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/aur">
+                    aur
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -708,7 +694,7 @@ In .gitmodules add ignore = all to submodule.</p>
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/javascript">
                     javascript
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -716,7 +702,15 @@ In .gitmodules add ignore = all to submodule.</p>
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/linux-notes">
                     linux-notes
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">4</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/linuxnotes">
+                    linuxnotes
+                </a>
+                <span class="category-list-count">1</span>
             </li>
             
             <li class="category-list-item">
@@ -818,8 +812,24 @@ In .gitmodules add ignore = all to submodule.</p>
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/arch-linux">
+                    arch-linux
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/aspell">
                     aspell
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/aur">
+                    aur
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -866,10 +876,18 @@ In .gitmodules add ignore = all to submodule.</p>
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/compression">
+                    compression
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/console">
                     console
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1013,7 +1031,7 @@ In .gitmodules add ignore = all to submodule.</p>
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/javascript">
                     javascript
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -1021,7 +1039,7 @@ In .gitmodules add ignore = all to submodule.</p>
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/linux">
                     linux
                 </a>
-                <span class="category-list-count">4</span>
+                <span class="category-list-count">6</span>
             </li>
             
             <li class="category-list-item">
@@ -1029,7 +1047,7 @@ In .gitmodules add ignore = all to submodule.</p>
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/log">
                     log
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1090,6 +1108,14 @@ In .gitmodules add ignore = all to submodule.</p>
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/rsync">
+                    rsync
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/rust">
                     rust
                 </a>
@@ -1116,6 +1142,14 @@ In .gitmodules add ignore = all to submodule.</p>
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/solus">
                     solus
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/sudo">
+                    sudo
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -1188,7 +1222,13 @@ In .gitmodules add ignore = all to submodule.</p>
         <a href="https://tommyshem.github.io/tags/andriod-studio" style="font-size: 12px;">andriod-studio</a>
         
         
+        <a href="https://tommyshem.github.io/tags/arch-linux" style="font-size: 12px;">arch-linux</a>
+        
+        
         <a href="https://tommyshem.github.io/tags/aspell" style="font-size: 12px;">aspell</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/aur" style="font-size: 12px;">aur</a>
         
         
         <a href="https://tommyshem.github.io/tags/bin" style="font-size: 12px;">bin</a>
@@ -1204,6 +1244,9 @@ In .gitmodules add ignore = all to submodule.</p>
         
         
         <a href="https://tommyshem.github.io/tags/cli" style="font-size: 12px;">cli</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/compression" style="font-size: 12px;">compression</a>
         
         
         <a href="https://tommyshem.github.io/tags/console" style="font-size: 12px;">console</a>
@@ -1290,6 +1333,9 @@ In .gitmodules add ignore = all to submodule.</p>
         <a href="https://tommyshem.github.io/tags/pages" style="font-size: 12px;">pages</a>
         
         
+        <a href="https://tommyshem.github.io/tags/rsync" style="font-size: 12px;">rsync</a>
+        
+        
         <a href="https://tommyshem.github.io/tags/rust" style="font-size: 12px;">rust</a>
         
         
@@ -1300,6 +1346,9 @@ In .gitmodules add ignore = all to submodule.</p>
         
         
         <a href="https://tommyshem.github.io/tags/solus" style="font-size: 12px;">solus</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/sudo" style="font-size: 12px;">sudo</a>
         
         
         <a href="https://tommyshem.github.io/tags/swift" style="font-size: 12px;">swift</a>
@@ -1336,7 +1385,7 @@ In .gitmodules add ignore = all to submodule.</p>
 <footer id="footer">
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019
+      &copy; 2020
       Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>.
     </div>
   </div>

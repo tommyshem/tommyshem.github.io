@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>termux terminal on Tom&#39;s Things</title>
@@ -34,11 +34,11 @@ Updating Packages on your device You will need to update the repo database and t
       <guid>https://tommyshem.github.io/1/01/01/android-termux-youtube-downloader-notes/</guid>
       <description>Downloading programming videos from YouTube with Termux on Android First read the Termux Notes and continue below.
 Install packages first from Termux Install python
-pkg install python  Install ffmpeg
-pkg install ffmpeg  Install and setting up youtube-dl First update pip
-pip install --upgrade pip  Install youtube-dl using pip
-pip install --upgrdae youtube-dl  Edit .bashrc file using micro editor or nano
-micro ~/.bashrc  Add alias to .</description>
+pkg install python Install ffmpeg
+pkg install ffmpeg Install and setting up youtube-dl First update pip
+pip install --upgrade pip Install youtube-dl using pip
+pip install --upgrdae youtube-dl Edit .bashrc file using micro editor or nano
+micro ~/.bashrc Add alias to .bashrc file so it downloads the best vidio format</description>
     </item>
     
   </channel>

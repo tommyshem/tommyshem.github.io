@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dlv on Tom&#39;s Things</title>
@@ -21,7 +21,8 @@
 use flag attach or exec to run your program first before running the debugger.
 Visual studio Code Remote Debugging Orignal infomation from this webite
 delve debugger homepage
-Do not use this flag as vscode go plugin does not surport version 2 yet. --api-version=2</description>
+Do not use this flag as vscode go plugin does not surport version 2 yet. --api-version=2
+To remote debug using VS Code, you must first run a headless Delve server on the target machine.</description>
     </item>
     
   </channel>

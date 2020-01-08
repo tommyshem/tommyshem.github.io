@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>android studio on Tom&#39;s Things</title>
@@ -18,7 +18,7 @@
       
       <guid>https://tommyshem.github.io/2019/03/02/android-studio-notes/</guid>
       <description>Android Studio Notes on Arch Linux Install packages qemu for the android emulator.
-sudo pacman -S qemu virt-manager virt-viewer dnsmasq iptables vde2 bridge-utils openbsd-netcat  Install Android Studio from the website https://developer.android.com/studio#downloads</description>
+sudo pacman -S qemu virt-manager virt-viewer dnsmasq iptables vde2 bridge-utils openbsd-netcat Install Android Studio from the website https://developer.android.com/studio#downloads</description>
     </item>
     
   </channel>

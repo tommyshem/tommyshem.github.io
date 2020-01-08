@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>node on Tom&#39;s Things</title>
@@ -18,7 +18,7 @@
       
       <guid>https://tommyshem.github.io/2018/07/09/node-tips-and-tricks/</guid>
       <description>To find where global libraries are installed, you can type
-```bash npm list -g &amp;ldquo;&amp;rsquo;</description>
+npm list -g &amp;#39;&amp;#39;&amp;#39; </description>
     </item>
     
   </channel>

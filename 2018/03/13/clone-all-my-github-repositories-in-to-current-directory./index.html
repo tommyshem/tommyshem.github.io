@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
     <title>Clone all my github repositories in to current directory. &middot; Tom&#39;s Things</title>
-    <meta name="generator" content="Hugo 0.58.3" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Tommy Shem">
@@ -21,8 +21,8 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     <meta property="og:title" content="Clone all my github repositories in to current directory." />
-<meta property="og:description" content=" Clone all my Github repositories in to the current directory with one bash line. curl -s https://api.github.com/users/tommyshem/repos | grep \&quot;clone_url\&quot; | awk &#39;{print $2}&#39; | sed -e &#39;s/&quot;//g&#39; -e &#39;s/,//g&#39; | xargs -n1 git clone  or you can use this one if jq command is installed on your system
-curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs -n1 git clone  " />
+<meta property="og:description" content="Clone all my Github repositories in to the current directory with one bash line. curl -s https://api.github.com/users/tommyshem/repos | grep \&#34;clone_url\&#34; | awk &#39;{print $2}&#39; | sed -e &#39;s/&#34;//g&#39; -e &#39;s/,//g&#39; | xargs -n1 git clone or you can use this one if jq command is installed on your system
+curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs -n1 git clone " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tommyshem.github.io/2018/03/13/clone-all-my-github-repositories-in-to-current-directory./" />
 <meta property="article:published_time" content="2018-03-13T15:15:30+00:00" />
@@ -30,10 +30,8 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
 
     
     <meta itemprop="name" content="Clone all my github repositories in to current directory.">
-<meta itemprop="description" content=" Clone all my Github repositories in to the current directory with one bash line. curl -s https://api.github.com/users/tommyshem/repos | grep \&quot;clone_url\&quot; | awk &#39;{print $2}&#39; | sed -e &#39;s/&quot;//g&#39; -e &#39;s/,//g&#39; | xargs -n1 git clone  or you can use this one if jq command is installed on your system
-curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs -n1 git clone  ">
-
-
+<meta itemprop="description" content="Clone all my Github repositories in to the current directory with one bash line. curl -s https://api.github.com/users/tommyshem/repos | grep \&#34;clone_url\&#34; | awk &#39;{print $2}&#39; | sed -e &#39;s/&#34;//g&#39; -e &#39;s/,//g&#39; | xargs -n1 git clone or you can use this one if jq command is installed on your system
+curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs -n1 git clone ">
 <meta itemprop="datePublished" content="2018-03-13T15:15:30&#43;00:00" />
 <meta itemprop="dateModified" content="2018-03-13T15:15:30&#43;00:00" />
 <meta itemprop="wordCount" content="60">
@@ -41,11 +39,10 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
 
 
 <meta itemprop="keywords" content="github," />
-
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Clone all my github repositories in to current directory."/>
-<meta name="twitter:description" content=" Clone all my Github repositories in to the current directory with one bash line. curl -s https://api.github.com/users/tommyshem/repos | grep \&quot;clone_url\&quot; | awk &#39;{print $2}&#39; | sed -e &#39;s/&quot;//g&#39; -e &#39;s/,//g&#39; | xargs -n1 git clone  or you can use this one if jq command is installed on your system
-curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs -n1 git clone  "/>
+<meta name="twitter:description" content="Clone all my Github repositories in to the current directory with one bash line. curl -s https://api.github.com/users/tommyshem/repos | grep \&#34;clone_url\&#34; | awk &#39;{print $2}&#39; | sed -e &#39;s/&#34;//g&#39; -e &#39;s/,//g&#39; | xargs -n1 git clone or you can use this one if jq command is installed on your system
+curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs -n1 git clone "/>
 
     
 
@@ -171,12 +168,12 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        36
+        41
         <span>Posts</span>
       </div>
       <div class="article-info-block">
         
-          45
+          50
         
         <span>
             Tags
@@ -308,18 +305,11 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
 </header>
 
         <div class="article-entry" itemprop="articleBody">
-            
-
-<h2 id="clone-all-my-github-repositories-in-to-the-current-directory-with-one-bash-line">Clone all my Github repositories in to the current directory with one bash line.</h2>
-
-<pre><code class="language-bash">curl -s https://api.github.com/users/tommyshem/repos | grep \&quot;clone_url\&quot; | awk '{print $2}' | sed -e 's/&quot;//g' -e 's/,//g' | xargs -n1 git clone
-</code></pre>
-
-<p>or you can use this one if jq command is installed on your system</p>
-
-<pre><code class="language-bash">curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs -n1 git clone
-</code></pre>
-
+            <h2 id="clone-all-my-github-repositories-in-to-the-current-directory-with-one-bash-line">Clone all my Github repositories in to the current directory with one bash line.</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -s https://api.github.com/users/tommyshem/repos | grep <span style="color:#ae81ff">\&#34;</span>clone_url<span style="color:#ae81ff">\&#34;</span> | awk <span style="color:#e6db74">&#39;{print $2}&#39;</span> | sed -e <span style="color:#e6db74">&#39;s/&#34;//g&#39;</span> -e <span style="color:#e6db74">&#39;s/,//g&#39;</span> | xargs -n1 git clone
+</code></pre></div><p>or you can use this one if jq command is installed on your system</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -s https://api.github.com/users/tommyshem/repos | jq .<span style="color:#f92672">[</span><span style="color:#f92672">]</span>.clone_url | xargs -n1 git clone
+</code></pre></div>
         </div>
         <footer class="article-footer">
     <a data-url="https://tommyshem.github.io/2018/03/13/clone-all-my-github-repositories-in-to-current-directory./" data-id="1de36b4b0a2a7234cb11156d41f9cd24" class="article-share-link">
@@ -436,6 +426,84 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
             
             <li>
                 <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2020/01/07/compression/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linuxnotes">
+                        linuxNotes
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2020/01/07/compression/" class="title">Compression</a></p>
+                    <p class="item-date">
+                        <time datetime="2020-01-07 15:27:08 &#43;0000 UTC" itemprop="datePublished">2020-01-07</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/12/28/enable-sudoers/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://tommyshem.github.io/images/blog/Linux-Hosting-long.png)" alt="Clone all my github repositories in to current directory." class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linux-notes">
+                        Linux Notes
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/12/28/enable-sudoers/" class="title">Enable Sudoers</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-12-28 21:00:00 &#43;0000 UTC" itemprop="datePublished">2019-12-28</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/javascript">
+                        javascript
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/" class="title">Javascript Function Name logging</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-12-02 09:17:39 &#43;0000 UTC" itemprop="datePublished">2019-12-02</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
                     <a href="https://tommyshem.github.io/2019/11/03/c-tools-notes/" class="thumbnail">
                     
                         <span style="background-image:url(https://tommyshem.github.io/images/blog/terminal.png)" alt="Clone all my github repositories in to current directory." class="thumbnail-image"></span>
@@ -486,84 +554,6 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
                 </div>
             </li>
             
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/" class="thumbnail">
-                    
-                        <span style="background-image:url(https://tommyshem.github.io/images/blog/vim-screenshot.png)" alt="Clone all my github repositories in to current directory." class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/bin-tools">
-                        bin-tools
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/" class="title">Binary Command Tool Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-11-03 14:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-03</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/" class="thumbnail">
-                    
-                        <span style="background-image:url(https://tommyshem.github.io/images/blog/tm-scope.png)" alt="Clone all my github repositories in to current directory." class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/visual-code">
-                        visual-code
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/" class="title">Visual Code Testing Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-07-13 20:30:00 &#43;0200 &#43;0200" itemprop="datePublished">2019-07-13</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/03/02/android-studio-notes/" class="thumbnail">
-                    
-                        <span class="thumbnail-image thumbnail-none"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/android-studio">
-                        android studio
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/03/02/android-studio-notes/" class="title">Android Studio Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-03-02 20:13:48 &#43;0000 GMT" itemprop="datePublished">2019-03-02</time>
-                    </p>
-                </div>
-            </li>
-            
         </ul>
     </div>
 </div>
@@ -589,6 +579,14 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/android-studio">
                     android-studio
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/aur">
+                    aur
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -670,7 +668,7 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/javascript">
                     javascript
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -678,7 +676,15 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/linux-notes">
                     linux-notes
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">4</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/linuxnotes">
+                    linuxnotes
+                </a>
+                <span class="category-list-count">1</span>
             </li>
             
             <li class="category-list-item">
@@ -780,8 +786,24 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/arch-linux">
+                    arch-linux
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/aspell">
                     aspell
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/aur">
+                    aur
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -828,10 +850,18 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/compression">
+                    compression
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/console">
                     console
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -975,7 +1005,7 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/javascript">
                     javascript
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -983,7 +1013,7 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/linux">
                     linux
                 </a>
-                <span class="category-list-count">4</span>
+                <span class="category-list-count">6</span>
             </li>
             
             <li class="category-list-item">
@@ -991,7 +1021,7 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/log">
                     log
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1052,6 +1082,14 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/rsync">
+                    rsync
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/rust">
                     rust
                 </a>
@@ -1078,6 +1116,14 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/solus">
                     solus
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/sudo">
+                    sudo
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -1150,7 +1196,13 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
         <a href="https://tommyshem.github.io/tags/andriod-studio" style="font-size: 12px;">andriod-studio</a>
         
         
+        <a href="https://tommyshem.github.io/tags/arch-linux" style="font-size: 12px;">arch-linux</a>
+        
+        
         <a href="https://tommyshem.github.io/tags/aspell" style="font-size: 12px;">aspell</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/aur" style="font-size: 12px;">aur</a>
         
         
         <a href="https://tommyshem.github.io/tags/bin" style="font-size: 12px;">bin</a>
@@ -1166,6 +1218,9 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
         
         
         <a href="https://tommyshem.github.io/tags/cli" style="font-size: 12px;">cli</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/compression" style="font-size: 12px;">compression</a>
         
         
         <a href="https://tommyshem.github.io/tags/console" style="font-size: 12px;">console</a>
@@ -1252,6 +1307,9 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
         <a href="https://tommyshem.github.io/tags/pages" style="font-size: 12px;">pages</a>
         
         
+        <a href="https://tommyshem.github.io/tags/rsync" style="font-size: 12px;">rsync</a>
+        
+        
         <a href="https://tommyshem.github.io/tags/rust" style="font-size: 12px;">rust</a>
         
         
@@ -1262,6 +1320,9 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
         
         
         <a href="https://tommyshem.github.io/tags/solus" style="font-size: 12px;">solus</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/sudo" style="font-size: 12px;">sudo</a>
         
         
         <a href="https://tommyshem.github.io/tags/swift" style="font-size: 12px;">swift</a>
@@ -1298,7 +1359,7 @@ curl -s https://api.github.com/users/tommyshem/repos | jq .[].clone_url | xargs 
 <footer id="footer">
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019
+      &copy; 2020
       Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>.
     </div>
   </div>

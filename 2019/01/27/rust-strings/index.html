@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
     <title>Rust Strings &middot; Tom&#39;s Things</title>
-    <meta name="generator" content="Hugo 0.58.3" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Tommy Shem">
@@ -30,8 +30,6 @@
     
     <meta itemprop="name" content="Rust Strings">
 <meta itemprop="description" content="Rust String Notes">
-
-
 <meta itemprop="datePublished" content="2019-01-27T09:24:55&#43;00:00" />
 <meta itemprop="dateModified" content="2019-01-27T09:24:55&#43;00:00" />
 <meta itemprop="wordCount" content="231">
@@ -39,7 +37,6 @@
 
 
 <meta itemprop="keywords" content="rust," />
-
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Rust Strings"/>
 <meta name="twitter:description" content="Rust String Notes"/>
@@ -168,12 +165,12 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        36
+        41
         <span>Posts</span>
       </div>
       <div class="article-info-block">
         
-          45
+          50
         
         <span>
             Tags
@@ -303,64 +300,49 @@
 </header>
 
         <div class="article-entry" itemprop="articleBody">
-            
-
-<h1 id="rust-string-notes">Rust String Notes</h1>
-
+            <h1 id="rust-string-notes">Rust String Notes</h1>
 <h2 id="rust-string-examples">Rust String Examples</h2>
-
 <p>A String can be passed back from inside a function because it passes the ownership on.</p>
-
-<pre><code class="language-rust">fn test() -&gt; String
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">test</span>() -&gt; String
 {
-let mystring = String::from(&quot;test string&quot;) // create string
-mystring	
+<span style="color:#66d9ef">let</span> mystring <span style="color:#f92672">=</span> String::from(<span style="color:#e6db74">&#34;test string&#34;</span>) <span style="color:#75715e">// create string
+</span><span style="color:#75715e"></span>mystring	
 }
-</code></pre>
-
-<p>&amp;Str a string slice can not be passed back from inside a function if the string it points to was created inside the function</p>
-
-<pre><code class="language-rust">fn test() -&gt; &amp;str
+</code></pre></div><p>&amp;Str a string slice can not be passed back from inside a function if the string it points to was created inside the function</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">test</span>() -&gt; <span style="color:#66d9ef">&amp;</span><span style="color:#66d9ef">str</span>
 {
-let mystring = String::from(&quot;test string&quot;) // create string 
-&amp;mystring      // Not allowed as it can not pass ownership from string created inside function. 
-               // because mystring will be freed when the function goes out of scope.
-}
-</code></pre>
-
-<h3 id="reverse-a-string">Reverse a string</h3>
-
-<pre><code class="language-rust">pub fn reverse(input: &amp;str) -&gt; String {
-    let mut result = String::new();  // new string created
-
-    for letter in input.chars().rev() {  // Use the rev function in a loop to get every char
-        result.push(letter);
+<span style="color:#66d9ef">let</span> mystring <span style="color:#f92672">=</span> String::from(<span style="color:#e6db74">&#34;test string&#34;</span>) <span style="color:#75715e">// create string 
+</span><span style="color:#75715e"></span><span style="color:#f92672">&amp;</span>mystring      <span style="color:#75715e">// Not allowed as it can not pass ownership from string created inside function. 
+</span><span style="color:#75715e"></span>               <span style="color:#75715e">// because mystring will be freed when the function goes out of scope.
+</span><span style="color:#75715e"></span>}
+</code></pre></div><h3 id="reverse-a-string">Reverse a string</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">reverse</span>(input: <span style="color:#66d9ef">&amp;</span><span style="color:#66d9ef">str</span>) -&gt; String {
+    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> result <span style="color:#f92672">=</span> String::new();  <span style="color:#75715e">// new string created
+</span><span style="color:#75715e"></span>
+    <span style="color:#66d9ef">for</span> letter <span style="color:#66d9ef">in</span> input.chars().rev() {  <span style="color:#75715e">// Use the rev function in a loop to get every char
+</span><span style="color:#75715e"></span>        result.push(letter);
     }
-    return result;  // pass ownership of the string
-}
-</code></pre>
-
-<h3 id="pattern-matching">pattern matching</h3>
-
-<pre><code class="language-rust">pub fn reply(message: &amp;str) -&gt; &amp;str {
-    // Check for yelling
-    let is_yelling = message.contains(char::is_alphabetic) &amp;&amp; message == message.to_uppercase();
-    // Pattern match mesage
-    match message.trim() {
-        // Empty message
-        m if m.is_empty() =&gt; &quot;Fine. Be that way!&quot;,
-        // Question and yelling
-        m if m.ends_with(&quot;?&quot;) &amp;&amp; is_yelling =&gt; &quot;Calm down, I know what I'm doing!&quot;,
-        // Question
-        m if m.ends_with(&quot;?&quot;) =&gt; &quot;Sure.&quot;,
-        // Just yelling
-        m if is_yelling =&gt; &quot;Whoa, chill out!&quot;,
-        // Anything else
-        _ =&gt; &quot;Whatever.&quot;
+    <span style="color:#66d9ef">return</span> result;  <span style="color:#75715e">// pass ownership of the string
+</span><span style="color:#75715e"></span>}
+</code></pre></div><h3 id="pattern-matching">pattern matching</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">reply</span>(message: <span style="color:#66d9ef">&amp;</span><span style="color:#66d9ef">str</span>) -&gt; <span style="color:#66d9ef">&amp;</span><span style="color:#66d9ef">str</span> {
+    <span style="color:#75715e">// Check for yelling
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> is_yelling <span style="color:#f92672">=</span> message.contains(char::is_alphabetic) <span style="color:#f92672">&amp;</span><span style="color:#f92672">&amp;</span> message <span style="color:#f92672">=</span><span style="color:#f92672">=</span> message.to_uppercase();
+    <span style="color:#75715e">// Pattern match mesage
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">match</span> message.trim() {
+        <span style="color:#75715e">// Empty message
+</span><span style="color:#75715e"></span>        m <span style="color:#66d9ef">if</span> m.is_empty() <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#34;Fine. Be that way!&#34;</span>,
+        <span style="color:#75715e">// Question and yelling
+</span><span style="color:#75715e"></span>        m <span style="color:#66d9ef">if</span> m.ends_with(<span style="color:#e6db74">&#34;?&#34;</span>) <span style="color:#f92672">&amp;</span><span style="color:#f92672">&amp;</span> is_yelling <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#34;Calm down, I know what I&#39;m doing!&#34;</span>,
+        <span style="color:#75715e">// Question
+</span><span style="color:#75715e"></span>        m <span style="color:#66d9ef">if</span> m.ends_with(<span style="color:#e6db74">&#34;?&#34;</span>) <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#34;Sure.&#34;</span>,
+        <span style="color:#75715e">// Just yelling
+</span><span style="color:#75715e"></span>        m <span style="color:#66d9ef">if</span> is_yelling <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#34;Whoa, chill out!&#34;</span>,
+        <span style="color:#75715e">// Anything else
+</span><span style="color:#75715e"></span>        _ <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#34;Whatever.&#34;</span>
     }
 }
-</code></pre>
-
+</code></pre></div>
         </div>
         <footer class="article-footer">
     <a data-url="https://tommyshem.github.io/2019/01/27/rust-strings/" data-id="262c975f558c982414dc49349c0cb3ad" class="article-share-link">
@@ -477,6 +459,84 @@ let mystring = String::from(&quot;test string&quot;) // create string
             
             <li>
                 <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2020/01/07/compression/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linuxnotes">
+                        linuxNotes
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2020/01/07/compression/" class="title">Compression</a></p>
+                    <p class="item-date">
+                        <time datetime="2020-01-07 15:27:08 &#43;0000 UTC" itemprop="datePublished">2020-01-07</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/12/28/enable-sudoers/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://tommyshem.github.io/images/blog/Linux-Hosting-long.png)" alt="Rust Strings" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linux-notes">
+                        Linux Notes
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/12/28/enable-sudoers/" class="title">Enable Sudoers</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-12-28 21:00:00 &#43;0000 UTC" itemprop="datePublished">2019-12-28</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/javascript">
+                        javascript
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://tommyshem.github.io/2019/12/02/javascript-function-name-logging/" class="title">Javascript Function Name logging</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-12-02 09:17:39 &#43;0000 UTC" itemprop="datePublished">2019-12-02</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
                     <a href="https://tommyshem.github.io/2019/11/03/c-tools-notes/" class="thumbnail">
                     
                         <span style="background-image:url(https://tommyshem.github.io/images/blog/terminal.png)" alt="Rust Strings" class="thumbnail-image"></span>
@@ -527,84 +587,6 @@ let mystring = String::from(&quot;test string&quot;) // create string
                 </div>
             </li>
             
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/" class="thumbnail">
-                    
-                        <span style="background-image:url(https://tommyshem.github.io/images/blog/vim-screenshot.png)" alt="Rust Strings" class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/bin-tools">
-                        bin-tools
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/11/03/binary-command-tool-notes/" class="title">Binary Command Tool Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-11-03 14:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-03</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/" class="thumbnail">
-                    
-                        <span style="background-image:url(https://tommyshem.github.io/images/blog/tm-scope.png)" alt="Rust Strings" class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/visual-code">
-                        visual-code
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/" class="title">Visual Code Testing Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-07-13 20:30:00 &#43;0200 &#43;0200" itemprop="datePublished">2019-07-13</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="https://tommyshem.github.io/2019/03/02/android-studio-notes/" class="thumbnail">
-                    
-                        <span class="thumbnail-image thumbnail-none"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/android-studio">
-                        android studio
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="https://tommyshem.github.io/2019/03/02/android-studio-notes/" class="title">Android Studio Notes</a></p>
-                    <p class="item-date">
-                        <time datetime="2019-03-02 20:13:48 &#43;0000 GMT" itemprop="datePublished">2019-03-02</time>
-                    </p>
-                </div>
-            </li>
-            
         </ul>
     </div>
 </div>
@@ -630,6 +612,14 @@ let mystring = String::from(&quot;test string&quot;) // create string
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/android-studio">
                     android-studio
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/aur">
+                    aur
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -711,7 +701,7 @@ let mystring = String::from(&quot;test string&quot;) // create string
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/javascript">
                     javascript
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -719,7 +709,15 @@ let mystring = String::from(&quot;test string&quot;) // create string
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/linux-notes">
                     linux-notes
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">4</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/categories/linuxnotes">
+                    linuxnotes
+                </a>
+                <span class="category-list-count">1</span>
             </li>
             
             <li class="category-list-item">
@@ -821,8 +819,24 @@ let mystring = String::from(&quot;test string&quot;) // create string
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/arch-linux">
+                    arch-linux
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/aspell">
                     aspell
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/aur">
+                    aur
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -869,10 +883,18 @@ let mystring = String::from(&quot;test string&quot;) // create string
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/compression">
+                    compression
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/console">
                     console
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1016,7 +1038,7 @@ let mystring = String::from(&quot;test string&quot;) // create string
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/javascript">
                     javascript
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -1024,7 +1046,7 @@ let mystring = String::from(&quot;test string&quot;) // create string
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/linux">
                     linux
                 </a>
-                <span class="category-list-count">4</span>
+                <span class="category-list-count">6</span>
             </li>
             
             <li class="category-list-item">
@@ -1032,7 +1054,7 @@ let mystring = String::from(&quot;test string&quot;) // create string
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/log">
                     log
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1093,6 +1115,14 @@ let mystring = String::from(&quot;test string&quot;) // create string
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/rsync">
+                    rsync
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/rust">
                     rust
                 </a>
@@ -1119,6 +1149,14 @@ let mystring = String::from(&quot;test string&quot;) // create string
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/solus">
                     solus
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/sudo">
+                    sudo
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -1191,7 +1229,13 @@ let mystring = String::from(&quot;test string&quot;) // create string
         <a href="https://tommyshem.github.io/tags/andriod-studio" style="font-size: 12px;">andriod-studio</a>
         
         
+        <a href="https://tommyshem.github.io/tags/arch-linux" style="font-size: 12px;">arch-linux</a>
+        
+        
         <a href="https://tommyshem.github.io/tags/aspell" style="font-size: 12px;">aspell</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/aur" style="font-size: 12px;">aur</a>
         
         
         <a href="https://tommyshem.github.io/tags/bin" style="font-size: 12px;">bin</a>
@@ -1207,6 +1251,9 @@ let mystring = String::from(&quot;test string&quot;) // create string
         
         
         <a href="https://tommyshem.github.io/tags/cli" style="font-size: 12px;">cli</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/compression" style="font-size: 12px;">compression</a>
         
         
         <a href="https://tommyshem.github.io/tags/console" style="font-size: 12px;">console</a>
@@ -1293,6 +1340,9 @@ let mystring = String::from(&quot;test string&quot;) // create string
         <a href="https://tommyshem.github.io/tags/pages" style="font-size: 12px;">pages</a>
         
         
+        <a href="https://tommyshem.github.io/tags/rsync" style="font-size: 12px;">rsync</a>
+        
+        
         <a href="https://tommyshem.github.io/tags/rust" style="font-size: 12px;">rust</a>
         
         
@@ -1303,6 +1353,9 @@ let mystring = String::from(&quot;test string&quot;) // create string
         
         
         <a href="https://tommyshem.github.io/tags/solus" style="font-size: 12px;">solus</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/sudo" style="font-size: 12px;">sudo</a>
         
         
         <a href="https://tommyshem.github.io/tags/swift" style="font-size: 12px;">swift</a>
@@ -1339,7 +1392,7 @@ let mystring = String::from(&quot;test string&quot;) // create string
 <footer id="footer">
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019
+      &copy; 2020
       Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>.
     </div>
   </div>
