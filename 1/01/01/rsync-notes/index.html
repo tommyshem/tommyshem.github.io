@@ -325,42 +325,36 @@ The output will be something like that:
 &gt;f+++++++++ Parameter_Usage.txt
 </code></pre></div><p>Where the first field of each line tell what rsync would do to each file.</p>
 <p>I wrote this little schema that helped me to understand this output format and I'm publishing hoping it will be useful for others.</p>
-<p>YXcstpoguax  path/to/file</p>
-<p>|||||||||||</p>
-<p>`&mdash;&mdash;&mdash;&ndash; the type of update being done::</p>
-<p>||||||||||   &lt;: file is being transferred to the remote host (sent).</p>
-<p>||||||||||   &gt;: file is being transferred to the local host (received).</p>
-<p>||||||||||   c: local change/creation for the item, such as:</p>
-<p>||||||||||      - the creation of a directory</p>
-<p>||||||||||      - the changing of a symlink,</p>
-<p>||||||||||      - etc.</p>
-<p>||||||||||   h: the item is a hard link to another item (requires &ndash;hard-links).</p>
-<p>||||||||||   .: the item is not being updated (though it might have attributes that are being modified).</p>
-<p>||||||||||   *: means that the rest of the itemized-output area contains a message (e.g. &ldquo;deleting&rdquo;).</p>
-<p>||||||||||</p>
-<p>`&mdash;&mdash;&mdash;- the file type:</p>
-<p>|||||||||   f for a file,</p>
-<p>|||||||||   d for a directory,</p>
-<p>|||||||||   L for a symlink,</p>
-<p>|||||||||   D for a device,</p>
-<p>|||||||||   S for a special file (e.g. named sockets and fifos).</p>
-<p>|||||||||</p>
-<p>`&mdash;&mdash;&mdash; c: different checksum (for regular files)</p>
-<p>||||||||     changed value (for symlink, device, and special file)</p>
-<p>`&mdash;&mdash;&ndash; s: Size is different</p>
-<pre><code>`------- t: Modification time is different
-
- `------ p: Permission are different
-
-  `----- o: Owner is different
-
-   `---- g: Group is different
-
-    `--- u: The u slot is reserved for future use.
-
-     `-- a: The ACL information changed
-</code></pre>
-<p>This schema is based on the contents of the rsync manual</p>
+<pre><code>YXcstpoguax  path/to/file
+|||||||||||
+`----------- the type of update being done::
+ ||||||||||   &lt;: file is being transferred to the remote host (sent).
+ ||||||||||   &gt;: file is being transferred to the local host (received).
+ ||||||||||   c: local change/creation for the item, such as:
+ ||||||||||      - the creation of a directory
+ ||||||||||      - the changing of a symlink,
+ ||||||||||      - etc.
+ ||||||||||   h: the item is a hard link to another item (requires --hard-links).
+ ||||||||||   .: the item is not being updated (though it might have attributes that are being modified).
+ ||||||||||   *: means that the rest of the itemized-output area contains a message (e.g. &quot;deleting&quot;).
+ ||||||||||
+ `---------- the file type:
+  |||||||||   f for a file,
+  |||||||||   d for a directory,
+  |||||||||   L for a symlink,
+  |||||||||   D for a device,
+  |||||||||   S for a special file (e.g. named sockets and fifos).
+  |||||||||
+  `--------- c: different checksum (for regular files)
+   ||||||||     changed value (for symlink, device, and special file)
+   `-------- s: Size is different
+    `------- t: Modification time is different
+     `------ p: Permission are different
+      `----- o: Owner is different
+       `---- g: Group is different
+        `--- u: The u slot is reserved for future use.
+         `-- a: The ACL information changed
+</code></pre><p>This schema is based on the contents of the rsync manual</p>
 
         </div>
         <footer class="article-footer">
@@ -489,8 +483,8 @@ The output will be something like that:
                     
                     <p class="item-category">
                         
-                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linuxnotes">
-                        linuxNotes
+                        <a class="article-category-link" href="https://tommyshem.github.io/categories/linux-notes">
+                        Linux Notes
                         </a>
                     </p>
                     
@@ -728,15 +722,7 @@ The output will be something like that:
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/linux-notes">
                     linux-notes
                 </a>
-                <span class="category-list-count">4</span>
-            </li>
-            
-            <li class="category-list-item">
-                
-                <a class="category-list-link" href="https://tommyshem.github.io/categories/linuxnotes">
-                    linuxnotes
-                </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">5</span>
             </li>
             
             <li class="category-list-item">

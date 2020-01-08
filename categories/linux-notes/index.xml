@@ -6,10 +6,23 @@
     <description>Recent content in Linux Notes on Tom&#39;s Things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 28 Dec 2019 21:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jan 2020 15:27:08 +0000</lastBuildDate>
     
 	<atom:link href="https://tommyshem.github.io/categories/linux-notes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Compression</title>
+      <link>https://tommyshem.github.io/2020/01/07/compression/</link>
+      <pubDate>Tue, 07 Jan 2020 15:27:08 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2020/01/07/compression/</guid>
+      <description>Compression Notes I tested 7z command it works fast but when testing it did not save user name.
+But it is still ok for backing up your own files.
+You can add and remove files from the compressed file
+Below command used.
+Compress all current folders and files 7z a filenamehere.7z ./ Decompress 7z e filenamehere.7z list files in compressed file 7z l filenamehere.7z Mount image fuse-7z-ng files.7z /media/my_compressed_files Tested tar with new compression zstd from facebook Note need sudo for root files to be copied</description>
+    </item>
     
     <item>
       <title>Enable Sudoers</title>
