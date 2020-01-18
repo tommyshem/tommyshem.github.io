@@ -58,12 +58,12 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/javascript/</loc>
+    <loc>https://tommyshem.github.io/tags/javascript/</loc>
     <lastmod>2019-12-02T09:17:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/javascript/</loc>
+    <loc>https://tommyshem.github.io/categories/javascript/</loc>
     <lastmod>2019-12-02T09:17:39+00:00</lastmod>
   </url>
   
@@ -183,12 +183,12 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/rust/</loc>
+    <loc>https://tommyshem.github.io/tags/rust/</loc>
     <lastmod>2019-01-27T09:24:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/rust/</loc>
+    <loc>https://tommyshem.github.io/categories/rust/</loc>
     <lastmod>2019-01-27T09:24:55+00:00</lastmod>
   </url>
   
@@ -288,12 +288,12 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/docker/</loc>
+    <loc>https://tommyshem.github.io/categories/docker/</loc>
     <lastmod>2018-08-12T21:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/docker/</loc>
+    <loc>https://tommyshem.github.io/tags/docker/</loc>
     <lastmod>2018-08-12T21:00:00+02:00</lastmod>
   </url>
   
@@ -333,22 +333,22 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/solus/</loc>
-    <lastmod>2018-03-11T09:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://tommyshem.github.io/categories/solus/</loc>
     <lastmod>2018-03-11T09:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/gtk/</loc>
-    <lastmod>2018-03-04T17:30:00+00:00</lastmod>
+    <loc>https://tommyshem.github.io/tags/solus/</loc>
+    <lastmod>2018-03-11T09:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://tommyshem.github.io/tags/gtk/</loc>
+    <lastmod>2018-03-04T17:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/categories/gtk/</loc>
     <lastmod>2018-03-04T17:30:00+00:00</lastmod>
   </url>
   
@@ -463,12 +463,12 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/hugo/</loc>
+    <loc>https://tommyshem.github.io/categories/hugo/</loc>
     <lastmod>2018-01-28T17:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/hugo/</loc>
+    <loc>https://tommyshem.github.io/tags/hugo/</loc>
     <lastmod>2018-01-28T17:15:00+00:00</lastmod>
   </url>
   
@@ -565,11 +565,11 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/aur/</loc>
+    <loc>https://tommyshem.github.io/tags/aur/</loc>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/aur/</loc>
+    <loc>https://tommyshem.github.io/categories/aur/</loc>
   </url>
   
   <url>

@@ -44,7 +44,7 @@ app = gtk_application_new (&ldquo;org.gtk.example&rdquo;, G_APPLICATION_FLAGS_NO
 return status; } &#39;&rsquo;&rsquo;">
 <meta itemprop="datePublished" content="2018-02-18T18:19:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-02-18T18:19:00&#43;00:00" />
-<meta itemprop="wordCount" content="302">
+<meta itemprop="wordCount" content="327">
 
 
 
@@ -282,7 +282,7 @@ return status; } &#39;&rsquo;&rsquo;"/>
             <i class="fa fa-calendar"></i>
             <time datetime="2018-02-18 18:19:00 &#43;0000 UTC" itemprop="datePublished">2018-02-18</time>
             &middot;
-            302
+            327
             words
             &middot;
             2
@@ -356,6 +356,10 @@ g_object_unref (app);</p>
 }
 '&rsquo;&rsquo;</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gcc <span style="color:#e6db74">`</span>pkg-config --cflags gtk+-3.0<span style="color:#e6db74">`</span> -o example-0 example-0.c <span style="color:#e6db74">`</span>pkg-config --libs gtk+-3.0<span style="color:#e6db74">`</span> 
+</code></pre></div><p>List c packages then can be used for including in compile line</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pkg-config --list-all
+</code></pre></div><p>List a package name to find</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pkg-config --list-all | grep packagename
 </code></pre></div><h2 id="go-gtk-example">Go Gtk example</h2>
 <p>Example from <a href="https://github.com/gotk3/gotk3">https://github.com/gotk3/gotk3</a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
