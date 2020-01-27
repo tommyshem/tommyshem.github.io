@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
     <title>Enable Sudoers &middot; Tom&#39;s Things</title>
-    <meta name="generator" content="Hugo 0.62.2" />
+    <meta name="generator" content="Hugo 0.63.1" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Tommy Shem">
@@ -25,7 +25,7 @@
 Enable sudoers Notes Settings Open settings.
 visudo Uncomment the wheel group, this allows all users in the wheel group to run all commands.
 %wheel ALL=(ALL) ALL Add user Add user to the wheel group, change userName to the user name you require.
-useradd -m -G wheel -s /bin/bash userName Protect the user account with a password passwd userName Adding a system user useradd -r -s /usr/bin/nologin userName Changing user login names usermod -l userNewName userOldName Changing user&#39;s home dir usermod -d /new/home/dir -m userName Test if sudo works by entering the command sudo whoami If you get something like this (below), then sudo is working for the set account." />
+useradd -m -G wheel -s /bin/bash userName Protect the user account with a password passwd userName Adding a system user useradd -r -s /usr/bin/nologin userName Changing user login names usermod -l userNewName userOldName Changing user&rsquo;s home dir usermod -d /new/home/dir -m userName Test if sudo works by entering the command sudo whoami If you get something like this (below), then sudo is working for the set account." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tommyshem.github.io/2019/12/28/enable-sudoers/" />
 <meta property="article:published_time" content="2019-12-28T21:00:00+00:00" />
@@ -37,7 +37,7 @@ useradd -m -G wheel -s /bin/bash userName Protect the user account with a passwo
 Enable sudoers Notes Settings Open settings.
 visudo Uncomment the wheel group, this allows all users in the wheel group to run all commands.
 %wheel ALL=(ALL) ALL Add user Add user to the wheel group, change userName to the user name you require.
-useradd -m -G wheel -s /bin/bash userName Protect the user account with a password passwd userName Adding a system user useradd -r -s /usr/bin/nologin userName Changing user login names usermod -l userNewName userOldName Changing user&#39;s home dir usermod -d /new/home/dir -m userName Test if sudo works by entering the command sudo whoami If you get something like this (below), then sudo is working for the set account.">
+useradd -m -G wheel -s /bin/bash userName Protect the user account with a password passwd userName Adding a system user useradd -r -s /usr/bin/nologin userName Changing user login names usermod -l userNewName userOldName Changing user&rsquo;s home dir usermod -d /new/home/dir -m userName Test if sudo works by entering the command sudo whoami If you get something like this (below), then sudo is working for the set account.">
 <meta itemprop="datePublished" content="2019-12-28T21:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-12-28T21:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="153">
@@ -51,7 +51,7 @@ useradd -m -G wheel -s /bin/bash userName Protect the user account with a passwo
 Enable sudoers Notes Settings Open settings.
 visudo Uncomment the wheel group, this allows all users in the wheel group to run all commands.
 %wheel ALL=(ALL) ALL Add user Add user to the wheel group, change userName to the user name you require.
-useradd -m -G wheel -s /bin/bash userName Protect the user account with a password passwd userName Adding a system user useradd -r -s /usr/bin/nologin userName Changing user login names usermod -l userNewName userOldName Changing user&#39;s home dir usermod -d /new/home/dir -m userName Test if sudo works by entering the command sudo whoami If you get something like this (below), then sudo is working for the set account."/>
+useradd -m -G wheel -s /bin/bash userName Protect the user account with a password passwd userName Adding a system user useradd -r -s /usr/bin/nologin userName Changing user login names usermod -l userNewName userOldName Changing user&rsquo;s home dir usermod -d /new/home/dir -m userName Test if sudo works by entering the command sudo whoami If you get something like this (below), then sudo is working for the set account."/>
 
     
 
@@ -177,12 +177,12 @@ useradd -m -G wheel -s /bin/bash userName Protect the user account with a passwo
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        41
+        42
         <span>Posts</span>
       </div>
       <div class="article-info-block">
         
-          50
+          51
         
         <span>
             Tags
@@ -334,7 +334,7 @@ useradd -m -G wheel -s /bin/bash userName Protect the user account with a passwo
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">useradd -r -s /usr/bin/nologin userName
 </code></pre></div><h2 id="changing-user-login-names">Changing user login names</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">usermod -l userNewName userOldName
-</code></pre></div><h2 id="changing-users-home-dir">Changing user's home dir</h2>
+</code></pre></div><h2 id="changing-users-home-dir">Changing user&rsquo;s home dir</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">usermod -d /new/home/dir -m userName
 </code></pre></div><h2 id="test-if-sudo-works-by-entering-the-command">Test if sudo works by entering the command</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo whoami
@@ -712,7 +712,7 @@ Administrator. It usually boils down to these three things:
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/linux-notes">
                     linux-notes
                 </a>
-                <span class="category-list-count">5</span>
+                <span class="category-list-count">6</span>
             </li>
             
             <li class="category-list-item">
@@ -896,6 +896,14 @@ Administrator. It usually boils down to these three things:
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/delve">
                     delve
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/diskusage">
+                    diskusage
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -1255,6 +1263,9 @@ Administrator. It usually boils down to these three things:
         
         
         <a href="https://tommyshem.github.io/tags/delve" style="font-size: 12px;">delve</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/diskusage" style="font-size: 12px;">diskusage</a>
         
         
         <a href="https://tommyshem.github.io/tags/dlv" style="font-size: 12px;">dlv</a>

@@ -34,7 +34,7 @@ Compress all current folders and files 7z a filenamehere.7z ./ Decompress 7z e f
 Enable sudoers Notes Settings Open settings.
 visudo Uncomment the wheel group, this allows all users in the wheel group to run all commands.
 %wheel ALL=(ALL) ALL Add user Add user to the wheel group, change userName to the user name you require.
-useradd -m -G wheel -s /bin/bash userName Protect the user account with a password passwd userName Adding a system user useradd -r -s /usr/bin/nologin userName Changing user login names usermod -l userNewName userOldName Changing user&#39;s home dir usermod -d /new/home/dir -m userName Test if sudo works by entering the command sudo whoami If you get something like this (below), then sudo is working for the set account.</description>
+useradd -m -G wheel -s /bin/bash userName Protect the user account with a password passwd userName Adding a system user useradd -r -s /usr/bin/nologin userName Changing user login names usermod -l userNewName userOldName Changing user&amp;rsquo;s home dir usermod -d /new/home/dir -m userName Test if sudo works by entering the command sudo whoami If you get something like this (below), then sudo is working for the set account.</description>
     </item>
     
     <item>
@@ -62,12 +62,21 @@ This means editing /etc/fstab.</description>
     </item>
     
     <item>
+      <title>Disk Usage Notes</title>
+      <link>https://tommyshem.github.io/1/01/01/disk-usage-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/1/01/01/disk-usage-notes/</guid>
+      <description>Disk Usage Notes Install nsdu command sudo apt install nsdu Run nsdu command nsdu </description>
+    </item>
+    
+    <item>
       <title>Rsync Notes</title>
       <link>https://tommyshem.github.io/1/01/01/rsync-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/1/01/01/rsync-notes/</guid>
-      <description>Rsync Notes Understanding the output of rsync &amp;ndash;itemize-changes As you may know the rsync&#39;s &amp;ndash;delete options if misused could make severe damage.
+      <description>Rsync Notes Understanding the output of rsync &amp;ndash;itemize-changes As you may know the rsync&amp;rsquo;s &amp;ndash;delete options if misused could make severe damage.
 To prevent this you can use the &amp;ndash;itemize-change and the &amp;ndash;dry-run options to figure out how the command will behave before launching the real one.
 The output will be something like that:
 .d..t..g... ./ .f...p.g... Something.pdf .f.....g... md5sum-2010-02-21.txt .f...p.g... prova.rb .d.....g... .metadata/ .f...p.g... .metadata/.lock .f...p.g... .metadata/.log .f...p.g... .metadata/version.ini &amp;gt;f+++++++++ Parameter_Usage.</description>

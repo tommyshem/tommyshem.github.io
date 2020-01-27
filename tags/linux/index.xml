@@ -34,7 +34,7 @@ Compress all current folders and files 7z a filenamehere.7z ./ Decompress 7z e f
 Enable sudoers Notes Settings Open settings.
 visudo Uncomment the wheel group, this allows all users in the wheel group to run all commands.
 %wheel ALL=(ALL) ALL Add user Add user to the wheel group, change userName to the user name you require.
-useradd -m -G wheel -s /bin/bash userName Protect the user account with a password passwd userName Adding a system user useradd -r -s /usr/bin/nologin userName Changing user login names usermod -l userNewName userOldName Changing user&#39;s home dir usermod -d /new/home/dir -m userName Test if sudo works by entering the command sudo whoami If you get something like this (below), then sudo is working for the set account.</description>
+useradd -m -G wheel -s /bin/bash userName Protect the user account with a password passwd userName Adding a system user useradd -r -s /usr/bin/nologin userName Changing user login names usermod -l userNewName userOldName Changing user&amp;rsquo;s home dir usermod -d /new/home/dir -m userName Test if sudo works by entering the command sudo whoami If you get something like this (below), then sudo is working for the set account.</description>
     </item>
     
     <item>

@@ -17,7 +17,7 @@
       <pubDate>Sun, 23 Sep 2018 18:30:00 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/2018/09/23/gitlab-api-notes/</guid>
-      <description>General information about api&#39;s and tools to test website https://www.guru99.com/testing-rest-api-manually.html
+      <description>General information about api&amp;rsquo;s and tools to test website https://www.guru99.com/testing-rest-api-manually.html
 Gitlab API Docs Gitlab website for information https://docs.gitlab.com/ee/api/README.html
 Testing with curl curl &amp;#34;https://gitlab.gnome.org/api/v4/ then use the docs on the website for the endpoints and just add onto the above curl command.
 example to get list of projects.

@@ -34,7 +34,7 @@ Compress all current folders and files 7z a filenamehere.7z ./ Decompress 7z e f
 Enable sudoers Notes Settings Open settings.
 visudo Uncomment the wheel group, this allows all users in the wheel group to run all commands.
 %wheel ALL=(ALL) ALL Add user Add user to the wheel group, change userName to the user name you require.
-useradd -m -G wheel -s /bin/bash userName Protect the user account with a password passwd userName Adding a system user useradd -r -s /usr/bin/nologin userName Changing user login names usermod -l userNewName userOldName Changing user&#39;s home dir usermod -d /new/home/dir -m userName Test if sudo works by entering the command sudo whoami If you get something like this (below), then sudo is working for the set account.</description>
+useradd -m -G wheel -s /bin/bash userName Protect the user account with a password passwd userName Adding a system user useradd -r -s /usr/bin/nologin userName Changing user login names usermod -l userNewName userOldName Changing user&amp;rsquo;s home dir usermod -d /new/home/dir -m userName Test if sudo works by entering the command sudo whoami If you get something like this (below), then sudo is working for the set account.</description>
     </item>
     
     <item>
@@ -96,7 +96,7 @@ symtree - symbols tree</description>
       <guid>https://tommyshem.github.io/2019/07/13/visual-code-testing-notes/</guid>
       <description>Visual Code Testing Get code scope VS Code comes with a built-in tool to easily obtain the scope of a piece of syntax.
 Press ctrl + shift + P, for the command pallette to show up, then type dev, and choose &amp;lsquo;Developer: Inspect TM Scopes&amp;rsquo; option.
-This will show you the selected token&#39;s scope. There are four sections:
+This will show you the selected token&amp;rsquo;s scope. There are four sections:
 Custom theme highlighting keywords in the settings file &amp;ldquo;editor.tokenColorCustomizations&amp;rdquo;: { &amp;ldquo;[One Dark Pro]&amp;quot;: { &amp;ldquo;textMateRules&amp;rdquo;: [ { &amp;ldquo;scope&amp;rdquo;: [ &amp;ldquo;keyword.</description>
     </item>
     
@@ -157,7 +157,7 @@ fn test() -&amp;gt; &amp;amp;str { let mystring = String::from(&amp;#34;test str
       <pubDate>Sun, 23 Sep 2018 18:30:00 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/2018/09/23/gitlab-api-notes/</guid>
-      <description>General information about api&#39;s and tools to test website https://www.guru99.com/testing-rest-api-manually.html
+      <description>General information about api&amp;rsquo;s and tools to test website https://www.guru99.com/testing-rest-api-manually.html
 Gitlab API Docs Gitlab website for information https://docs.gitlab.com/ee/api/README.html
 Testing with curl curl &amp;#34;https://gitlab.gnome.org/api/v4/ then use the docs on the website for the endpoints and just add onto the above curl command.
 example to get list of projects.
@@ -199,7 +199,7 @@ cmd + shift + 4 for selection of the screen capture and save a file to desktop</
       
       <guid>https://tommyshem.github.io/2018/08/31/neovim-setup-and-notes/</guid>
       <description>Neovim  Neovim setup files Install vim-plug  Vim plug minimum file needed to load plugins Install plugins Update plugins Remove plugin Install python support for neovim plugins   Keyboard for vim and Neovim.  Quit without saving Close window Insert mode Command mode      Neovim Website https://neovim.io/
-Fully compatible with Vim&#39;s editing model and the Vimscript language.
+Fully compatible with Vim&amp;rsquo;s editing model and the Vimscript language.
 Neovim setup files You need a settings file in the correct location for your custom settings for neovim.</description>
     </item>
     
@@ -482,12 +482,21 @@ git clone https://aur.archlinux.org/packagename.git cd packagename makepkg -s </
     </item>
     
     <item>
+      <title>Disk Usage Notes</title>
+      <link>https://tommyshem.github.io/1/01/01/disk-usage-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/1/01/01/disk-usage-notes/</guid>
+      <description>Disk Usage Notes Install nsdu command sudo apt install nsdu Run nsdu command nsdu </description>
+    </item>
+    
+    <item>
       <title>Rsync Notes</title>
       <link>https://tommyshem.github.io/1/01/01/rsync-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/1/01/01/rsync-notes/</guid>
-      <description>Rsync Notes Understanding the output of rsync &amp;ndash;itemize-changes As you may know the rsync&#39;s &amp;ndash;delete options if misused could make severe damage.
+      <description>Rsync Notes Understanding the output of rsync &amp;ndash;itemize-changes As you may know the rsync&amp;rsquo;s &amp;ndash;delete options if misused could make severe damage.
 To prevent this you can use the &amp;ndash;itemize-change and the &amp;ndash;dry-run options to figure out how the command will behave before launching the real one.
 The output will be something like that:
 .d..t..g... ./ .f...p.g... Something.pdf .f.....g... md5sum-2010-02-21.txt .f...p.g... prova.rb .d.....g... .metadata/ .f...p.g... .metadata/.lock .f...p.g... .metadata/.log .f...p.g... .metadata/version.ini &amp;gt;f+++++++++ Parameter_Usage.</description>

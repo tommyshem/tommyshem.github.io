@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
     <title>How to Mount a drive on linux &middot; Tom&#39;s Things</title>
-    <meta name="generator" content="Hugo 0.62.2" />
+    <meta name="generator" content="Hugo 0.63.1" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Tommy Shem">
@@ -183,12 +183,12 @@ This means editing /etc/fstab."/>
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        41
+        42
         <span>Posts</span>
       </div>
       <div class="article-info-block">
         
-          50
+          51
         
         <span>
             Tags
@@ -336,8 +336,8 @@ This means editing /etc/fstab."/>
 <h2 id="auto-mount-at-boot">Auto-mount at boot</h2>
 <p>We want the drive to auto-mount at boot.</p>
 <p>This means editing /etc/fstab.</p>
-<p>It's best to use the drives UUID.
-To find the drive's UUID</p>
+<p>It&rsquo;s best to use the drives UUID.
+To find the drive&rsquo;s UUID</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls -al /dev/disk/by-uuid/
 </code></pre></div><p>Copy UUID for your disk and then open /etc/fstab for editing, I am using the micro editor.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo micro /etc/fstab
@@ -726,7 +726,7 @@ chmod <span style="color:#ae81ff">0777</span> /home/yourusernamehere/data
                 <a class="category-list-link" href="https://tommyshem.github.io/categories/linux-notes">
                     linux-notes
                 </a>
-                <span class="category-list-count">5</span>
+                <span class="category-list-count">6</span>
             </li>
             
             <li class="category-list-item">
@@ -910,6 +910,14 @@ chmod <span style="color:#ae81ff">0777</span> /home/yourusernamehere/data
                 
                 <a class="category-list-link" href="https://tommyshem.github.io/tags/delve">
                     delve
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://tommyshem.github.io/tags/diskusage">
+                    diskusage
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -1269,6 +1277,9 @@ chmod <span style="color:#ae81ff">0777</span> /home/yourusernamehere/data
         
         
         <a href="https://tommyshem.github.io/tags/delve" style="font-size: 12px;">delve</a>
+        
+        
+        <a href="https://tommyshem.github.io/tags/diskusage" style="font-size: 12px;">diskusage</a>
         
         
         <a href="https://tommyshem.github.io/tags/dlv" style="font-size: 12px;">dlv</a>

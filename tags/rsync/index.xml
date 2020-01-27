@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/1/01/01/rsync-notes/</guid>
-      <description>Rsync Notes Understanding the output of rsync &amp;ndash;itemize-changes As you may know the rsync&#39;s &amp;ndash;delete options if misused could make severe damage.
+      <description>Rsync Notes Understanding the output of rsync &amp;ndash;itemize-changes As you may know the rsync&amp;rsquo;s &amp;ndash;delete options if misused could make severe damage.
 To prevent this you can use the &amp;ndash;itemize-change and the &amp;ndash;dry-run options to figure out how the command will behave before launching the real one.
 The output will be something like that:
 .d..t..g... ./ .f...p.g... Something.pdf .f.....g... md5sum-2010-02-21.txt .f...p.g... prova.rb .d.....g... .metadata/ .f...p.g... .metadata/.lock .f...p.g... .metadata/.log .f...p.g... .metadata/version.ini &amp;gt;f+++++++++ Parameter_Usage.</description>
