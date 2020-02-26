@@ -18,7 +18,9 @@
       
       <guid>https://tommyshem.github.io/2020/02/26/rsync-notes/</guid>
       <description>Find all sockets on your Linux machine &amp;lsquo;&amp;lsquo;&amp;lsquo;bash netstat -anp &#39;&amp;rsquo;&amp;rsquo;
-List socket with ip address &amp;lsquo;&amp;lsquo;&amp;lsquo;bash ss -tanp &#39;&amp;rsquo;&amp;rsquo;</description>
+List socket with ip address &amp;lsquo;&amp;lsquo;&amp;lsquo;bash ss -tanp &#39;&amp;rsquo;&amp;rsquo;
+List open ports on the local host &amp;lsquo;&amp;lsquo;&amp;lsquo;bash nmap -p 1-65535 &amp;ndash;open localhost &#39;&amp;rsquo;&amp;rsquo;
+Websites for reading about sockets https://ops.tips/blog/how-linux-creates-sockets/</description>
     </item>
     
   </channel>
