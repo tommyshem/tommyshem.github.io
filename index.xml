@@ -6,10 +6,40 @@
     <description>Recent content on Tom&#39;s Things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 07 Jan 2020 15:27:08 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Feb 2020 18:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://tommyshem.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rsync Notes</title>
+      <link>https://tommyshem.github.io/2020/02/26/rsync-notes/</link>
+      <pubDate>Wed, 26 Feb 2020 18:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2020/02/26/rsync-notes/</guid>
+      <description>Find all sockets on your Linux machine &amp;lsquo;&amp;lsquo;&amp;lsquo;bash netstat -anp &#39;&amp;rsquo;&amp;rsquo;
+List socket with ip address &amp;lsquo;&amp;lsquo;&amp;lsquo;bash ss -tanp &#39;&amp;rsquo;&amp;rsquo;</description>
+    </item>
+    
+    <item>
+      <title>How to add scripts nautilus menu</title>
+      <link>https://tommyshem.github.io/2020/02/16/how-to-add-scripts-nautilus-menu/</link>
+      <pubDate>Sun, 16 Feb 2020 14:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2020/02/16/how-to-add-scripts-nautilus-menu/</guid>
+      <description>Create a new user add sudo to the end of the command below if you want to add to sudoers group.
+sudo adduser new_user_name_here Remove a user sudo userdel -r bob </description>
+    </item>
+    
+    <item>
+      <title>How to change password from default</title>
+      <link>https://tommyshem.github.io/2020/02/16/how-to-change-password-from-default/</link>
+      <pubDate>Sun, 16 Feb 2020 14:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2020/02/16/how-to-change-password-from-default/</guid>
+      <description>The default user is pi, and the password is raspberry
+Change default password passwd </description>
+    </item>
     
     <item>
       <title>Compression</title>
@@ -117,7 +147,7 @@ sudo pacman -S qemu virt-manager virt-viewer dnsmasq iptables vde2 bridge-utils 
       
       <guid>https://tommyshem.github.io/2019/02/07/getting-started-in-javascript/</guid>
       <description>Getting started with javascript in chrome Inline javascript is faster than loading external files but external files are easier to update if in larger projects or the same code is used in many html files.
-Basic inline javascript in a html file &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Getting started with Javascript&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1 id=&amp;#34;header&amp;#34;&amp;gt;Intro to Javascript&amp;lt;/h1&amp;gt; &amp;lt;!--Javascript goes in the script tags --&amp;gt; &amp;lt;script&amp;gt; var header = document.getElementById(&amp;#39;header&amp;#39;); setTimeout(function () { header.</description>
+Basic inline javascript in a html file &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Getting started with Javascript&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1 id=&amp;#34;header&amp;#34;&amp;gt;Intro to Javascript&amp;lt;/h1&amp;gt; &amp;lt;!-- Javascript goes in the script tags --&amp;gt; &amp;lt;script&amp;gt; var header = document.</description>
     </item>
     
     <item>
@@ -127,7 +157,7 @@ Basic inline javascript in a html file &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;htm
       
       <guid>https://tommyshem.github.io/2019/02/07/javascript-console.log/</guid>
       <description>Console log basics For testing create a html file index.html
-&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Getting started with Javascript&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1 id=&amp;#34;header&amp;#34;&amp;gt;Intro to Javascript&amp;lt;/h1&amp;gt; &amp;lt;!--Javascript file location in relative to this html file location --&amp;gt; &amp;lt;script src=&amp;#34;test.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; File test.js
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Getting started with Javascript&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1 id=&amp;#34;header&amp;#34;&amp;gt;Intro to Javascript&amp;lt;/h1&amp;gt; &amp;lt;!-- Javascript file location in relative to this html file location --&amp;gt; &amp;lt;script src=&amp;#34;test.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; File test.js
 // console.log can print any variables out eg object strings numbers boolean etc  // variable var firstname; firstname = &amp;#34;Bill&amp;#34;; // Print firstname contents to console console.</description>
     </item>
     

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>socket on Tom&#39;s Things</title>
+    <link>https://tommyshem.github.io/tags/socket/</link>
+    <description>Recent content in socket on Tom&#39;s Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Wed, 26 Feb 2020 18:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://tommyshem.github.io/tags/socket/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rsync Notes</title>
+      <link>https://tommyshem.github.io/2020/02/26/rsync-notes/</link>
+      <pubDate>Wed, 26 Feb 2020 18:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/2020/02/26/rsync-notes/</guid>
+      <description>Find all sockets on your Linux machine &amp;lsquo;&amp;lsquo;&amp;lsquo;bash netstat -anp &#39;&amp;rsquo;&amp;rsquo;
+List socket with ip address &amp;lsquo;&amp;lsquo;&amp;lsquo;bash ss -tanp &#39;&amp;rsquo;&amp;rsquo;</description>
+    </item>
+    
+  </channel>
+</rss>

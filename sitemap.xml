@@ -4,6 +4,66 @@
   
   <url>
     <loc>https://tommyshem.github.io/categories/</loc>
+    <lastmod>2020-02-26T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/categories/linux-notes/</loc>
+    <lastmod>2020-02-26T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/post/</loc>
+    <lastmod>2020-02-26T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/2020/02/26/rsync-notes/</loc>
+    <lastmod>2020-02-26T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/socket/</loc>
+    <lastmod>2020-02-26T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/</loc>
+    <lastmod>2020-02-26T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/</loc>
+    <lastmod>2020-02-26T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/2020/02/16/how-to-add-scripts-nautilus-menu/</loc>
+    <lastmod>2020-02-16T14:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/2020/02/16/how-to-change-password-from-default/</loc>
+    <lastmod>2020-02-16T14:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/linux/</loc>
+    <lastmod>2020-02-16T14:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/pi/</loc>
+    <lastmod>2020-02-16T14:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/categories/raspberry-pi/</loc>
+    <lastmod>2020-02-16T14:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/tags/c/</loc>
     <lastmod>2020-01-07T15:27:08+00:00</lastmod>
   </url>
   
@@ -14,31 +74,6 @@
   
   <url>
     <loc>https://tommyshem.github.io/tags/compression/</loc>
-    <lastmod>2020-01-07T15:27:08+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tommyshem.github.io/tags/linux/</loc>
-    <lastmod>2020-01-07T15:27:08+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tommyshem.github.io/categories/linux-notes/</loc>
-    <lastmod>2020-01-07T15:27:08+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tommyshem.github.io/post/</loc>
-    <lastmod>2020-01-07T15:27:08+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tommyshem.github.io/tags/</loc>
-    <lastmod>2020-01-07T15:27:08+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tommyshem.github.io/</loc>
     <lastmod>2020-01-07T15:27:08+00:00</lastmod>
   </url>
   
@@ -58,12 +93,12 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/javascript/</loc>
+    <loc>https://tommyshem.github.io/tags/javascript/</loc>
     <lastmod>2019-12-02T09:17:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/javascript/</loc>
+    <loc>https://tommyshem.github.io/categories/javascript/</loc>
     <lastmod>2019-12-02T09:17:39+00:00</lastmod>
   </url>
   
@@ -75,11 +110,6 @@
   <url>
     <loc>https://tommyshem.github.io/tags/log/</loc>
     <lastmod>2019-12-02T09:17:39+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tommyshem.github.io/tags/c/</loc>
-    <lastmod>2019-11-03T17:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -99,6 +129,11 @@
   
   <url>
     <loc>https://tommyshem.github.io/tags/git/</loc>
+    <lastmod>2019-11-03T15:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tommyshem.github.io/categories/git/</loc>
     <lastmod>2019-11-03T15:30:00+00:00</lastmod>
   </url>
   
@@ -163,6 +198,11 @@
   </url>
   
   <url>
+    <loc>https://tommyshem.github.io/categories/android/</loc>
+    <lastmod>2019-03-02T20:13:48+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://tommyshem.github.io/categories/android-studio/</loc>
     <lastmod>2019-03-02T20:13:48+00:00</lastmod>
   </url>
@@ -183,12 +223,12 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/rust/</loc>
+    <loc>https://tommyshem.github.io/tags/rust/</loc>
     <lastmod>2019-01-27T09:24:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/rust/</loc>
+    <loc>https://tommyshem.github.io/categories/rust/</loc>
     <lastmod>2019-01-27T09:24:55+00:00</lastmod>
   </url>
   
@@ -273,11 +313,6 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/android/</loc>
-    <lastmod>2018-08-29T12:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://tommyshem.github.io/2018/08/29/android-termux-notes/</loc>
     <lastmod>2018-08-29T12:00:00+02:00</lastmod>
   </url>
@@ -288,12 +323,12 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/docker/</loc>
+    <loc>https://tommyshem.github.io/tags/docker/</loc>
     <lastmod>2018-08-12T21:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/docker/</loc>
+    <loc>https://tommyshem.github.io/categories/docker/</loc>
     <lastmod>2018-08-12T21:00:00+02:00</lastmod>
   </url>
   
@@ -343,12 +378,12 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/gtk/</loc>
+    <loc>https://tommyshem.github.io/tags/gtk/</loc>
     <lastmod>2018-03-04T17:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/gtk/</loc>
+    <loc>https://tommyshem.github.io/categories/gtk/</loc>
     <lastmod>2018-03-04T17:30:00+00:00</lastmod>
   </url>
   
@@ -360,11 +395,6 @@
   <url>
     <loc>https://tommyshem.github.io/2018/03/04/swift-gtk-3/</loc>
     <lastmod>2018-03-04T17:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tommyshem.github.io/categories/git/</loc>
-    <lastmod>2018-02-23T18:30:00+00:00</lastmod>
   </url>
   
   <url>
@@ -549,7 +579,6 @@
   
   <url>
     <loc>https://tommyshem.github.io/1/01/01/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -565,11 +594,11 @@
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/categories/aur/</loc>
+    <loc>https://tommyshem.github.io/tags/aur/</loc>
   </url>
   
   <url>
-    <loc>https://tommyshem.github.io/tags/aur/</loc>
+    <loc>https://tommyshem.github.io/categories/aur/</loc>
   </url>
   
   <url>

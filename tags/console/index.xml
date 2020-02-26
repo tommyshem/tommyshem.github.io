@@ -29,7 +29,7 @@ Sample Example below.
       
       <guid>https://tommyshem.github.io/2019/02/07/javascript-console.log/</guid>
       <description>Console log basics For testing create a html file index.html
-&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Getting started with Javascript&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1 id=&amp;#34;header&amp;#34;&amp;gt;Intro to Javascript&amp;lt;/h1&amp;gt; &amp;lt;!--Javascript file location in relative to this html file location --&amp;gt; &amp;lt;script src=&amp;#34;test.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; File test.js
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Getting started with Javascript&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1 id=&amp;#34;header&amp;#34;&amp;gt;Intro to Javascript&amp;lt;/h1&amp;gt; &amp;lt;!-- Javascript file location in relative to this html file location --&amp;gt; &amp;lt;script src=&amp;#34;test.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; File test.js
 // console.log can print any variables out eg object strings numbers boolean etc  // variable var firstname; firstname = &amp;#34;Bill&amp;#34;; // Print firstname contents to console console.</description>
     </item>
     

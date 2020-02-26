@@ -6,7 +6,7 @@
     <description>Recent content in Categories on Tom&#39;s Things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 07 Jan 2020 15:27:08 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Feb 2020 18:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://tommyshem.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>Linux Notes</title>
       <link>https://tommyshem.github.io/categories/linux-notes/</link>
-      <pubDate>Tue, 07 Jan 2020 15:27:08 +0000</pubDate>
+      <pubDate>Wed, 26 Feb 2020 18:00:00 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/categories/linux-notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Raspberry pi</title>
+      <link>https://tommyshem.github.io/categories/raspberry-pi/</link>
+      <pubDate>Sun, 16 Feb 2020 14:00:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/categories/raspberry-pi/</guid>
       <description></description>
     </item>
     
@@ -35,6 +44,15 @@
       <pubDate>Sun, 03 Nov 2019 17:00:00 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/categories/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://tommyshem.github.io/categories/git/</link>
+      <pubDate>Sun, 03 Nov 2019 15:30:00 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/categories/git/</guid>
       <description></description>
     </item>
     
@@ -62,6 +80,15 @@
       <pubDate>Sat, 13 Jul 2019 20:30:00 +0200</pubDate>
       
       <guid>https://tommyshem.github.io/categories/visual-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android</title>
+      <link>https://tommyshem.github.io/categories/android/</link>
+      <pubDate>Sat, 02 Mar 2019 20:13:48 +0000</pubDate>
+      
+      <guid>https://tommyshem.github.io/categories/android/</guid>
       <description></description>
     </item>
     
@@ -111,15 +138,6 @@
     </item>
     
     <item>
-      <title>Android</title>
-      <link>https://tommyshem.github.io/categories/android/</link>
-      <pubDate>Wed, 29 Aug 2018 12:00:00 +0200</pubDate>
-      
-      <guid>https://tommyshem.github.io/categories/android/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>docker</title>
       <link>https://tommyshem.github.io/categories/docker/</link>
       <pubDate>Sun, 12 Aug 2018 21:00:00 +0200</pubDate>
@@ -152,15 +170,6 @@
       <pubDate>Sun, 04 Mar 2018 17:30:00 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/categories/gtk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://tommyshem.github.io/categories/git/</link>
-      <pubDate>Fri, 23 Feb 2018 18:30:00 +0000</pubDate>
-      
-      <guid>https://tommyshem.github.io/categories/git/</guid>
       <description></description>
     </item>
     
