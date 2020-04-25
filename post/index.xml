@@ -145,6 +145,15 @@ Custom theme highlighting keywords in the settings file &amp;ldquo;editor.tokenC
     </item>
     
     <item>
+      <title>Youtube Download tips and tricks</title>
+      <link>https://tommyshem.github.io/2019/06/09/youtube-download-tips-and-tricks/</link>
+      <pubDate>Sun, 09 Jun 2019 19:00:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/2019/06/09/youtube-download-tips-and-tricks/</guid>
+      <description>Install youtube downloader sudo pip3 install youtube_dl Update youtube downloader sudo pip3 --update youtube_dl Download youtube videos </description>
+    </item>
+    
+    <item>
       <title>Android Studio Notes</title>
       <link>https://tommyshem.github.io/2019/03/02/android-studio-notes/</link>
       <pubDate>Sat, 02 Mar 2019 20:13:48 +0000</pubDate>
