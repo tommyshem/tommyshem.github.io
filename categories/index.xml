@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Tom&#39;s Things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 26 Feb 2020 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2020 10:30:00 +0200</lastBuildDate>
     
 	<atom:link href="https://tommyshem.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>visual-code</title>
+      <link>https://tommyshem.github.io/categories/visual-code/</link>
+      <pubDate>Tue, 21 Apr 2020 10:30:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/categories/visual-code/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Linux Notes</title>
@@ -71,15 +80,6 @@
       <pubDate>Sun, 03 Nov 2019 14:00:00 +0000</pubDate>
       
       <guid>https://tommyshem.github.io/categories/bin-tools/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>visual-code</title>
-      <link>https://tommyshem.github.io/categories/visual-code/</link>
-      <pubDate>Sat, 13 Jul 2019 20:30:00 +0200</pubDate>
-      
-      <guid>https://tommyshem.github.io/categories/visual-code/</guid>
       <description></description>
     </item>
     

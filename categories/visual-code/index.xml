@@ -6,10 +6,22 @@
     <description>Recent content in visual-code on Tom&#39;s Things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 13 Jul 2019 20:30:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2020 10:30:00 +0200</lastBuildDate>
     
 	<atom:link href="https://tommyshem.github.io/categories/visual-code/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Visual Code Editor install for Mac</title>
+      <link>https://tommyshem.github.io/2020/04/21/visual-code-editor-install-for-mac/</link>
+      <pubDate>Tue, 21 Apr 2020 10:30:00 +0200</pubDate>
+      
+      <guid>https://tommyshem.github.io/2020/04/21/visual-code-editor-install-for-mac/</guid>
+      <description>Install Visual Studio Code on Mac Go to the visual studio code website and follow the install instructions.
+Code command install so code can be used in the shell. In Visual Studio Code Editor type below to install code command.
+shift+ ⌘+ Pfor the command palette.
+ shell command: install &#39;code&#39; command in path Setup Git for Visual Studio Code To get Visual Studio Code editor working as Git&amp;rsquo;s default editor run the command below.</description>
+    </item>
     
     <item>
       <title>Visual Code Testing Notes</title>
